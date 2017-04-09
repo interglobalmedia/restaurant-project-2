@@ -1,0 +1,174 @@
+/* Responsive Navigation Styling */
+.top {
+	@mixin atResponsive {
+		display: none;
+	}
+}
+
+nav.hamburger {
+	width: 42px;
+	height: 36px;
+	margin: 30px 0 0 30px;
+	position: fixed;
+	top: 0;
+	right: 30px;
+	cursor: pointer;
+	z-index: 9999;
+}
+
+nav.hamburger div.line {
+	width: 100%;
+	height: 6px;
+	margin: 0 0 6px 0;
+	background: black;
+	transition: transform 0.3s, opacity 0.1s;
+}
+
+.hide {
+	opacity: 0;
+	transform: translateX(-42px);
+}
+
+.animate0 {
+	transform: rotate(45deg) translateY(17px);
+}
+
+.animate2 {
+	transform: rotate(-45deg) translateY(-17px);
+}
+
+nav.responsive-menu {
+	background: rgba(52, 152, 219, 0);
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	position: fixed;
+	overflow-y: visible;
+	opacity: 0;
+	-webkit-transition: background 0.5s ease-in-out, opacity 0.5s;
+	-moz-transition: background 0.5s ease-in-out, opacity 0.5s;
+	-ms-transition: background 0.5s ease-in-out, opacity 0.5s;
+	-o-transition: background 0.5s ease-in-out, opacity 0.5s;
+	transition: background 0.5s ease-in-out, opacity 0.5s;
+}
+
+nav.responsive-menu.show {
+	opacity: 1;
+	background: white;
+	-webkit-transition: background 0.5s ease-in-out, visibility 0.5s;
+	-moz-transition: background 0.5s ease-in-out, visibility 0.5s;
+	-ms-transition: background 0.5s ease-in-out, visibility 0.5s;
+	-o-transition: background 0.5s ease-in-out, visibility 0.5s;
+	transition: background 0.5s ease-in-out, visibility 0.5s;
+	display: block;
+	@mixin atMediumLarge {
+		display: none;
+	}
+}
+
+nav.responsive-menu ul {
+	padding: 90px 10% 20px 0;
+	margin-top: 180px;
+}
+
+nav.responsive-menu li {
+	list-style: none;
+	text-align: center;
+	width: 100%;
+}
+
+nav.responsive-menu li a {
+	color: $mainAntiqueWhite;
+	font-size: 28px;
+	text-decoration: none;
+	font-weight: 300;
+	line-height: 1.5;
+}
+
+nav.responsive-menu li:first-child a {
+	background: transparent;
+	border: none;
+	color: $mainAntiqueWhite;
+}
+
+nav.responsive-menu li:first-child a.active, nav.responsive-menu li:first-child a:hover {
+	color: $mainAzure4;
+	border: none;
+}
+
+nav.responsive-menu a.active, nav.responsive-menu a:hover {
+	text-decoration: underline;
+	color: $mainAzure4;
+	border: none;
+}
+
+/* Navigation Styling */
+.top {
+	text-align: center;
+	width: 100%;
+	max-width: 880px;
+}
+
+nav.responsive-menu, nav.hamburger,
+nav.responsive-menu a.active, nav.responsive-menu a:hover {
+	@mixin atMediumLarge {
+		display: none;
+	}
+}
+
+nav {
+	position: -webkit-sticky;
+	position: sticky;
+	z-index: 1;
+	margin: 0 auto;
+	background: $mainCornFlowerBlue;
+	@mixin atMediumLarge {
+		background: red;
+		max-width: 880px;
+		width: 100%;
+		margin-left: -8px;
+		border-right: 1px solid red;
+		border-bottom: 12px solid black;
+	}
+}
+
+nav ul {
+	padding: 0;
+	list-style: none;
+}
+
+nav a {
+	text-decoration: none;
+	display: block;
+}
+
+nav li:last-child {
+	margin-right: 20px;
+}
+
+nav a.active, nav a:hover {
+	text-decoration: underline;
+	color: $mainRed;
+	border: 1px dotted $mainAzure4;
+}
+
+nav li {
+	display: inline-block;
+	text-align: center;
+	letter-spacing: 0.1em;
+	font-family: 'Dosis',sans-serif;
+	font-size: 18px;
+    font-weight: bold;
+	padding: 1rem 1.5rem 1.75rem;
+}
+
+nav li a {
+	margin-left: 10px;
+	color: black;
+}
+
+nav li:hover {
+	color: $mainAzure4;
+	cursor: pointer;
+}

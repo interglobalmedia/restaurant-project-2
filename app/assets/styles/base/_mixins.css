@@ -1,0 +1,39 @@
+/* Mixins */
+
+@define-mixin atSmall {
+    @media (min-width: 530px) {
+        @mixin-content;
+    }
+}
+
+@define-mixin atMediumSmall {
+    @media (min-width: 675px) {
+        @mixin-content;
+    }
+}
+
+@define-mixin atMedium {
+    @media (min-width: 730px) {
+        @mixin-content;
+    }
+}
+
+@define-mixin atMediumLarge {
+    @media (min-width: 856px) {
+        @mixin-content;
+    }
+}
+
+@define-mixin atResponsive {
+    @media (max-width: 855px) {
+        @mixin-content;
+    }
+}
+
+@define-mixin clearfix {
+    &:after {
+        content: '';
+        clear: both;
+        display: table;
+    }
+}

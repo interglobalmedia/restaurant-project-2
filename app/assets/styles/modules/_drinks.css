@@ -1,0 +1,89 @@
+/* Drinks Styling */
+body.drinks {
+	margin: 0;
+	overflow: hidden;
+	font-size: 20px;
+}
+
+body.drinks #drinks {
+	width: 100%;
+	height: 100%;
+	background-image: url('../../assets/images/relax-701362_1920.jpg');
+	background-size: cover;
+	background-position: 50% 50%;
+	position: absolute;
+	overflow: visible;
+	top: 0;
+	left: 0;
+	z-index: 0;
+	@mixin atMediumLarge {
+		overflow: scroll;
+		overflow-x: auto;
+	}
+}
+
+#drinks {
+	width: 100%;
+	margin: 0 auto;
+	overflow: hidden;
+	z-index: 1;
+	display: flex;
+	flex-direction: column;
+	justify-content: start;
+}
+
+#drinks img {
+	display: none;
+}
+
+.drink-items {
+	padding: 340px 0 20px;
+	text-align: center;
+	width: 100%;
+	background: white;
+	margin: 0 auto;
+	@mixin atMediumLarge {
+		width: 100%;
+		max-width: 880px;
+	}
+}
+
+.drink-item {
+	padding-bottom: 20px;
+}
+
+.drink-items h2, .drink-items h4 {
+	text-transform: uppercase;
+	letter-spacing: 0.1em;
+	font-weight: 700;
+}
+
+.drink-items h2 {
+	font-family: 'Cutive Mono', monospace;
+	padding-bottom: 20px;
+	color: $mainRed;
+}
+
+.drink-items h4 {
+	font-family: 'Dosis', sans-serif;
+}
+
+/* Common Meals Styling */
+
+.description {
+	color: $mainAzure4;
+	line-height: 1.5;
+	font-family: 'Dosis', sans-serif;
+	letter-spacing: 0.1em;
+}
+
+.price {
+	font-weight: bold;
+	font-family: 'Dosis', sans-serif;
+}
+
+.add {
+	margin-top: 0;
+	margin-bottom: 0;
+	font-family: 'Dosis', sans-serif;
+}

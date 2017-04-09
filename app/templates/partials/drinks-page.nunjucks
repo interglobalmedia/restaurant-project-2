@@ -1,0 +1,41 @@
+<!-- drinks-page.nunjucks -->
+				<div id="drinks">
+					<img src="/assets/images/relax-701362_1920.jpg" alt="Interior of restaurant Julia.">
+					<div class="drink-items">
+						<h2>Cocktails</h2>
+						<span class="price">12</span>
+						<div class="drink-item">
+							<h4>The Wee Monsieur</h4>
+							<span class="description">Pisco, Applejack, Cointreau, ancho liqueur, lemon</span>
+						</div>
+						<div class="drink-item">
+							<h4>The Last Exit</h4>
+							<span class="description">Jamaican rum, chamomile-infused white rum, falernum, rosewater</span>
+						</div>
+						<div class="drink-item">
+							<h4>La Picosa</h4>
+							<span class="description">Tequila, mezcal, serrano pepper, cucumber syrup, lime</span>
+						</div>
+						<div class="drink-item">
+							<h4>The Patient Extra</h4>
+							<span class="description">Cachaca, Luxardo maraschino, grapefruit, lime, citrus bitters</span>
+						</div>
+						<div class="drink-item">
+							<h4>The Handsome Devil</h4>
+							<span class="description">Rye whiskey, aged cachaca, house vermouth</span>
+						</div>
+						<div class="drink-item">
+							<h4>The Old Dean</h4>
+							<span class="description">Mezcal, fino sherry, allspice dram, pear, lemon</span>
+						</div>
+						<div class="drink-item">
+							<h4>The Tickled Pink</h4>
+							<span class="description">Gin, crema de mezcal, pink peppercorn syrup, basil, lime</span>
+						</div>
+					</div>
+					<div class="footer">
+						<p>
+							Copyright © 2017 Julia's Restaurant
+						</p>
+					</div>
+				</div>
