@@ -1,0 +1,172 @@
+/* Welcome Page Styling */
+
+body.welcome {
+	overflow: hidden;
+	font-size: 18px;
+}
+
+#welcome {
+	width: 100%;
+	margin: 0 auto;
+	overflow: hidden;
+	z-index: 1;
+	display: flex;
+	flex-direction: column;
+	justify-content: start;
+}
+
+#welcome.show {
+	margin-top: 600px;
+}
+
+#welcome img {
+	display: none;
+}
+
+.welcome-items {
+	padding: 140px 0 0;
+	text-align: center;
+	max-width: 880px;
+	width: 100%;
+	margin: 0 auto;
+	background: white;
+	@mixin atMediumLarge {
+		padding: 60px 0 20px;
+	}
+}
+
+.welcome-items h1 {
+	font-family: 'Dosis', sans-serif;
+	font-weight: 100;
+	padding-bottom: 20px;
+	color: $mainRed;
+	text-transform: uppercase;
+	letter-spacing: 0.1em;
+}
+
+.welcome-items p {
+	font-size: 18px;
+	font-family: 'Dosis', sans-serif;
+	padding: 0 40px;
+}
+
+.welcome-item img {
+	width: 90%;
+	z-index: 5;
+}
+
+.welcome-item {
+	margin: 20px 0;
+}
+
+.welcome-item .description {
+	font-weight: 100;
+	color: black;
+	font-size: 18px;
+}
+
+.welcome-item .address,
+.welcome-item .contact-info {
+	font-size: 18px;
+	letter-spacing: 0.1em;
+	font-weight: 100;
+	line-height: 1.5;
+}
+
+.welcome-item .title,
+.welcome-item .hours {
+	letter-spacing: 0.1em;
+	line-height: 1.5;
+}
+
+.welcome-item .title {
+	font-weight: bold;
+	color: $mainRed;
+}
+
+.welcome-item .hours {
+	color: black;
+}
+
+.welcome-items .social-media-icons-container {
+	margin: 40px auto;
+	@mixin atMediumLarge {
+		width: 100%;
+		margin: 0 auto;
+		padding: 40px 0;
+	}
+}
+
+.welcome-items .find-a-table-container {
+	@mixin atMediumLarge {
+		margin: 0 auto;
+		letter-spacing: 0.1em;
+		width: 90%;
+	}
+}
+
+.welcome-items .find-a-table-container h2 {
+	font-weight: 100;
+}
+
+#welcome .welcome-items .instagram-container img {
+	display: block;
+	width: 100%;
+	border: 1px solid #ddd;
+}
+
+.welcome-items .instagram-container {
+	width: 90%;
+	margin: 0 auto;
+	@mixin atMediumLarge {
+		margin: 40px auto;
+	}
+}
+
+.welcome-items .instagram-column {
+	width: 100%;
+	margin: 0 auto 20px;
+	@mixin atMediumSmall {
+		width: 50%;
+		float: left;
+		@mixin atMediumLarge {
+			width: 33.3333%;
+			float: left;
+		}
+	}
+}
+
+.video-container {
+	position: relative;
+	padding-bottom: 56.25%;
+	padding-top: 30px;
+	overflow: hidden;
+	margin: 20px auto 40px;
+	width: 90%;
+	@mixin atMediumLarge {
+		margin: 60px auto 0;
+	}
+}
+.video-container iframe,
+.video-container object,
+.video-container embed {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	margin: 20px auto;
+	z-index: 1;
+}
+
+.welcome-items .subscribe-container {
+	@mixin atMediumLarge {
+		width: 90%;
+		margin: 0 auto;
+	}
+}
+
+.welcome-items .subscribe-container h2 {
+	font-weight: 100;
+	letter-spacing: 0.1em;
+}

@@ -7,7 +7,7 @@
 }
 
 @define-mixin atMediumSmall {
-    @media (min-width: 675px) {
+    @media (min-width: 620px) {
         @mixin-content;
     }
 }
@@ -18,14 +18,20 @@
     }
 }
 
+@define-mixin atMediumMedium {
+    @media (min-width: 800px) {
+        @mixin-content;
+    }
+}
+
 @define-mixin atMediumLarge {
-    @media (min-width: 856px) {
+    @media (min-width: 897px) {
         @mixin-content;
     }
 }
 
 @define-mixin atResponsive {
-    @media (max-width: 855px) {
+    @media (max-width: 896px) {
         @mixin-content;
     }
 }

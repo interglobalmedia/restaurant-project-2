@@ -1,4 +1,5 @@
 /* Responsive Navigation Styling */
+
 .top {
 	@mixin atResponsive {
 		display: none;
@@ -8,10 +9,12 @@
 nav.hamburger {
 	width: 42px;
 	height: 36px;
-	margin: 30px 0 0 30px;
+	margin: 10px 0 0 30px;
+	//margin: 20px auto;
 	position: fixed;
+	//position: sticky;
 	top: 0;
-	right: 30px;
+	right: 10px;
 	cursor: pointer;
 	z-index: 9999;
 }
@@ -42,10 +45,13 @@ nav.responsive-menu {
 	top: 0;
 	left: 0;
 	width: 100%;
-	height: 100%;
-	position: fixed;
+	height: 100vh;
 	overflow-y: visible;
+	//overflow-x: hidden;
+	position: -webkit-sticky;
+	position: sticky;
 	opacity: 0;
+	z-index: 1;
 	-webkit-transition: background 0.5s ease-in-out, opacity 0.5s;
 	-moz-transition: background 0.5s ease-in-out, opacity 0.5s;
 	-ms-transition: background 0.5s ease-in-out, opacity 0.5s;
@@ -62,19 +68,22 @@ nav.responsive-menu.show {
 	-o-transition: background 0.5s ease-in-out, visibility 0.5s;
 	transition: background 0.5s ease-in-out, visibility 0.5s;
 	display: block;
+	width: 100%;
+	height: auto;
+	//height: 100vh;
+	z-index: 2;
 	@mixin atMediumLarge {
 		display: none;
 	}
 }
 
 nav.responsive-menu ul {
-	padding: 90px 10% 20px 0;
-	margin-top: 180px;
+	padding: 60px 0 0 0;
 }
 
 nav.responsive-menu li {
 	list-style: none;
-	text-align: center;
+	text-align: left;
 	width: 100%;
 }
 
@@ -120,16 +129,20 @@ nav.responsive-menu a.active, nav.responsive-menu a:hover {
 nav {
 	position: -webkit-sticky;
 	position: sticky;
-	z-index: 1;
+	z-index: 3;
 	margin: 0 auto;
-	background: $mainCornFlowerBlue;
+	background: white;
 	@mixin atMediumLarge {
-		background: red;
 		max-width: 880px;
+		//margin-left: -7px;
+		//margin-left: -15px;
 		width: 100%;
-		margin-left: -8px;
-		border-right: 1px solid red;
-		border-bottom: 12px solid black;
+		//margin-left: -7px;
+		//border-top: 12px solid black;
+		//border-bottom: 12px solid black;
+		height: 60px;
+		margin-top: -60px;
+		//position: relative;
 	}
 }
 
@@ -164,11 +177,10 @@ nav li {
 }
 
 nav li a {
-	margin-left: 10px;
 	color: black;
 }
 
-nav li:hover {
+nav li a:hover {
 	color: $mainAzure4;
 	cursor: pointer;
 }

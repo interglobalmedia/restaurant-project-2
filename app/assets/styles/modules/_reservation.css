@@ -1,0 +1,214 @@
+/* Reserve Page Styling */
+
+body.reserve {
+	overflow: hidden;
+	font-size: 20px;
+}
+
+#reserve {
+	width: 100%;
+	margin: 0 auto;
+	z-index: 1;
+	display: flex;
+	flex-direction: column;
+	justify-content: start;
+}
+
+#reserve img {
+	display: none;
+}
+
+#reserve .reservations {
+	text-align: center;
+	max-width: 880px;
+	background: white;
+	line-height: 1.4;
+	margin: 0 auto;
+	display: flex;
+	flex-direction: column;
+	justify-content: end;
+	@mixin atMediumLarge {
+		text-align: center;
+		flex-direction: column;
+		align-items: center;
+		display: flex;
+		justify-content: start;
+	}
+}
+.reservations {
+	padding: 140px 0 0;
+	text-align: center;
+	max-width: 880px;
+	margin: 0 auto;
+	@mixin atMediumLarge {
+		padding: 40px 40px 20px;
+	}
+}
+
+.reservations h1 {
+	font-family: 'Dosis', sans-serif;
+	text-transform: uppercase;
+	color: $mainRed;
+	letter-spacing: 0.1em;
+	font-weight: 100;
+}
+
+.reservations p {
+	font-family: 'Dosis', sans-serif;
+	padding-top: 10px;
+	letter-spacing: 0.1em;
+	font-weight: 100;
+}
+
+.reserve-info {
+	padding: 0 20px 20px;
+	@mixin atMediumLarge {
+		margin-top: 20px;
+	}
+}
+
+.reserve-info a {
+	color: $mainAzure4;
+	font-weight: 100;
+	letter-spacing: 0.1em;
+	font-size: 20px;
+}
+
+.reserve-info .description {
+	color: black;
+	font-size: 20px;
+	letter-spacing: 0.1em;
+	font-weight: 100;
+}
+
+.reserve-info .add {
+	color: black;
+	font-family: 'Dosis', sans-serif;
+	font-size: 20px;
+	padding: 0;
+	margin: 0 auto;
+	font-weight: 100;
+}
+
+/* Find A Table Styling */
+
+.find-a-table-container {
+	width: 90%;
+	margin: 40px auto;
+	padding: 10px 0;
+	background: $mainAzure4;
+	@mixin atMediumLarge {
+		width: 100%;
+		background: $mainAzure4;
+		margin: 40px 60px 60px;
+		padding: 10px 0 30px;
+	}
+}
+
+.find-a-table-container h2 {
+	font-family: 'Dosis', sans-serif;
+	font-weight: 100;
+	text-transform: none;
+	color: black;
+	letter-spacing: 0.1em;
+}
+
+.find-a-table {
+	text-align: center;
+	margin: 30px;
+}
+
+.find-a-table a {
+	background: $mainRed;
+	padding: 10px 20px;
+	border: 3px dotted black;
+	color: black;
+	font-family: 'Dosis', sans-serif;
+	letter-spacing: 0.1em;
+}
+
+.find-a-table p {
+	font-family: 'Dosis', sans-serif;
+	font-size: 16px;
+	color: black;
+	padding-top: 10px;
+	margin-bottom: 20px;
+}
+
+/* Social Media Icons Styling */
+
+.social-media-icons-container {
+	margin: 30px auto 20px;
+	@mixin atMediumLarge {
+		width: 100%;
+		padding: 40px 0;
+		margin: 20px 0;
+	}
+}
+
+.social-media-icons-container svg {
+	width: 40px;
+	height: 40px;
+	margin: 0 5px;
+}
+
+/* Subscribe Container Styling */
+
+.subscribe-container {
+	width: 90%;
+	background: $mainAzure4;
+	margin: 40px auto;
+	padding: 40px 0;
+	@mixin atMediumLarge {
+		width: 100%;
+		background: $mainAzure4;
+		margin: 0 auto;
+		padding: 40px 0;
+	}
+}
+
+.subscribe-container h2 {
+	text-transform: none;
+	color: black;
+	padding-bottom: 20px;
+	font-family: 'Dosis', sans-serif;
+	font-weight: 100;
+	letter-spacing: 0.1em;
+}
+
+.subscribe-container .description {
+	color: black;
+	font-size: 16px;
+}
+
+.newsletter-form-field-wrapper {
+	padding: 40px 0;
+}
+
+.newsletter-form-button-icon {
+	width: 120px;
+	height: 42px;
+	font-size: 16px;
+	text-transform: uppercase;
+	font-family: 'Dosis', sans-serif;
+	letter-spacing: 0.1em;
+	border: 2px solid black;
+	outline: none;
+	cursor: pointer;
+	background: transparent;
+	margin: 20px 5px 0;
+	@mixin atMediumLarge {
+		margin: 7px 5px 0;
+	}
+}
+
+.newsletter-form-field-element {
+	width: 250px;
+	height: 35px;
+	margin: 5px 5px 0;
+	border: 2px solid black;
+	text-align: center;
+	letter-spacing: 0.1em;
+	font-size: 14px;
+	outline: none;
+}

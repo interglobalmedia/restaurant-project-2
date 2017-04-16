@@ -1,5 +1,3 @@
-import $ from 'jquery';
-/* Slide in From Side Responsive Nav */
 const icon = document.querySelector('.hamburger');
 
 export function transformIcon() {

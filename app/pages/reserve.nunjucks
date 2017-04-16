@@ -1,0 +1,15 @@
+<!-- reserve.nunjucks -->
+{% extends "layout.nunjucks" %}
+{% block content %}
+	<body class="reserve Site">
+		<main class="Site-content">
+			<div class="wrapper">
+				<!-- Adds the nav-macro navigation partial -->
+				{% import "macros/nav-macro.nunjucks" as nav %}
+				<!-- Creating the navigation with activePage = 'reserve' -->
+				{{nav.active('reserve')}}
+				<!-- Adds the reserve-page partial -->
+				{% include "partials/reserve-page.nunjucks" %}
+			</div>
+		</main>
+{% endblock %}

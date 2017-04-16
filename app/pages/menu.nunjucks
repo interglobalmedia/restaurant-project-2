@@ -6,9 +6,9 @@
 			<div class="wrapper">
 				<!-- Adds the nav-macro navigation partial -->
 				{% import "macros/nav-macro.nunjucks" as nav %}
-				<!-- Creating the navigation with activePage = 'welcome' -->
+				<!-- Creating the navigation with activePage = 'menu' -->
 				{{nav.active('menu')}}
-				<!-- Adds the welcome-page partial -->
+				<!-- Adds the menu-page partial -->
 				{% include "partials/menu-page.nunjucks" %}
 			</div>
 		</main>

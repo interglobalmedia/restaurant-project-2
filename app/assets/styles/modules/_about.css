@@ -1,0 +1,142 @@
+/* About Page Styling */
+body.about {
+	overflow: hidden;
+	font-size: 18px;
+}
+
+#about {
+	width: 100%;
+	margin: 0 auto;
+	overflow: hidden;
+	z-index: 1;
+	display: flex;
+	flex-direction: column;
+	justify-content: start;
+}
+
+#about.show {
+	margin-top: 600px;
+}
+
+#about img {
+	display: none;
+}
+
+.about-items {
+	padding: 160px 0 20px;
+	text-align: center;
+	width: 100%;
+	background: white;
+	margin: 0 auto;
+	@mixin atMediumLarge {
+		width: 100%;
+		max-width: 880px;
+		padding-top: 60px;
+	}
+}
+
+.about-items h1 {
+	font-family: 'Dosis', sans-serif;
+	font-weight: 100;
+	padding-bottom: 20px;
+	color: $mainRed;
+	text-transform: uppercase;
+	text-align: center;
+	letter-spacing: 0.1em;
+}
+
+.about-items h2 {
+	font-family: 'Dosis', sans-serif;
+	font-weight: 100;
+	padding-bottom: 20px;
+	color: black;
+	text-transform: uppercase;
+	text-align: center;
+	letter-spacing: 0.1em;
+}
+
+.about-items p {
+	font-family: 'Dosis', sans-serif;
+	letter-spacing: 0.1em;
+	font-weight: 100;
+	color: $mainAzure4;
+	line-height: 1.5;
+}
+
+#about .about-items img {
+	display: block;
+	width: 100%;
+	margin: 0 auto;
+}
+
+.about-people h2 {
+	margin: 40px auto 20px;
+	text-align: center;
+	clear: both;
+	font-weight: 100;
+}
+
+.about-people p {
+	padding: 0 40px;
+	font-weight: 100;
+	color: $mainAzure4;
+	@mixin atMediumLarge {
+		padding: 0 40px 20px;
+	}
+}
+
+.about-food-and-drink {
+	margin: 40px auto 0;
+}
+
+.about-items .one-column .description {
+	font-size: 16px;
+	margin: 0 auto 20px;
+	padding: 0 20px;
+	text-align: center;
+}
+
+.about-items .one-column {
+	width: 90%;
+	margin: 20px auto;
+}
+
+.about-items .two-column {
+	width: 90%;
+	margin: 0 auto;
+}
+
+.about-items .column {
+	width: 100%;
+	margin: 0 auto;
+	@mixin atMediumLarge {
+		width: 48.5%;
+		float: left;
+		margin: 20px auto 40px;
+	}
+}
+
+.about-items .column img {
+	padding-bottom: 20px;
+}
+
+.about-items .column:first-of-type {
+	@mixin atMediumLarge {
+		padding-right: 10px;
+		margin-right: 10px;
+	}
+}
+
+.about-items .subscribe-container {
+	@mixin atMediumLarge {
+		width: 90%;
+		margin: 0 auto;
+	}
+}
+
+.about-item {
+	padding: 0 20px 20px;
+	@mixin atMediumLarge {
+		padding: 0 40px 20px;
+	}
+}

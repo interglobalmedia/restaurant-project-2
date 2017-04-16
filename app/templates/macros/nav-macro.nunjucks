@@ -2,17 +2,13 @@
 {% macro active(activePage='home') %}
 				<header>
 					<div class="logo">
-						<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-						 width="262.07px" height="89.535px" viewBox="0 0 262.07 89.535" enable-background="new 0 0 262.07 89.535" xml:space="preserve">
-						 <text transform="matrix(1.0116 0 0 1 4.6509 57.6758)" stroke="#000000" stroke-miterlimit="10" font-family="'MaturaMTScriptCapitals'" font-size="72">Julia’s</text>
-						</svg>
+						Julia's
 					</div>
 					<nav class="hamburger">
 						<div class="line"></div>
 						<div class="line"></div>
 						<div class="line"><div>
 					</nav>
-				</header>
 				<!-- Macro stuff here -->
 				<nav class="responsive-menu">
 					<ul>
@@ -57,4 +53,5 @@
 						<a href="buzz.html" class="{%if activePage == 'buzz' %} active {% endif %}">BUZZ</a>
 					</li>
 				</nav>
+			</header>
 {% endmacro %}
