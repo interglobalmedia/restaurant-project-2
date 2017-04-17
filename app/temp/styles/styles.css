@@ -3,15 +3,6 @@
 	padding: 0;
 	margin: 0;
 }
-main {
-	max-width: 880px;
-	//width: 100%;
-	margin: 0 auto;
-}
-.wrapper {
-	width: 100%;
-	margin: 0 auto;
-}
 html {
 	max-height: 100vh;
 	overflow-y: auto;
@@ -25,17 +16,20 @@ html {
 		background-attachment: fixed;
 	}
 }
+main {
+	max-width: 880px;
+	margin: 0 auto;
+}
+.wrapper {
+	width: 100%;
+	margin: 0 auto;
+}
 /* Header/Logo Styling */
 header {
-	//position: -webkit-sticky;
-	//position: sticky;
-	//top: 0;
-	//left: 0;
-	background:white;
-	height: 0;
 	z-index: 3;
 	width: 100%;
 	margin: 0 auto;
+	background: white;
 }
 @media (min-width: 897px) {
 	header {
@@ -48,20 +42,18 @@ header {
 }
 .logo {
 	position: relative;
-	//position: -webkit-sticky;
-	//position: sticky;
 	margin: 0 auto;
-	//top: 0;
+	top: 22px;
+	top: 0;
 	left: 10px;
 	font-size: 32px;
 	text-transform: uppercase;
 	font-family: 'Joti One', cursive;
 	letter-spacing: 0.1em;
 	font-weight: 700;
-	z-index: 1;
+	z-index: 10000;
 	text-align: left;
 	width: 100%;
-	background: white;
 }
 @media (min-width: 897px) {
 	.logo {
@@ -70,15 +62,16 @@ header {
 		text-align: center;
 		height: 120px;
 		font-size: 48px;
+		top: 0;
 		left: 0;
 	}
 }
 /* Styling Social Media Icons */
 svg:hover {
-    -webkit-transform: scale(1.25);
-            transform: scale(1.25);
-    -webkit-transition: all 0.5s;
-    transition: all 0.5s;
+	-webkit-transform: scale(1.25);
+	        transform: scale(1.25);
+	-webkit-transition: all 0.5s;
+	transition: all 0.5s;
 }
 /* Responsive Navigation Styling */
 @media (max-width: 896px) {
@@ -87,16 +80,15 @@ svg:hover {
 	}
 }
 nav.hamburger {
+	display: block;
 	width: 42px;
 	height: 36px;
-	margin: 10px 0 0 30px;
-	//margin: 20px auto;
-	position: fixed;
-	//position: sticky;
-	top: 0;
-	right: 10px;
+	margin: -25px 10px 15px 30px;
+	position: -webkit-sticky;
+	position: sticky;
+	left: 100vw;
 	cursor: pointer;
-	z-index: 9999;
+	z-index: 99999;
 }
 nav.hamburger div.line {
 	width: 100%;
@@ -126,9 +118,11 @@ nav.responsive-menu {
 	top: 0;
 	left: 0;
 	width: 100%;
-	height: 100vh;
+	height: 0;
+	-webkit-transition: height 0.5s;
+	transition: height 0.5s;
+	background: antiquewhite;
 	overflow-y: visible;
-	//overflow-x: hidden;
 	position: -webkit-sticky;
 	position: sticky;
 	opacity: 0;
@@ -138,14 +132,13 @@ nav.responsive-menu {
 }
 nav.responsive-menu.show {
 	opacity: 1;
-	background: white;
 	-webkit-transition: background 0.5s ease-in-out, visibility 0.5s;
 	transition: background 0.5s ease-in-out, visibility 0.5s;
-	display: block;
+	display: block !important;
 	width: 100%;
 	height: auto;
-	//height: 100vh;
-	z-index: 2;
+	background: red;
+	margin-left: 0;
 }
 @media (min-width: 897px) {
 	nav.responsive-menu.show {
@@ -153,15 +146,16 @@ nav.responsive-menu.show {
 	}
 }
 nav.responsive-menu ul {
-	padding: 60px 0 0 0;
+	padding: 20px 0 0 0;
 }
 nav.responsive-menu li {
 	list-style: none;
-	text-align: left;
+	text-align: center;
 	width: 100%;
+	padding-left: 0;
 }
 nav.responsive-menu li a {
-	color: antiquewhite;
+	color: black;
 	font-size: 28px;
 	text-decoration: none;
 	font-weight: 300;
@@ -170,15 +164,15 @@ nav.responsive-menu li a {
 nav.responsive-menu li:first-child a {
 	background: transparent;
 	border: none;
-	color: antiquewhite;
+	color: black;
 }
 nav.responsive-menu li:first-child a.active, nav.responsive-menu li:first-child a:hover {
-	color: #838b8b;
+	color: antiquewhite;
 	border: none;
 }
 nav.responsive-menu a.active, nav.responsive-menu a:hover {
 	text-decoration: underline;
-	color: #838b8b;
+	color: antiquewhite;
 	border: none;
 }
 /* Navigation Styling */
@@ -194,24 +188,15 @@ nav.responsive-menu a.active, nav.responsive-menu a:hover {
 	}
 }
 nav {
-	position: -webkit-sticky;
-	position: sticky;
 	z-index: 3;
 	margin: 0 auto;
-	background: white;
 }
 @media (min-width: 897px) {
 	nav {
 		max-width: 880px;
-		//margin-left: -7px;
-		//margin-left: -15px;
 		width: 100%;
-		//margin-left: -7px;
-		//border-top: 12px solid black;
-		//border-bottom: 12px solid black;
 		height: 60px;
-		margin-top: -60px;
-		//position: relative;
+		margin-left: 10px;
 	}
 }
 nav ul {
@@ -224,6 +209,7 @@ nav a {
 }
 nav li:last-child {
 	margin-right: 20px;
+	padding-bottom: 1.75rem;
 }
 nav a.active, nav a:hover {
 	text-decoration: underline;
@@ -237,7 +223,13 @@ nav li {
 	font-family: 'Dosis',sans-serif;
 	font-size: 18px;
     font-weight: bold;
-	padding: 1rem 1.5rem 1.75rem;
+	padding: 0.5rem;
+
+}
+@media (min-width: 897px) {
+	nav li {
+		padding: 1rem 1.5rem 1.75rem;
+	}
 }
 nav li a {
 	color: black;
@@ -285,15 +277,11 @@ body.welcome {
 	    -ms-flex-pack: start;
 	        justify-content: start;
 }
-#welcome.show {
-	margin-top: 600px;
-}
 #welcome img {
 	display: none;
 }
 .welcome-items {
-	padding: 140px 0 0;
-	text-align: center;
+	padding: 40px 0 0;
 	max-width: 880px;
 	width: 100%;
 	margin: 0 auto;
@@ -305,16 +293,11 @@ body.welcome {
 	}
 }
 .welcome-items h1 {
-	font-family: 'Dosis', sans-serif;
-	font-weight: 100;
 	padding-bottom: 20px;
 	color: firebrick;
 	text-transform: uppercase;
-	letter-spacing: 0.1em;
 }
 .welcome-items p {
-	font-size: 18px;
-	font-family: 'Dosis', sans-serif;
 	padding: 0 40px;
 }
 .welcome-item img {
@@ -324,29 +307,9 @@ body.welcome {
 .welcome-item {
 	margin: 20px 0;
 }
-.welcome-item .description {
-	font-weight: 100;
-	color: black;
-	font-size: 18px;
-}
-.welcome-item .address,
-.welcome-item .contact-info {
-	font-size: 18px;
-	letter-spacing: 0.1em;
-	font-weight: 100;
-	line-height: 1.5;
-}
-.welcome-item .title,
-.welcome-item .hours {
-	letter-spacing: 0.1em;
-	line-height: 1.5;
-}
 .welcome-item .title {
-	font-weight: bold;
 	color: firebrick;
-}
-.welcome-item .hours {
-	color: black;
+	font-weight: bold;
 }
 .welcome-items .social-media-icons-container {
 	margin: 40px auto;
@@ -361,12 +324,8 @@ body.welcome {
 @media (min-width: 897px) {
 	.welcome-items .find-a-table-container {
 		margin: 0 auto;
-		letter-spacing: 0.1em;
 		width: 90%;
 	}
-}
-.welcome-items .find-a-table-container h2 {
-	font-weight: 100;
 }
 #welcome .welcome-items .instagram-container img {
 	display: block;
@@ -422,25 +381,55 @@ body.welcome {
 	margin: 20px auto;
 	z-index: 1;
 }
+.welcome-items .subscribe-container {
+	margin: 0 auto;
+}
 @media (min-width: 897px) {
 	.welcome-items .subscribe-container {
 		width: 90%;
-		margin: 0 auto;
 	}
 }
+/* Common CSS Properties Stylings */
+.welcome-items,
+.welcome-items .subscribe-container {
+		text-align: center;
+}
+.welcome-items h1,
+.welcome-items p {
+	font-family: 'Dosis', sans-serif;
+}
+.welcome-items h1,
+.welcome-item .description,
+.welcome-item .address,
+.welcome-item .contact-info,
+.welcome-items .find-a-table-container h2,
 .welcome-items .subscribe-container h2 {
 	font-weight: 100;
+}
+.welcome-items h1,
+.welcome-item .address,
+.welcome-item .contact-info,
+.welcome-item .title,
+.welcome-item .hours,
+.welcome-items .find-a-table-container,
+.welcome-items .subscribe-container h2 {
 	letter-spacing: 0.1em;
+}
+.welcome-item .description,
+.welcome-item .hours {
+	color: black;
+}
+.welcome-item .address,
+.welcome-item .contact-info,
+.welcome-item .title,
+.welcome-item .hours {
+	line-height: 1.5;
 }
 /* About Page Styling */
 body.about {
-	overflow: hidden;
 	font-size: 18px;
 }
 #about {
-	width: 100%;
-	margin: 0 auto;
-	overflow: hidden;
 	z-index: 1;
 	display: -webkit-box;
 	display: -ms-flexbox;
@@ -453,71 +442,43 @@ body.about {
 	    -ms-flex-pack: start;
 	        justify-content: start;
 }
-#about.show {
-	margin-top: 600px;
-}
 #about img {
 	display: none;
 }
 .about-items {
-	padding: 160px 0 20px;
-	text-align: center;
-	width: 100%;
+	padding: 40px 0 20px;
 	background: white;
-	margin: 0 auto;
 }
 @media (min-width: 897px) {
 	.about-items {
-		width: 100%;
 		max-width: 880px;
 		padding-top: 60px;
 	}
 }
 .about-items h1 {
-	font-family: 'Dosis', sans-serif;
-	font-weight: 100;
-	padding-bottom: 20px;
 	color: firebrick;
-	text-transform: uppercase;
-	text-align: center;
-	letter-spacing: 0.1em;
 }
 .about-items h2 {
-	font-family: 'Dosis', sans-serif;
-	font-weight: 100;
-	padding-bottom: 20px;
 	color: black;
-	text-transform: uppercase;
-	text-align: center;
-	letter-spacing: 0.1em;
 }
 .about-items p {
-	font-family: 'Dosis', sans-serif;
-	letter-spacing: 0.1em;
-	font-weight: 100;
-	color: #838b8b;
 	line-height: 1.5;
 }
 #about .about-items img {
 	display: block;
-	width: 100%;
-	margin: 0 auto;
 }
 .about-people h2 {
-	margin: 40px auto 20px;
-	text-align: center;
+	margin: 20px auto;
 	clear: both;
-	font-weight: 100;
-}
-.about-people p {
-	padding: 0 40px;
-	font-weight: 100;
-	color: #838b8b;
 }
 @media (min-width: 897px) {
-	.about-people p {
-		padding: 0 40px 20px;
+	.about-people h2 {
+		margin: 40px auto 20px;
+		padding-top: 20px;
 	}
+}
+.about-people p {
+	padding: 0 20px;
 }
 .about-food-and-drink {
 	margin: 40px auto 0;
@@ -526,7 +487,6 @@ body.about {
 	font-size: 16px;
 	margin: 0 auto 20px;
 	padding: 0 20px;
-	text-align: center;
 }
 .about-items .one-column {
 	width: 90%;
@@ -534,11 +494,11 @@ body.about {
 }
 .about-items .two-column {
 	width: 90%;
-	margin: 0 auto;
 }
-.about-items .column {
-	width: 100%;
-	margin: 0 auto;
+@media (min-width: 897px) {
+	.about-items .two-column {
+		padding-top: 10px;
+	}
 }
 @media (min-width: 897px) {
 	.about-items .column {
@@ -559,14 +519,59 @@ body.about {
 @media (min-width: 897px) {
 	.about-items .subscribe-container {
 		width: 90%;
-		margin: 0 auto;
 	}
 }
 .about-item {
 	padding: 0 20px 20px;
 }
+/* Common CSS Properties Styling */
+body.about,
+#about {
+	overflow: hidden;
+}
+.about-items,
+.about-items h1,
+.about-items h2,
+.about-people h2,
+.about-items .one-column .description {
+	text-align: center;
+}
+#about,
+.about-items,
+#about .about-items img {
+	width: 100%;
+	margin: 0 auto;
+}
+.about-items .two-column,
+.about-items .column,
+.about-items .subscribe-container {
+	margin: 0 auto;
+}
+.about-items h1,
+.about-items h2,
+.about-items p {
+	font-family: 'Dosis', sans-serif;
+	letter-spacing: 0.1em;
+}
+.about-items h1,
+.about-people h2,
+.about-items h2,
+.about-items p,
+.about-people p {
+	font-weight: 100;
+}
+.about-items h1,
+.about-items h2 {
+	text-transform: uppercase;
+	padding-bottom: 20px;
+}
+.about-items p,
+.about-people p {
+	color: #838b8b;
+}
 @media (min-width: 897px) {
-	.about-item {
+	.about-people p,
+.about-item {
 		padding: 0 40px 20px;
 	}
 }
@@ -610,7 +615,7 @@ body.menu {
 	}
 }
 .brunch-items {
-padding-top: 160px;
+padding-top: 40px;
 }
 @media (min-width: 897px) {
 	.brunch-items {
@@ -645,7 +650,8 @@ padding-top: 160px;
 }
 .brunch-items h2, .brunch-items h4,
 .brunch-bevs h2,
-.lunch-items h2, .lunch-items h4 {
+.lunch-items h2, .lunch-items h4,
+.dinner-items h2, .dinner-items h4 {
 	text-transform: uppercase;
 	letter-spacing: 0.1em;
 	font-weight: 100;
@@ -663,18 +669,12 @@ padding-top: 160px;
 .dinner-items h4 {
 	font-family: 'Dosis', sans-serif;
 }
-.dinner-items h2, .dinner-items h4 {
-	text-transform: uppercase;
-	letter-spacing: 0.1em;
-	font-weight: 100;
-}
 /* Common Meals Styling */
 .description {
 	color: #838b8b;
 	line-height: 1.5;
 	font-family: 'Dosis', sans-serif;
 	letter-spacing: 0.1em;
-	padding-right: 10px;
 }
 .price {
 	font-weight: bold;
@@ -688,8 +688,7 @@ padding-top: 160px;
 /* Drinks Styling */
 body.drinks {
 	overflow: hidden;
-	font-size: 20px;
-	font-weight: 100;
+	font-size: 18px;
 }
 #drinks {
 	width: 100%;
@@ -706,13 +705,12 @@ body.drinks {
 	-webkit-box-pack: start;
 	    -ms-flex-pack: start;
 	        justify-content: start;
-	font-weight: 100;
 }
 #drinks img {
 	display: none;
 }
 .drink-items {
-	padding: 160px 0 0;
+	padding: 40px 0 0;
 	text-align: center;
 	width: 100%;
 	background: white;
@@ -732,8 +730,19 @@ body.drinks {
 	margin: 0 auto;
 	border-radius: 50%;
 }
+.drink-items .social-media-icons-container {
+	width: 90%;
+	margin: 20px auto;
+	padding: 20px 0 0;
+	clear: both;
+}
+@media (min-width: 800px) {
+	.drink-items .social-media-icons-container {
+		padding: 10px 0 20px;
+	}
+}
 @media (min-width: 897px) {
-	.drink-items > .subscribe-container {
+	.drink-items .subscribe-container {
 		width: 90%;
 		margin: 0 auto;
 	}
@@ -741,41 +750,38 @@ body.drinks {
 .drink-item {
 	padding-bottom: 20px;
 }
-.drink-items h2, .drink-items h4 {
-	text-transform: uppercase;
-	letter-spacing: 0.1em;
+.drink-items h2,
+.drink-items h4,
+.drink-items .price {
 	font-weight: 100;
+}
+.drink-items h2,
+.drink-items h4 {
+	text-transform: uppercase;
 }
 .drink-items h2 {
 	font-family: 'Cutive Mono', monospace;
 	padding-bottom: 20px;
 	color: firebrick;
-	letter-spacing: 0.1em;
 }
-.drink-items h4 {
+.drink-items h4,
+.drink-items .price {
 	font-family: 'Dosis', sans-serif;
 }
-/* Common Meals Styling */
 #drinks .drink-items .drink-item .description {
 	color: #838b8b;
 	line-height: 1.5;
 	font-family: 'Dosis', sans-serif;
+}
+.drink-items h2,
+.drink-items h4,
+#drinks .drink-items .drink-item .description {
 	letter-spacing: 0.1em;
-	//font-weight: 100;
-}
-.price {
-	font-weight: 100;
-	font-family: 'Dosis', sans-serif;
-}
-.add {
-	margin-top: 0;
-	margin-bottom: 0;
-	font-family: 'Dosis', sans-serif;
 }
 /* Reserve Page Styling */
 body.reserve {
 	overflow: hidden;
-	font-size: 20px;
+	font-size: 18px;
 }
 #reserve {
 	width: 100%;
@@ -796,7 +802,6 @@ body.reserve {
 	display: none;
 }
 #reserve .reservations {
-	text-align: center;
 	max-width: 880px;
 	background: white;
 	line-height: 1.4;
@@ -808,33 +813,19 @@ body.reserve {
 	-webkit-box-direction: normal;
 	    -ms-flex-direction: column;
 	        flex-direction: column;
-	-webkit-box-pack: end;
-	    -ms-flex-pack: end;
-	        justify-content: end;
+	-webkit-box-pack: start;
+	    -ms-flex-pack: start;
+	        justify-content: start;
 }
 @media (min-width: 897px) {
 	#reserve .reservations {
-		text-align: center;
-		-webkit-box-orient: vertical;
-		-webkit-box-direction: normal;
-		    -ms-flex-direction: column;
-		        flex-direction: column;
 		-webkit-box-align: center;
 		    -ms-flex-align: center;
 		        align-items: center;
-		display: -webkit-box;
-		display: -ms-flexbox;
-		display: flex;
-		-webkit-box-pack: start;
-		    -ms-flex-pack: start;
-		        justify-content: start;
 	}
 }
 .reservations {
-	padding: 140px 0 0;
-	text-align: center;
-	max-width: 880px;
-	margin: 0 auto;
+	padding: 40px 0 0;
 }
 @media (min-width: 897px) {
 	.reservations {
@@ -842,17 +833,10 @@ body.reserve {
 	}
 }
 .reservations h1 {
-	font-family: 'Dosis', sans-serif;
-	text-transform: uppercase;
 	color: firebrick;
-	letter-spacing: 0.1em;
-	font-weight: 100;
 }
 .reservations p {
-	font-family: 'Dosis', sans-serif;
 	padding-top: 10px;
-	letter-spacing: 0.1em;
-	font-weight: 100;
 }
 .reserve-info {
 	padding: 0 20px 20px;
@@ -864,62 +848,33 @@ body.reserve {
 }
 .reserve-info a {
 	color: #838b8b;
-	font-weight: 100;
-	letter-spacing: 0.1em;
-	font-size: 20px;
-}
-.reserve-info .description {
-	color: black;
-	font-size: 20px;
-	letter-spacing: 0.1em;
-	font-weight: 100;
 }
 .reserve-info .add {
-	color: black;
-	font-family: 'Dosis', sans-serif;
-	font-size: 20px;
 	padding: 0;
 	margin: 0 auto;
-	font-weight: 100;
 }
 /* Find A Table Styling */
 .find-a-table-container {
 	width: 90%;
 	margin: 40px auto;
 	padding: 10px 0;
-	background: #838b8b;
 }
 @media (min-width: 897px) {
 	.find-a-table-container {
 		width: 100%;
-		background: #838b8b;
 		margin: 40px 60px 60px;
 		padding: 10px 0 30px;
 	}
 }
-.find-a-table-container h2 {
-	font-family: 'Dosis', sans-serif;
-	font-weight: 100;
-	text-transform: none;
-	color: black;
-	letter-spacing: 0.1em;
-}
 .find-a-table {
-	text-align: center;
 	margin: 30px;
 }
 .find-a-table a {
 	background: firebrick;
 	padding: 10px 20px;
 	border: 3px dotted black;
-	color: black;
-	font-family: 'Dosis', sans-serif;
-	letter-spacing: 0.1em;
 }
 .find-a-table p {
-	font-family: 'Dosis', sans-serif;
-	font-size: 16px;
-	color: black;
 	padding-top: 10px;
 	margin-bottom: 20px;
 }
@@ -942,29 +897,18 @@ body.reserve {
 /* Subscribe Container Styling */
 .subscribe-container {
 	width: 90%;
-	background: #838b8b;
 	margin: 40px auto;
 	padding: 40px 0;
 }
 @media (min-width: 897px) {
 	.subscribe-container {
 		width: 100%;
-		background: #838b8b;
 		margin: 0 auto;
 		padding: 40px 0;
 	}
 }
 .subscribe-container h2 {
-	text-transform: none;
-	color: black;
 	padding-bottom: 20px;
-	font-family: 'Dosis', sans-serif;
-	font-weight: 100;
-	letter-spacing: 0.1em;
-}
-.subscribe-container .description {
-	color: black;
-	font-size: 16px;
 }
 .newsletter-form-field-wrapper {
 	padding: 40px 0;
@@ -972,12 +916,6 @@ body.reserve {
 .newsletter-form-button-icon {
 	width: 120px;
 	height: 42px;
-	font-size: 16px;
-	text-transform: uppercase;
-	font-family: 'Dosis', sans-serif;
-	letter-spacing: 0.1em;
-	border: 2px solid black;
-	outline: none;
 	cursor: pointer;
 	background: transparent;
 	margin: 20px 5px 0;
@@ -991,16 +929,80 @@ body.reserve {
 	width: 250px;
 	height: 35px;
 	margin: 5px 5px 0;
-	border: 2px solid black;
-	text-align: center;
-	letter-spacing: 0.1em;
 	font-size: 14px;
+}
+/* Common CSS Properties Stylings */
+.reservations h1,
+.reservations p,
+.reserve-info .add,
+.find-a-table-container h2,
+.find-a-table a,
+.find-a-table p,
+.subscribe-container h2,
+.newsletter-form-button-icon {
+	font-family: 'Dosis', sans-serif;
+}
+.reservations h1,
+.newsletter-form-button-icon {
+	text-transform: uppercase;
+}
+.reservations h1,
+.reservations p,
+.reserve-info a,
+.reserve-info .description,
+.find-a-table-container h2,
+.find-a-table a,
+.subscribe-container h2,
+.newsletter-form-button-icon,
+.newsletter-form-field-element {
+	letter-spacing: 0.1em;
+}
+.reservations h1,
+.reservations p,
+.reserve-info a,
+.reserve-info .description,
+.reserve-info .add,
+.find-a-table-container h2,
+.subscribe-container h2 {
+	font-weight: 100;
+}
+.reserve-info .description,
+.reserve-info .add,
+.find-a-table-container h2,
+.find-a-table a,
+.find-a-table p,
+.subscribe-container h2,
+.subscribe-container .description {
+	color: black;
+}
+.find-a-table-container,
+.subscribe-container {
+	background: #838b8b;
+}
+.find-a-table-container h2,
+.subscribe-container h2 {
+	text-transform: none;
+}
+#reserve .reservations,
+.find-a-table,
+.subscribe-container .description,
+.newsletter-form-field-element {
+	text-align: center;
+}
+.find-a-table p,
+.subscribe-container .description,
+.newsletter-form-button-icon {
+	font-size: 16px;
+}
+.newsletter-form-button-icon,
+.newsletter-form-field-element {
 	outline: none;
+	border: 2px solid black;
 }
 /* Buzz Page Styling */
 body.buzz {
 	overflow: hidden;
-	font-size: 20px;
+	font-size: 18px;
 }
 #buzz {
 	width: 100%;
@@ -1022,8 +1024,7 @@ body.buzz {
 	display: none;
 }
 .buzz-items {
-	padding: 160px 0 0;
-	text-align: center;
+	padding: 40px 0 0;
 	width: 100%;
 	background: white;
 	margin: 0 auto;
@@ -1037,18 +1038,10 @@ body.buzz {
 	}
 }
 .buzz-items h1 {
-	font-family: 'Dosis', sans-serif;
-	font-weight: 100;
 	padding-bottom: 20px;
 	color: firebrick;
-	text-transform: uppercase;
-	text-align: center;
-	letter-spacing: 0.1em;
 }
-.buzz-items .buzz-item {
-	width: 90%;
-	margin: 0 auto;
-}
+.buzz-items .buzz-item,
 .buzz-items .instagram-container {
 	width: 90%;
 	margin: 0 auto;
@@ -1104,18 +1097,7 @@ body.buzz {
 }
 .instagram-container h2 {
 	width: 100%;
-	//display: block;
-	font-family: 'Dosis', sans-serif;
-	letter-spacing: 0.1em;
-	font-weight: 100;
-	text-transform: uppercase;
-	text-align: center;
 	margin: 20px auto;
-}
-@media (min-width: 897px) {
-	.instagram-container h2 {
-		margin: 20px auto;
-	}
 }
 .buzz-items .social-media-icons-container {
 	width: 90%;
@@ -1138,8 +1120,17 @@ body.buzz {
 		margin: 40px auto 0;
 	}
 }
-.buzz-items .subscribe-container .description {
-	padding: 5px;
+/* Common CSS Properties Styling */
+.buzz-items {
+	text-align: center;
+}
+.buzz-items h1,
+.instagram-container h2 {
+	font-family: 'Dosis', sans-serif;
+	text-align: center;
+	font-weight: 100;
+	text-transform: uppercase;
+	letter-spacing: 0.1em;
 }
 /* Sticky Footer and Footer Styling */
 /* Sticky Footer */

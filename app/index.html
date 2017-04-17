@@ -23,14 +23,40 @@
 					<div class="logo">
 						Julia's
 					</div>
-					<nav class="hamburger">
-						<div class="line"></div>
-						<div class="line"></div>
-						<div class="line"><div>
-					</nav>
-				<!-- Macro stuff here -->
-				<nav class="responsive-menu">
-					<ul>
+					<div class="mobile-nav">
+						<nav class="hamburger">
+							<div class="line"></div>
+							<div class="line"></div>
+							<div class="line"><div>
+						</nav>
+						<!-- Macro stuff here -->
+						<nav class="responsive-menu">
+							<div class="expand">
+								<ul>
+									<li>
+										<a href="index.html" class=" active ">WELCOME</a>
+									</li>
+									<li>
+										<a href="about.html" class="">ABOUT</a>
+									</li>
+									<li>
+										<a href="menu.html" class="">MENU</a>
+									</li>
+									<li>
+										<a href="drinks.html" class="">DRINKS</a>
+									</li>
+									<li>
+										<a href="reserve.html" class="">RESERVE</a>
+									</li>
+									<li>
+										<a href="buzz.html" class="">BUZZ</a>
+									</li>
+								</ul>
+							</div>
+						</nav>
+					</div>	
+					<!-- Macro stuff here -->
+					<nav class="top">
 						<li>
 							<a href="index.html" class=" active ">WELCOME</a>
 						</li>
@@ -49,30 +75,8 @@
 						<li>
 							<a href="buzz.html" class="">BUZZ</a>
 						</li>
-					</ul>
-				</nav>
-				<!-- Macro stuff here -->
-				<nav class="top">
-					<li>
-						<a href="index.html" class=" active ">WELCOME</a>
-					</li>
-					<li>
-						<a href="about.html" class="">ABOUT</a>
-					</li>
-					<li>
-						<a href="menu.html" class="">MENU</a>
-					</li>
-					<li>
-						<a href="drinks.html" class="">DRINKS</a>
-					</li>
-					<li>
-						<a href="reserve.html" class="">RESERVE</a>
-					</li>
-					<li>
-						<a href="buzz.html" class="">BUZZ</a>
-					</li>
-				</nav>
-			</header>
+					</nav>
+				</header>
 
 				<!-- Adds the welcome-page partial -->
 				<!-- welcome-page.nunjucks -->
@@ -136,7 +140,7 @@
 						</div>
 						<div class="instagram-container">
 							<div class="instagram-column">
-								<img src="/assets/images/melanzana-1985391_1920.jpg" class="align-center zoom-in" alt="Julia's restaurant exquisite grilled eggplant sprinkled with pomegranate seeds, bean sprouts, and melted mozzarella cheese.">
+								<a href="/assets/images/melanzana-1985391_1920.jpg"><img src="/assets/images/melanzana-1985391_1920.jpg" class="align-center zoom-in" alt="Julia's restaurant exquisite grilled eggplant sprinkled with pomegranate seeds, bean sprouts, and melted mozzarella cheese."></a>
 							</div>
 							<div class="instagram-column">
 								<img src="/assets/images/salad-2087384_1920.jpg" class="align-center zoom-in" alt=" Julia's restaurant Caesar salad overflowing with cheesy romano dressing.">

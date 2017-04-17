@@ -15,38 +15,28 @@ body.welcome {
 	justify-content: start;
 }
 
-#welcome.show {
-	margin-top: 600px;
-}
-
 #welcome img {
 	display: none;
 }
 
 .welcome-items {
-	padding: 140px 0 0;
-	text-align: center;
+	padding: 40px 0 0;
 	max-width: 880px;
 	width: 100%;
 	margin: 0 auto;
-	background: white;
+	background: $mainWhite;
 	@mixin atMediumLarge {
 		padding: 60px 0 20px;
 	}
 }
 
 .welcome-items h1 {
-	font-family: 'Dosis', sans-serif;
-	font-weight: 100;
 	padding-bottom: 20px;
 	color: $mainRed;
 	text-transform: uppercase;
-	letter-spacing: 0.1em;
 }
 
 .welcome-items p {
-	font-size: 18px;
-	font-family: 'Dosis', sans-serif;
 	padding: 0 40px;
 }
 
@@ -59,33 +49,9 @@ body.welcome {
 	margin: 20px 0;
 }
 
-.welcome-item .description {
-	font-weight: 100;
-	color: black;
-	font-size: 18px;
-}
-
-.welcome-item .address,
-.welcome-item .contact-info {
-	font-size: 18px;
-	letter-spacing: 0.1em;
-	font-weight: 100;
-	line-height: 1.5;
-}
-
-.welcome-item .title,
-.welcome-item .hours {
-	letter-spacing: 0.1em;
-	line-height: 1.5;
-}
-
 .welcome-item .title {
-	font-weight: bold;
 	color: $mainRed;
-}
-
-.welcome-item .hours {
-	color: black;
+	font-weight: bold;
 }
 
 .welcome-items .social-media-icons-container {
@@ -100,13 +66,8 @@ body.welcome {
 .welcome-items .find-a-table-container {
 	@mixin atMediumLarge {
 		margin: 0 auto;
-		letter-spacing: 0.1em;
 		width: 90%;
 	}
-}
-
-.welcome-items .find-a-table-container h2 {
-	font-weight: 100;
 }
 
 #welcome .welcome-items .instagram-container img {
@@ -160,13 +121,51 @@ body.welcome {
 }
 
 .welcome-items .subscribe-container {
+	margin: 0 auto;
 	@mixin atMediumLarge {
 		width: 90%;
-		margin: 0 auto;
 	}
 }
 
+/* Common CSS Properties Stylings */
+
+.welcome-items,
+.welcome-items .subscribe-container {
+		text-align: center;
+}
+
+.welcome-items h1,
+.welcome-items p {
+	font-family: 'Dosis', sans-serif;
+}
+
+.welcome-items h1,
+.welcome-item .description,
+.welcome-item .address,
+.welcome-item .contact-info,
+.welcome-items .find-a-table-container h2,
 .welcome-items .subscribe-container h2 {
 	font-weight: 100;
+}
+
+.welcome-items h1,
+.welcome-item .address,
+.welcome-item .contact-info,
+.welcome-item .title,
+.welcome-item .hours,
+.welcome-items .find-a-table-container,
+.welcome-items .subscribe-container h2 {
 	letter-spacing: 0.1em;
+}
+
+.welcome-item .description,
+.welcome-item .hours {
+	color: $mainBlack;
+}
+
+.welcome-item .address,
+.welcome-item .contact-info,
+.welcome-item .title,
+.welcome-item .hours {
+	line-height: 1.5;
 }

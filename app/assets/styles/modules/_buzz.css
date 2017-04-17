@@ -1,7 +1,7 @@
 /* Buzz Page Styling */
 body.buzz {
 	overflow: hidden;
-	font-size: 20px;
+	font-size: 18px;
 }
 
 #buzz {
@@ -19,10 +19,9 @@ body.buzz {
 }
 
 .buzz-items {
-	padding: 160px 0 0;
-	text-align: center;
+	padding: 40px 0 0;
 	width: 100%;
-	background: white;
+	background: $mainWhite;
 	margin: 0 auto;
 	@mixin atMediumLarge {
 		width: 100%;
@@ -33,23 +32,17 @@ body.buzz {
 }
 
 .buzz-items h1 {
-	font-family: 'Dosis', sans-serif;
-	font-weight: 100;
 	padding-bottom: 20px;
 	color: $mainRed;
-	text-transform: uppercase;
-	text-align: center;
-	letter-spacing: 0.1em;
 }
 
-.buzz-items .buzz-item {
+.buzz-items .buzz-item,
+.buzz-items .instagram-container {
 	width: 90%;
 	margin: 0 auto;
 }
 
 .buzz-items .instagram-container {
-	width: 90%;
-	margin: 0 auto;
 	@mixin atMediumLarge {
 		margin: 40px auto;
 	}
@@ -98,16 +91,7 @@ body.buzz {
 
 .instagram-container h2 {
 	width: 100%;
-	//display: block;
-	font-family: 'Dosis', sans-serif;
-	letter-spacing: 0.1em;
-	font-weight: 100;
-	text-transform: uppercase;
-	text-align: center;
 	margin: 20px auto;
-	@mixin atMediumLarge {
-		margin: 20px auto;
-	}
 }
 
 .buzz-items .social-media-icons-container {
@@ -129,6 +113,16 @@ body.buzz {
 	}
 }
 
-.buzz-items .subscribe-container .description {
-	padding: 5px;
+/* Common CSS Properties Styling */
+.buzz-items {
+	text-align: center;
+}
+
+.buzz-items h1,
+.instagram-container h2 {
+	font-family: 'Dosis', sans-serif;
+	text-align: center;
+	font-weight: 100;
+	text-transform: uppercase;
+	letter-spacing: 0.1em;
 }

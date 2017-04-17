@@ -27,7 +27,7 @@ body.menu {
 	padding: 60px 0 0;
 	text-align: center;
 	max-width: 880px;
-	background: white;
+	background: $mainWhite;
 	margin: 0 auto;
 }
 
@@ -38,7 +38,7 @@ body.menu {
 }
 
 .brunch-items {
-padding-top: 160px;
+padding-top: 40px;
 	@mixin atMediumLarge {
 		padding-top: 60px;
 	}
@@ -70,7 +70,8 @@ padding-top: 160px;
 
 .brunch-items h2, .brunch-items h4,
 .brunch-bevs h2,
-.lunch-items h2, .lunch-items h4 {
+.lunch-items h2, .lunch-items h4,
+.dinner-items h2, .dinner-items h4 {
 	text-transform: uppercase;
 	letter-spacing: 0.1em;
 	font-weight: 100;
@@ -91,12 +92,6 @@ padding-top: 160px;
 	font-family: 'Dosis', sans-serif;
 }
 
-.dinner-items h2, .dinner-items h4 {
-	text-transform: uppercase;
-	letter-spacing: 0.1em;
-	font-weight: 100;
-}
-
 /* Common Meals Styling */
 
 .description {
@@ -104,7 +99,6 @@ padding-top: 160px;
 	line-height: 1.5;
 	font-family: 'Dosis', sans-serif;
 	letter-spacing: 0.1em;
-	padding-right: 10px;
 }
 
 .price {

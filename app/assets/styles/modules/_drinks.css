@@ -1,8 +1,7 @@
 /* Drinks Styling */
 body.drinks {
 	overflow: hidden;
-	font-size: 20px;
-	font-weight: 100;
+	font-size: 18px;
 }
 
 #drinks {
@@ -13,7 +12,6 @@ body.drinks {
 	display: flex;
 	flex-direction: column;
 	justify-content: start;
-	font-weight: 100;
 }
 
 #drinks img {
@@ -21,10 +19,10 @@ body.drinks {
 }
 
 .drink-items {
-	padding: 160px 0 0;
+	padding: 40px 0 0;
 	text-align: center;
 	width: 100%;
-	background: white;
+	background: $mainWhite;
 	margin: 0 auto;
 	@mixin atMediumLarge {
 		width: 100%;
@@ -41,7 +39,17 @@ body.drinks {
 	border-radius: 50%;
 }
 
-.drink-items > .subscribe-container {
+.drink-items .social-media-icons-container {
+	width: 90%;
+	margin: 20px auto;
+	padding: 20px 0 0;
+	clear: both;
+	@mixin atMediumMedium {
+		padding: 10px 0 20px;
+	}
+}
+
+.drink-items .subscribe-container {
 	@mixin atMediumLarge {
 		width: 90%;
 		margin: 0 auto;
@@ -52,40 +60,36 @@ body.drinks {
 	padding-bottom: 20px;
 }
 
-.drink-items h2, .drink-items h4 {
-	text-transform: uppercase;
-	letter-spacing: 0.1em;
+.drink-items h2,
+.drink-items h4,
+.drink-items .price {
 	font-weight: 100;
+}
+
+.drink-items h2,
+.drink-items h4 {
+	text-transform: uppercase;
 }
 
 .drink-items h2 {
 	font-family: 'Cutive Mono', monospace;
 	padding-bottom: 20px;
 	color: $mainRed;
-	letter-spacing: 0.1em;
 }
 
-.drink-items h4 {
+.drink-items h4,
+.drink-items .price {
 	font-family: 'Dosis', sans-serif;
 }
-
-/* Common Meals Styling */
 
 #drinks .drink-items .drink-item .description {
 	color: $mainAzure4;
 	line-height: 1.5;
 	font-family: 'Dosis', sans-serif;
+}
+
+.drink-items h2,
+.drink-items h4,
+#drinks .drink-items .drink-item .description {
 	letter-spacing: 0.1em;
-	//font-weight: 100;
-}
-
-.price {
-	font-weight: 100;
-	font-family: 'Dosis', sans-serif;
-}
-
-.add {
-	margin-top: 0;
-	margin-bottom: 0;
-	font-family: 'Dosis', sans-serif;
 }

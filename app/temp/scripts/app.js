@@ -77,6 +77,7 @@ Object.defineProperty(exports, "__esModule", {
 	value: true
 });
 exports.transformIcon = transformIcon;
+exports.welcomeExpand = welcomeExpand;
 var icon = document.querySelector('.hamburger');
 
 function transformIcon() {
@@ -89,6 +90,16 @@ function transformIcon() {
 }
 
 icon.addEventListener('click', transformIcon);
+
+function welcomeExpand() {
+	var responsivemenu = document.querySelector('.responsive-menu');
+	var lines = document.querySelectorAll('.line');
+	var welcome = document.querySelector('#welcome');
+	lines[0].classList.toggle('animate0');
+	lines[1].classList.toggle('hide');
+	lines[2].classList.toggle('animate2');
+	responsivemenu.classList.toggle('show');
+}
 
 /***/ }),
 /* 1 */

@@ -1,21 +1,13 @@
 /* About Page Styling */
 body.about {
-	overflow: hidden;
 	font-size: 18px;
 }
 
 #about {
-	width: 100%;
-	margin: 0 auto;
-	overflow: hidden;
 	z-index: 1;
 	display: flex;
 	flex-direction: column;
 	justify-content: start;
-}
-
-#about.show {
-	margin-top: 600px;
 }
 
 #about img {
@@ -23,66 +15,41 @@ body.about {
 }
 
 .about-items {
-	padding: 160px 0 20px;
-	text-align: center;
-	width: 100%;
-	background: white;
-	margin: 0 auto;
+	padding: 40px 0 20px;
+	background: $mainWhite;
 	@mixin atMediumLarge {
-		width: 100%;
 		max-width: 880px;
 		padding-top: 60px;
 	}
 }
 
 .about-items h1 {
-	font-family: 'Dosis', sans-serif;
-	font-weight: 100;
-	padding-bottom: 20px;
 	color: $mainRed;
-	text-transform: uppercase;
-	text-align: center;
-	letter-spacing: 0.1em;
 }
 
 .about-items h2 {
-	font-family: 'Dosis', sans-serif;
-	font-weight: 100;
-	padding-bottom: 20px;
-	color: black;
-	text-transform: uppercase;
-	text-align: center;
-	letter-spacing: 0.1em;
+	color: $mainBlack;
 }
 
 .about-items p {
-	font-family: 'Dosis', sans-serif;
-	letter-spacing: 0.1em;
-	font-weight: 100;
-	color: $mainAzure4;
 	line-height: 1.5;
 }
 
 #about .about-items img {
 	display: block;
-	width: 100%;
-	margin: 0 auto;
 }
 
 .about-people h2 {
-	margin: 40px auto 20px;
-	text-align: center;
+	margin: 20px auto;
 	clear: both;
-	font-weight: 100;
+	@mixin atMediumLarge {
+		margin: 40px auto 20px;
+		padding-top: 20px;
+	}
 }
 
 .about-people p {
-	padding: 0 40px;
-	font-weight: 100;
-	color: $mainAzure4;
-	@mixin atMediumLarge {
-		padding: 0 40px 20px;
-	}
+	padding: 0 20px;
 }
 
 .about-food-and-drink {
@@ -93,7 +60,6 @@ body.about {
 	font-size: 16px;
 	margin: 0 auto 20px;
 	padding: 0 20px;
-	text-align: center;
 }
 
 .about-items .one-column {
@@ -103,12 +69,12 @@ body.about {
 
 .about-items .two-column {
 	width: 90%;
-	margin: 0 auto;
+	@mixin atMediumLarge {
+		padding-top: 10px;
+	}
 }
 
 .about-items .column {
-	width: 100%;
-	margin: 0 auto;
 	@mixin atMediumLarge {
 		width: 48.5%;
 		float: left;
@@ -130,12 +96,69 @@ body.about {
 .about-items .subscribe-container {
 	@mixin atMediumLarge {
 		width: 90%;
-		margin: 0 auto;
 	}
 }
 
 .about-item {
 	padding: 0 20px 20px;
+}
+
+/* Common CSS Properties Styling */
+
+body.about,
+#about {
+	overflow: hidden;
+}
+
+.about-items,
+.about-items h1,
+.about-items h2,
+.about-people h2,
+.about-items .one-column .description {
+	text-align: center;
+}
+
+#about,
+.about-items,
+#about .about-items img {
+	width: 100%;
+	margin: 0 auto;
+}
+
+.about-items .two-column,
+.about-items .column,
+.about-items .subscribe-container {
+	margin: 0 auto;
+}
+
+.about-items h1,
+.about-items h2,
+.about-items p {
+	font-family: 'Dosis', sans-serif;
+	letter-spacing: 0.1em;
+}
+
+.about-items h1,
+.about-people h2,
+.about-items h2,
+.about-items p,
+.about-people p {
+	font-weight: 100;
+}
+
+.about-items h1,
+.about-items h2 {
+	text-transform: uppercase;
+	padding-bottom: 20px;
+}
+
+.about-items p,
+.about-people p {
+	color: $mainAzure4;
+}
+
+.about-people p,
+.about-item {
 	@mixin atMediumLarge {
 		padding: 0 40px 20px;
 	}

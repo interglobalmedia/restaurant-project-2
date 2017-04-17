@@ -3,17 +3,6 @@
 	margin: 0;
 }
 
-main {
-	max-width: 880px;
-	//width: 100%;
-	margin: 0 auto;
-}
-
-.wrapper {
-	width: 100%;
-	margin: 0 auto;
-}
-
 html {
 	max-height: 100vh;
 	overflow-y: auto;
@@ -24,4 +13,14 @@ html {
 		background-position: center;
 		background-attachment: fixed;
 	}
+}
+
+main {
+	max-width: 880px;
+	margin: 0 auto;
+}
+
+.wrapper {
+	width: 100%;
+	margin: 0 auto;
 }

@@ -1,15 +1,10 @@
 /* Header/Logo Styling */
 
 header {
-	//position: -webkit-sticky;
-	//position: sticky;
-	//top: 0;
-	//left: 0;
-	background:white;
-	height: 0;
 	z-index: 3;
 	width: 100%;
 	margin: 0 auto;
+	background: $mainWhite;
 	@mixin atMediumLarge {
 		max-width: 880px;
 		width: 100%;
@@ -21,26 +16,25 @@ header {
 
 .logo {
 	position: relative;
-	//position: -webkit-sticky;
-	//position: sticky;
 	margin: 0 auto;
-	//top: 0;
+	top: 22px;
+	top: 0;
 	left: 10px;
 	font-size: 32px;
 	text-transform: uppercase;
 	font-family: 'Joti One', cursive;
 	letter-spacing: 0.1em;
 	font-weight: 700;
-	z-index: 1;
+	z-index: 10000;
 	text-align: left;
 	width: 100%;
-	background: white;
 	@mixin atMediumLarge {
-		background: white;
+		background: $mainWhite;
 		width: 97%;
 		text-align: center;
 		height: 120px;
 		font-size: 48px;
+		top: 0;
 		left: 0;
 	}
 }

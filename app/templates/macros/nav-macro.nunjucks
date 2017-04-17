@@ -4,14 +4,40 @@
 					<div class="logo">
 						Julia's
 					</div>
-					<nav class="hamburger">
-						<div class="line"></div>
-						<div class="line"></div>
-						<div class="line"><div>
-					</nav>
-				<!-- Macro stuff here -->
-				<nav class="responsive-menu">
-					<ul>
+					<div class="mobile-nav">
+						<nav class="hamburger">
+							<div class="line"></div>
+							<div class="line"></div>
+							<div class="line"><div>
+						</nav>
+						<!-- Macro stuff here -->
+						<nav class="responsive-menu">
+							<div class="expand">
+								<ul>
+									<li>
+										<a href="index.html" class="{%if activePage == 'welcome' %} active {% endif %}">WELCOME</a>
+									</li>
+									<li>
+										<a href="about.html" class="{%if activePage == 'about' %} active {% endif %}">ABOUT</a>
+									</li>
+									<li>
+										<a href="menu.html" class="{%if activePage == 'menu' %} active {% endif %}">MENU</a>
+									</li>
+									<li>
+										<a href="drinks.html" class="{%if activePage == 'drinks' %} active {% endif %}">DRINKS</a>
+									</li>
+									<li>
+										<a href="reserve.html" class="{%if activePage == 'reserve' %} active {% endif %}">RESERVE</a>
+									</li>
+									<li>
+										<a href="buzz.html" class="{%if activePage == 'buzz' %} active {% endif %}">BUZZ</a>
+									</li>
+								</ul>
+							</div>
+						</nav>
+					</div>	
+					<!-- Macro stuff here -->
+					<nav class="top">
 						<li>
 							<a href="index.html" class="{%if activePage == 'welcome' %} active {% endif %}">WELCOME</a>
 						</li>
@@ -30,28 +56,6 @@
 						<li>
 							<a href="buzz.html" class="{%if activePage == 'buzz' %} active {% endif %}">BUZZ</a>
 						</li>
-					</ul>
-				</nav>
-				<!-- Macro stuff here -->
-				<nav class="top">
-					<li>
-						<a href="index.html" class="{%if activePage == 'welcome' %} active {% endif %}">WELCOME</a>
-					</li>
-					<li>
-						<a href="about.html" class="{%if activePage == 'about' %} active {% endif %}">ABOUT</a>
-					</li>
-					<li>
-						<a href="menu.html" class="{%if activePage == 'menu' %} active {% endif %}">MENU</a>
-					</li>
-					<li>
-						<a href="drinks.html" class="{%if activePage == 'drinks' %} active {% endif %}">DRINKS</a>
-					</li>
-					<li>
-						<a href="reserve.html" class="{%if activePage == 'reserve' %} active {% endif %}">RESERVE</a>
-					</li>
-					<li>
-						<a href="buzz.html" class="{%if activePage == 'buzz' %} active {% endif %}">BUZZ</a>
-					</li>
-				</nav>
-			</header>
+					</nav>
+				</header>
 {% endmacro %}

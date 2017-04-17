@@ -59,7 +59,7 @@
 						</div>
 						<div class="instagram-container">
 							<div class="instagram-column">
-								<img src="/assets/images/melanzana-1985391_1920.jpg" class="align-center zoom-in" alt="Julia's restaurant exquisite grilled eggplant sprinkled with pomegranate seeds, bean sprouts, and melted mozzarella cheese.">
+								<a href="/assets/images/melanzana-1985391_1920.jpg"><img src="/assets/images/melanzana-1985391_1920.jpg" class="align-center zoom-in" alt="Julia's restaurant exquisite grilled eggplant sprinkled with pomegranate seeds, bean sprouts, and melted mozzarella cheese."></a>
 							</div>
 							<div class="instagram-column">
 								<img src="/assets/images/salad-2087384_1920.jpg" class="align-center zoom-in" alt=" Julia's restaurant Caesar salad overflowing with cheesy romano dressing.">

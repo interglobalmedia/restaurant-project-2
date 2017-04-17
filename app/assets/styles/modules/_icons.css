@@ -1,6 +1,6 @@
 /* Styling Social Media Icons */
 
 svg:hover {
-    transform: scale(1.25);
-    transition: all 0.5s;
+	transform: scale(1.25);
+	transition: all 0.5s;
 }
