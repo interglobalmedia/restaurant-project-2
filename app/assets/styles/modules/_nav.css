@@ -1,4 +1,5 @@
 /* Responsive Navigation Styling */
+
 .top {
 	@mixin atResponsive {
 		display: none;
@@ -6,21 +7,21 @@
 }
 
 nav.hamburger {
+	display: block;
 	width: 42px;
 	height: 36px;
-	margin: 30px 0 0 30px;
-	position: fixed;
-	top: 0;
-	right: 30px;
+	margin: -25px 10px 15px 30px;
+	position: sticky;
+	left: 100vw;
 	cursor: pointer;
-	z-index: 9999;
+	z-index: 99999;
 }
 
 nav.hamburger div.line {
 	width: 100%;
 	height: 6px;
 	margin: 0 0 6px 0;
-	background: black;
+	background: $mainBlack;
 	transition: transform 0.3s, opacity 0.1s;
 }
 
@@ -42,10 +43,13 @@ nav.responsive-menu {
 	top: 0;
 	left: 0;
 	width: 100%;
-	height: 100%;
-	position: fixed;
+	height: 0;
+	transition: height 0.5s;
+	background: $mainAntiqueWhite;
 	overflow-y: visible;
+	position: sticky;
 	opacity: 0;
+	z-index: 1;
 	-webkit-transition: background 0.5s ease-in-out, opacity 0.5s;
 	-moz-transition: background 0.5s ease-in-out, opacity 0.5s;
 	-ms-transition: background 0.5s ease-in-out, opacity 0.5s;
@@ -55,31 +59,34 @@ nav.responsive-menu {
 
 nav.responsive-menu.show {
 	opacity: 1;
-	background: white;
 	-webkit-transition: background 0.5s ease-in-out, visibility 0.5s;
 	-moz-transition: background 0.5s ease-in-out, visibility 0.5s;
 	-ms-transition: background 0.5s ease-in-out, visibility 0.5s;
 	-o-transition: background 0.5s ease-in-out, visibility 0.5s;
 	transition: background 0.5s ease-in-out, visibility 0.5s;
-	display: block;
+	display: block !important;
+	width: 100%;
+	height: auto;
+	background: $mainBrightRed;
+	margin-left: 0;
 	@mixin atMediumLarge {
 		display: none;
 	}
 }
 
 nav.responsive-menu ul {
-	padding: 90px 10% 20px 0;
-	margin-top: 180px;
+	padding: 20px 0 0 0;
 }
 
 nav.responsive-menu li {
 	list-style: none;
 	text-align: center;
 	width: 100%;
+	padding-left: 0;
 }
 
 nav.responsive-menu li a {
-	color: $mainAntiqueWhite;
+	color: $mainBlack;
 	font-size: 28px;
 	text-decoration: none;
 	font-weight: 300;
@@ -89,17 +96,17 @@ nav.responsive-menu li a {
 nav.responsive-menu li:first-child a {
 	background: transparent;
 	border: none;
-	color: $mainAntiqueWhite;
+	color: $mainBlack;
 }
 
 nav.responsive-menu li:first-child a.active, nav.responsive-menu li:first-child a:hover {
-	color: $mainAzure4;
+	color: $mainAntiqueWhite;
 	border: none;
 }
 
 nav.responsive-menu a.active, nav.responsive-menu a:hover {
 	text-decoration: underline;
-	color: $mainAzure4;
+	color: $mainAntiqueWhite;
 	border: none;
 }
 
@@ -118,18 +125,13 @@ nav.responsive-menu a.active, nav.responsive-menu a:hover {
 }
 
 nav {
-	position: -webkit-sticky;
-	position: sticky;
-	z-index: 1;
+	z-index: 3;
 	margin: 0 auto;
-	background: $mainCornFlowerBlue;
 	@mixin atMediumLarge {
-		background: red;
 		max-width: 880px;
 		width: 100%;
-		margin-left: -8px;
-		border-right: 1px solid red;
-		border-bottom: 12px solid black;
+		height: 60px;
+		margin-left: 10px;
 	}
 }
 
@@ -145,6 +147,7 @@ nav a {
 
 nav li:last-child {
 	margin-right: 20px;
+	padding-bottom: 1.75rem;
 }
 
 nav a.active, nav a:hover {
@@ -160,15 +163,18 @@ nav li {
 	font-family: 'Dosis',sans-serif;
 	font-size: 18px;
     font-weight: bold;
-	padding: 1rem 1.5rem 1.75rem;
+	padding: 0.5rem;
+	@mixin atMediumLarge {
+		padding: 1rem 1.5rem 1.75rem;
+	}
+
 }
 
 nav li a {
-	margin-left: 10px;
-	color: black;
+	color: $mainBlack;
 }
 
-nav li:hover {
+nav li a:hover {
 	color: $mainAzure4;
 	cursor: pointer;
 }

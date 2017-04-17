@@ -1,0 +1,15 @@
+<!-- buzz.nunjucks -->
+{% extends "layout.nunjucks" %}
+{% block content %}
+	<body class="buzz Site">
+		<main class="Site-content">
+			<div class="wrapper">
+				<!-- Adds the nav-macro navigation partial -->
+				{% import "macros/nav-macro.nunjucks" as nav %}
+				<!-- Creating the navigation with activePage = 'buzz' -->
+				{{nav.active('buzz')}}
+				<!-- Adds the buzz-page partial -->
+				{% include "partials/buzz-page.nunjucks" %}
+			</div>
+		</main>
+{% endblock %}

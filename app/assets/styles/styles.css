@@ -2,8 +2,13 @@
 @import 'base/_mixins';
 @import 'base/_base.css';
 @import 'modules/_logo';
+@import 'modules/_icons';
 @import 'modules/_nav.css';
+@import 'modules/_zoomin';
 @import 'modules/_welcome';
+@import 'modules/_about';
 @import 'modules/_menu';
 @import 'modules/_drinks';
+@import 'modules/_reservation';
+@import 'modules/_buzz';
 @import 'modules/_footer';

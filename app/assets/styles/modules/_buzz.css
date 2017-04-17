@@ -1,0 +1,128 @@
+/* Buzz Page Styling */
+body.buzz {
+	overflow: hidden;
+	font-size: 18px;
+}
+
+#buzz {
+	width: 100%;
+	margin: 0 auto;
+	overflow: hidden;
+	z-index: 1;
+	display: flex;
+	flex-direction: column;
+	justify-content: start;
+}
+
+#buzz img {
+	display: none;
+}
+
+.buzz-items {
+	padding: 40px 0 0;
+	width: 100%;
+	background: $mainWhite;
+	margin: 0 auto;
+	@mixin atMediumLarge {
+		width: 100%;
+		max-width: 880px;
+		padding-top: 60px;
+		padding-bottom: 20px;
+	}
+}
+
+.buzz-items h1 {
+	padding-bottom: 20px;
+	color: $mainRed;
+}
+
+.buzz-items .buzz-item,
+.buzz-items .instagram-container {
+	width: 90%;
+	margin: 0 auto;
+}
+
+.buzz-items .instagram-container {
+	@mixin atMediumLarge {
+		margin: 40px auto;
+	}
+}
+
+.buzz-items .instagram-container .instagram-column {
+	width: 100%;
+	margin: 1.25% auto 0;
+	@mixin atMediumMedium {
+		width: 48.75%;
+		float: left;
+	}
+}
+
+.buzz-items .instagram-container .instagram-column:nth-of-type(1),
+.buzz-items .instagram-container .instagram-column:nth-of-type(3) {
+	width: 100%;
+	margin: 1.25% auto 0;
+	@mixin atMediumMedium {
+		width: 48.75%;
+		margin: 1.25% 1.25% 0 0;
+	}
+}
+
+.buzz-items .instagram-container .instagram-column:nth-of-type(2),
+.buzz-items .instagram-container .instagram-column:nth-of-type(4) {
+	width: 100%;
+	margin: 1.25% auto 0;
+	@mixin atMediumMedium {
+		width: 48.75%;
+		margin: 1.25% 0 0 1.25%;
+	}
+}
+
+.buzz-items .instagram-container .instagram-column:nth-of-type(2) {
+	@mixin atMediumMedium {
+		margin: 1.25% 0 0 1.25%;
+	}
+}
+
+.buzz-items .instagram-container .instagram-column:nth-of-type(3) {
+	@mixin atMediumMedium {
+		margin-top: -3.75%;
+	}
+}
+
+.instagram-container h2 {
+	width: 100%;
+	margin: 20px auto;
+}
+
+.buzz-items .social-media-icons-container {
+	width: 90%;
+	margin: 40px auto;
+	padding: 20px 0 0;
+	clear: both;
+	@mixin atMediumMedium {
+		border-top: 1px solid #ddd;
+		padding: 40px 0 0;
+	}
+}
+
+.buzz-items .subscribe-container {
+	padding: 40px 0;
+	@mixin atMediumLarge {
+		width: 90%;
+		margin: 40px auto 0;
+	}
+}
+
+/* Common CSS Properties Styling */
+.buzz-items {
+	text-align: center;
+}
+
+.buzz-items h1,
+.instagram-container h2 {
+	font-family: 'Dosis', sans-serif;
+	text-align: center;
+	font-weight: 100;
+	text-transform: uppercase;
+	letter-spacing: 0.1em;
+}
