@@ -446,7 +446,7 @@ body.about {
 	display: none;
 }
 .about-items {
-	padding: 40px 0 20px;
+	padding: 40px 0 0;
 	background: white;
 }
 @media (min-width: 897px) {
@@ -603,11 +603,15 @@ body.menu {
 .brunch-bevs,
 .lunch-items,
 .dinner-items {
-	padding: 60px 0 0;
 	text-align: center;
 	max-width: 880px;
 	background: white;
 	margin: 0 auto;
+}
+.brunch-bevs,
+.lunch-items,
+.dinner-items {
+	padding: 60px 0 0;
 }
 @media (min-width: 897px) {
 	.dinner-items {
@@ -615,7 +619,7 @@ body.menu {
 	}
 }
 .brunch-items {
-padding-top: 40px;
+padding: 40px 0 0;
 }
 @media (min-width: 897px) {
 	.brunch-items {
@@ -627,6 +631,9 @@ padding-top: 40px;
 	width: 60%;
 	margin: 0 auto;
 	border-radius: 50%;
+}
+.dinner-items .subscribe-container {
+	margin: 0 auto;
 }
 @media (min-width: 897px) {
 	.dinner-items .subscribe-container {
@@ -740,6 +747,9 @@ body.drinks {
 	.drink-items .social-media-icons-container {
 		padding: 10px 0 20px;
 	}
+}
+.drink-items .subscribe-container {
+	margin: 0 auto;
 }
 @media (min-width: 897px) {
 	.drink-items .subscribe-container {
@@ -897,7 +907,7 @@ body.reserve {
 /* Subscribe Container Styling */
 .subscribe-container {
 	width: 90%;
-	margin: 40px auto;
+	margin: 40px auto 0;
 	padding: 40px 0;
 }
 @media (min-width: 897px) {
@@ -1113,6 +1123,7 @@ body.buzz {
 }
 .buzz-items .subscribe-container {
 	padding: 40px 0;
+	margin: 0 auto;
 }
 @media (min-width: 897px) {
 	.buzz-items .subscribe-container {

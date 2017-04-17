@@ -107,6 +107,7 @@ body.buzz {
 
 .buzz-items .subscribe-container {
 	padding: 40px 0;
+	margin: 0 auto;
 	@mixin atMediumLarge {
 		width: 90%;
 		margin: 40px auto 0;

@@ -110,7 +110,7 @@ body.reserve {
 
 .subscribe-container {
 	width: 90%;
-	margin: 40px auto;
+	margin: 40px auto 0;
 	padding: 40px 0;
 	@mixin atMediumLarge {
 		width: 100%;

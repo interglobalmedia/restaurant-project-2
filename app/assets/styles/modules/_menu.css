@@ -24,11 +24,16 @@ body.menu {
 .brunch-bevs,
 .lunch-items,
 .dinner-items {
-	padding: 60px 0 0;
 	text-align: center;
 	max-width: 880px;
 	background: $mainWhite;
 	margin: 0 auto;
+}
+
+.brunch-bevs,
+.lunch-items,
+.dinner-items {
+	padding: 60px 0 0;
 }
 
 .dinner-items {
@@ -38,7 +43,7 @@ body.menu {
 }
 
 .brunch-items {
-padding-top: 40px;
+padding: 40px 0 0;
 	@mixin atMediumLarge {
 		padding-top: 60px;
 	}
@@ -52,6 +57,7 @@ padding-top: 40px;
 }
 
 .dinner-items .subscribe-container {
+	margin: 0 auto;
 	@mixin atMediumLarge {
 		width: 90%;
 		margin: 0 auto;
