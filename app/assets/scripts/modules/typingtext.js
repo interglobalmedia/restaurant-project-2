@@ -1,23 +1,7 @@
-/* Resposnive Nav */
-
-const icon = document.querySelector('.hamburger');
-
-import { transformIcon } from './modules/responsiveNav';
-
-icon.addEventListener('click', transformIcon);
-
-/* Zoom In Images */
-
-import { debounce, checkSlide } from './modules/zoomin';
-
-const sliderImages = document.querySelectorAll('.zoom-in');
-
-window.addEventListener('scroll', debounce(checkSlide));
-
 /* Typing Text Effect Welcome Page */
 
 document.addEventListener('DOMContentLoaded', function(event) {
-	const dataText = ["Welcome", "to Julia's", "Restaurant", "Come Visit", "and Enjoy", "the Experience", "... Today!"];
+	const dataText = ["Welcome", "to Julia's", "Restaurant", "Come Visit", "and Enjoy", "the", "Experience", "... Today!"];
     /* type one text string. keeps calling itself until all text strings completed */
 	function typeWriter(text, i, callback) {
 		// check if text is finished typing

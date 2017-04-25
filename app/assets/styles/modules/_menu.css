@@ -26,6 +26,7 @@ body.menu {
 .dinner-items {
 	text-align: center;
 	max-width: 880px;
+	width: 100%;
 	background: $mainWhite;
 	margin: 0 auto;
 }
@@ -98,6 +99,133 @@ padding: 40px 0 0;
 	font-family: 'Dosis', sans-serif;
 }
 
+/* Menu Item Border Y to X Styling */
+
+div.menu-container-y-to-x {
+	@mixin atMediumLarge {
+		text-align: center;
+		width: 100%;
+		margin: 0 auto;
+	}
+}
+
+div.menu-container-y-to-x .description {
+	@mixin atMediumLarge {
+		margin: 0;
+		padding-left: 0;
+		padding-right: 0;
+		position: relative;
+		cursor: pointer;
+	}
+}
+
+div.menu-border-y-to-x .description:before, div.menu-border-y-to-x .description:after {
+	@mixin atMediumLarge {
+		position: absolute;
+		opacity: 0.5;
+		height: 100%;
+		width: 0;
+		content: '';
+		background: $mainBrightRed;
+		transition: all 0.3s;
+	}
+}
+
+div.menu-border-y-to-x .description:before {
+	@mixin atMediumLarge {
+		left: 0;
+		top: 0;
+	}
+}
+
+div.menu-border-y-to-x .description:after {
+	@mixin atMediumLarge {
+		right: 0;
+		bottom: 0;
+	}
+}
+
+div.menu-border-y-to-x .description:hover:before,
+div.menu-border-y-to-x .description:hover:after {
+	@mixin atMediumLarge {
+		opacity: 0.3;
+		height: 2px;
+		width: 100%;
+	}
+}
+
+div.menu-border-y-to-x .description {
+	padding: 5px 0;
+	line-height: 1.3;
+}
+
+div.menu-border-y-to-x .description:hover {
+	background: $mainAntiqueWhite;
+	color: $mainBlack;
+}
+
+/* End Menu Item Border Y to X Styling */
+
+/* Circle Behind Styling For Price */
+
+div.menu-price-double-circle {
+	display: block;
+	@mixin atMediumLarge {
+		margin: 15px auto;
+		text-align: center;
+	}
+}
+
+div.menu-price-double-circle .price {
+	@mixin atMediumLarge {
+		margin: 0;
+		padding: 10px 10px;
+		position: relative;
+		z-index: 0;
+		cursor: pointer;
+	}
+}
+
+div.circle-behind .price:before, div.circle-behind .price:after {
+	@mixin atMediumLarge {
+		position: absolute;
+		top: 22px;
+		left: 50%;
+		width: 40px;
+		height: 40px;
+		border: 4px solid $mainLightCoral;
+		transform: translateX(-50%) translateY(-50%) scale(0.8);
+		border-radius: 50%;
+		background: transparent;
+		content: "";
+		opacity: 0;
+		transition: all 0.3s;
+		z-index: -1;
+	}
+}
+
+div.circle-behind .price:after {
+	@mixin atMediumLarge {
+		border-width: 2px;
+		transition: all 0.4s;
+	}
+}
+
+div.circle-behind .price:hover:before {
+	@mixin atMediumLarge {
+		opacity: 1;
+		transform: translateX(-50%) translateY(-50%) scale(1);
+		background: $mainAntiqueWhite;
+	}
+}
+
+div.circle-behind .price:hover:after {
+	@mixin atMediumLarge {
+		opacity: 0.5;
+		transform: translateX(-50%) translateY(-50%) scale(1.3);
+	}
+}
+
 /* Common Meals Styling */
 
 .description {
@@ -110,6 +238,7 @@ padding: 40px 0 0;
 .price {
 	font-weight: bold;
 	font-family: 'Dosis', sans-serif;
+	//background: transparent;
 }
 
 .add {
