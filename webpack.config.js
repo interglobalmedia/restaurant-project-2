@@ -1,4 +1,5 @@
 const path = require('path');
+const webpack = require('webpack');
 
 module.exports = {
 	entry: {
@@ -7,7 +8,8 @@ module.exports = {
 	},
 	output: {
 		path: path.resolve(__dirname, 'app/temp/scripts'),
-		filename: '[name].js'
+		filename: '[name].js',
+		sourceMapFileName: '[name].map'
 	},
 	module: {
 		rules: [
@@ -19,8 +21,8 @@ module.exports = {
 						presets: ['env', 'stage-1']
 					}
 				},
-				exclude: /node_modules/,
+				exclude: /node_modules/
 			},
 		]
 	},
-}
+};
