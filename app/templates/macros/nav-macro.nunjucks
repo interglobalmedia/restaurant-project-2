@@ -24,7 +24,7 @@
 										<a href="menu.html" class="{%if activePage == 'menu' %} active {% endif %}">MENU</a>
 									</li>
 									<li>
-										<a href="drinks.html" class="{%if activePage == 'drinks' %} active {% endif %}">DRINKS</a>
+										<a href="photos.html" class="{%if activePage == 'photos' %} active {% endif %}">PHOTOS</a>
 									</li>
 									<li>
 										<a href="reserve.html" class="{%if activePage == 'reserve' %} active {% endif %}">RESERVE</a>
@@ -35,27 +35,29 @@
 								</ul>
 							</div>
 						</nav>
-					</div>	
+					</div>
 					<!-- Macro stuff here -->
 					<nav class="top">
-						<li>
-							<a href="index.html" class="{%if activePage == 'welcome' %} active {% endif %}">WELCOME</a>
-						</li>
-						<li>
-							<a href="about.html" class="{%if activePage == 'about' %} active {% endif %}">ABOUT</a>
-						</li>
-						<li>
-							<a href="menu.html" class="{%if activePage == 'menu' %} active {% endif %}">MENU</a>
-						</li>
-						<li>
-							<a href="drinks.html" class="{%if activePage == 'drinks' %} active {% endif %}">DRINKS</a>
-						</li>
-						<li>
-							<a href="reserve.html" class="{%if activePage == 'reserve' %} active {% endif %}">RESERVE</a>
-						</li>
-						<li>
-							<a href="buzz.html" class="{%if activePage == 'buzz' %} active {% endif %}">BUZZ</a>
-						</li>
+						<div class="container pull-right-left">
+							<li>
+								<a href="index.html" class="{%if activePage == 'welcome' %} active {% endif %}">WELCOME</a>
+							</li>
+							<li>
+								<a href="about.html" class="{%if activePage == 'about' %} active {% endif %}">ABOUT</a>
+							</li>
+							<li>
+								<a href="menu.html" class="{%if activePage == 'menu' %} active {% endif %}">MENU</a>
+							</li>
+							<li>
+								<a href="photos.html" class="{%if activePage == 'photos' %} active {% endif %}">PHOTOS</a>
+							</li>
+							<li>
+								<a href="reserve.html" class="{%if activePage == 'reserve' %} active {% endif %}">RESERVE</a>
+							</li>
+							<li>
+								<a href="buzz.html" class="{%if activePage == 'buzz' %} active {% endif %}">BUZZ</a>
+							</li>
+						</div>
 					</nav>
 				</header>
 {% endmacro %}

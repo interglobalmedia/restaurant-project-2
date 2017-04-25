@@ -45,7 +45,7 @@ nav.responsive-menu {
 	width: 100%;
 	height: 0;
 	transition: height 0.5s;
-	background: $mainAntiqueWhite;
+	background: $mainRed;
 	overflow-y: visible;
 	position: sticky;
 	opacity: 0;
@@ -67,7 +67,7 @@ nav.responsive-menu.show {
 	display: block !important;
 	width: 100%;
 	height: auto;
-	background: $mainBrightRed;
+	background: $mainAntiqueWhite;
 	margin-left: 0;
 	@mixin atMediumLarge {
 		display: none;
@@ -99,15 +99,25 @@ nav.responsive-menu li:first-child a {
 	color: $mainBlack;
 }
 
-nav.responsive-menu li:first-child a.active, nav.responsive-menu li:first-child a:hover {
-	color: $mainAntiqueWhite;
-	border: none;
+nav.responsive-menu li:first-child a:hover {
+	color: $mainRed;
+}
+
+nav.responsive-menu li:first-child a.active {
+	color: $mainAzure4;
 }
 
 nav.responsive-menu a.active, nav.responsive-menu a:hover {
 	text-decoration: underline;
-	color: $mainAntiqueWhite;
 	border: none;
+}
+
+nav.responsive-menu a.active {
+	color: $mainAzure4;
+}
+
+nav.responsive-menu a:hover {
+	color: $mainRed;
 }
 
 /* Navigation Styling */
@@ -125,13 +135,12 @@ nav.responsive-menu a.active, nav.responsive-menu a:hover {
 }
 
 nav {
-	z-index: 3;
+	z-index: 4;
 	margin: 0 auto;
 	@mixin atMediumLarge {
 		max-width: 880px;
 		width: 100%;
 		height: 60px;
-		margin-left: 10px;
 	}
 }
 
@@ -151,9 +160,9 @@ nav li:last-child {
 }
 
 nav a.active, nav a:hover {
-	text-decoration: underline;
+	//text-decoration: underline;
 	color: $mainRed;
-	border: 1px dotted $mainAzure4;
+	//border: 1px dotted $mainAzure4;
 }
 
 nav li {
@@ -162,7 +171,7 @@ nav li {
 	letter-spacing: 0.1em;
 	font-family: 'Dosis',sans-serif;
 	font-size: 18px;
-    font-weight: bold;
+	font-weight: bold;
 	padding: 0.5rem;
 	@mixin atMediumLarge {
 		padding: 1rem 1.5rem 1.75rem;
@@ -177,4 +186,49 @@ nav li a {
 nav li a:hover {
 	color: $mainAzure4;
 	cursor: pointer;
+}
+
+/* Navigation Animation Styling .top nav */
+/* Pull right and left  */
+
+div.container {
+	text-align: center;
+	margin: 0 auto;
+	//padding: 10em 3em;
+	background: $mainAntiqueWhite;
+}
+
+div.container a {
+	//margin: 0px 10px;
+	padding: 10px 10px;
+	position: relative;
+	z-index: 2;
+	cursor: pointer;
+}
+
+div.pull-right-left a:before, div.pull-right-left a:after
+{
+	position: absolute;
+	width: 2px;
+	height: 100%;
+	top: 0;
+	content: '';
+	background: $mainBrightRed;
+	opacity: 0.3;
+	transition: all 0.5s;
+}
+
+div.pull-right-left a:before
+{
+	left: 0;
+}
+
+div.pull-right-left a:after
+{
+	right: 0;
+}
+
+div.pull-right-left a:hover:before, div.pull-right-left a:hover:after
+{
+	width: 100%;
 }

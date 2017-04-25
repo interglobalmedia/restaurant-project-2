@@ -7,11 +7,17 @@ body.reserve {
 
 #reserve {
 	width: 100%;
+	max-width: 880px;
 	margin: 0 auto;
+	overflow: hidden;
 	z-index: 1;
 	display: flex;
 	flex-direction: column;
 	justify-content: start;
+	background: $mainWhite;
+	@mixin atMediumLarge {
+		margin: 0 auto 20px;
+	}
 }
 
 #reserve img {
@@ -19,57 +25,55 @@ body.reserve {
 }
 
 #reserve .reservations {
+	padding: 40px 0 0;
 	max-width: 880px;
-	background: $mainWhite;
-	line-height: 1.4;
+	width: 100%;
 	margin: 0 auto;
-	display: flex;
-	flex-direction: column;
-	justify-content: start;
 	@mixin atMediumLarge {
-		align-items: center;
+		padding: 60px 0 0;
 	}
 }
-.reservations {
-	padding: 40px 0 0;
-	@mixin atMediumLarge {
-		padding: 40px 40px 20px;
+
+.reservations .reserve-title {
+	font-size: 30px;
+	@mixin atSmall {
+		font-size: 2em;
 	}
 }
 
 .reservations h1 {
 	color: $mainRed;
+	padding-bottom: 20px;
 }
 
 .reservations p {
 	padding-top: 10px;
-}
-
-.reserve-info {
-	padding: 0 20px 20px;
-	@mixin atMediumLarge {
-		margin-top: 20px;
-	}
-}
-
-.reserve-info a {
-	color: $mainAzure4;
-}
-
-.reserve-info .add {
-	padding: 0;
 	margin: 0 auto;
+	max-width: 880px;
+	width: 100%;
+}
+
+.reserve-intro {
+	margin: 20px auto 40px;
+}
+
+.reserve-description,
+.reserve-description a {
+	font-family: 'Dosis', sans-serif;
+	letter-spacing: 0.1em;
+	margin: 0 auto;
+	text-align: center;
 }
 
 /* Find A Table Styling */
 
 .find-a-table-container {
-	width: 90%;
+	width: 95%;
 	margin: 40px auto;
 	padding: 10px 0;
 	@mixin atMediumLarge {
-		width: 100%;
-		margin: 40px 60px 60px;
+		width: 90%;
+		margin: 20px auto;
 		padding: 10px 0 30px;
 	}
 }
@@ -89,33 +93,50 @@ body.reserve {
 	margin-bottom: 20px;
 }
 
+.reserve-item .reserve-description {
+	margin: 5px auto;
+}
+
+.walkins br,
+.catering br {
+	line-height: 1.5;
+}
+
+.reserve-email-link a,
+.reserve-description a {
+	color: $mainLightCoral;
+	@mixin atMediumLarge {
+		&:hover {
+			transform: scale(1.2);
+		}
+	}
+}
+
 /* Social Media Icons Styling */
 
 .social-media-icons-container {
-	margin: 30px auto 20px;
+	text-align: center;
+	margin: 40px auto;
 	@mixin atMediumLarge {
 		width: 100%;
-		padding: 40px 0;
+		padding: 20px 0;
 		margin: 20px 0;
 	}
 }
 
 .social-media-icons-container svg {
-	width: 40px;
-	height: 40px;
 	margin: 0 5px;
 }
 
 /* Subscribe Container Styling */
 
-.subscribe-container {
+.reservations .subscribe-container {
+	margin: 0 auto;
 	width: 90%;
-	margin: 40px auto 0;
-	padding: 40px 0;
+	text-align: center;
 	@mixin atMediumLarge {
-		width: 100%;
-		margin: 0 auto;
-		padding: 40px 0;
+		max-width: 880px;
+		width: 90%;
 	}
 }
 
@@ -125,6 +146,7 @@ body.reserve {
 
 .newsletter-form-field-wrapper {
 	padding: 40px 0;
+	margin: 0 auto;
 }
 
 .newsletter-form-button-icon {
@@ -143,6 +165,11 @@ body.reserve {
 	height: 35px;
 	margin: 5px 5px 0;
 	font-size: 14px;
+}
+
+#reserve .footer p {
+	padding-top: 60px;
+	padding-bottom: 0;
 }
 
 /* Common CSS Properties Stylings */

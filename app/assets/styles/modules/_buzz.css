@@ -31,6 +31,13 @@ body.buzz {
 	}
 }
 
+.buzz-items .buzz-title {
+	font-size: 30px;
+	@mixin atSmall {
+		font-size: 2em;
+	}
+}
+
 .buzz-items h1 {
 	padding-bottom: 20px;
 	color: $mainRed;

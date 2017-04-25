@@ -4,6 +4,9 @@ body.about {
 }
 
 #about {
+	width: 100%;
+	margin: 0 auto;
+	overflow: hidden;
 	z-index: 1;
 	display: flex;
 	flex-direction: column;
@@ -16,10 +19,19 @@ body.about {
 
 .about-items {
 	padding: 40px 0 0;
+	max-width: 880px;
+	width: 100%;
+	margin: 0 auto;
 	background: $mainWhite;
 	@mixin atMediumLarge {
-		max-width: 880px;
-		padding-top: 60px;
+		padding: 60px 0 0;
+	}
+}
+
+.about-items .about-title {
+	font-size: 30px;
+	@mixin atSmall {
+		font-size: 2em;
 	}
 }
 
@@ -35,8 +47,160 @@ body.about {
 	line-height: 1.5;
 }
 
+.slide-hover .about-description {
+	color: $mainBlack;
+}
+
+/* Animation for About Page Text */
+/* Pull right and left  */
+
+div.slide-hover {
+	@mixin atMediumLarge {
+		text-align: center;
+		margin: 0 auto;
+		transition: 0.3s ease;
+		&:hover {
+			transform: translateY(-10px) scale(1.02);
+			.about-item-right-left {
+				background-position: -100% 0;
+			}
+		}
+	}
+}
+
+.about-item-right-left {
+	@mixin atMediumLarge {
+		background-size: 200%;
+	  	background-position: 0 0;
+		transition: .5s ease-in-out;
+	}
+}
+
+div.slide-hover .about-description {
+	@mixin atMediumLarge {
+		margin: 0;
+		padding: 10px 10px;
+		position: relative;
+		z-index: 2;
+		cursor: pointer;
+	}
+}
+
+div.about-item-right-left .about-description:before, div.about-item-right-left .about-description:after {
+	@mixin atMediumLarge {
+		position: absolute;
+		width: 0;
+		height: 100%;
+		top: 0;
+		content: '';
+		background: transparent;
+		opacity: 0.4;
+		transition: all 0.5s;
+	}
+}
+
+div.about-item-right-left .about-description:before {
+	@mixin atMediumLarge {
+		left: 0;
+	}
+}
+
+div.about-item-right-left .about-description:after {
+	@mixin atMediumLarge {
+		right: 0;
+	}
+}
+
+div.about-item-right-left .about-description:hover:before,
+div.about-item-right-left .about-description:hover:after {
+	@mixin atMediumLarge {
+		width: 100%;
+	}
+}
+
+/* End Animation for About Page Text */
+
+.slide-hover .about-people-description {
+	color: $mainBlack;
+	padding: 0 20px 20px;
+}
+
+/* Animation for About (People) Page Text */
+/* Pull right and left  */
+
+div.slide-hover {
+	@mixin atMediumLarge {
+		text-align: center;
+		margin: 0 auto;
+		transition: 0.3s ease;
+		&:hover {
+			transform: translateY(-10px) scale(1.02);
+			.about-people-item-right-left {
+				background-position: -100% 0;
+			}
+		}
+	}
+}
+
+.about-people-item-right-left {
+	@mixin atMediumLarge {
+		background-size: 200%;
+	  	background-position: 0 0;
+		transition: .5s ease-in-out;
+	}
+}
+
+div.slide-hover .about-people-description {
+	@mixin atMediumLarge {
+		margin: 0;
+		padding: 10px 10px;
+		position: relative;
+		z-index: 2;
+		cursor: pointer;
+	}
+}
+
+div.about-people-item-right-left .about-people-description:before, div.about-people-item-right-left .about-people-description:after {
+	@mixin atMediumLarge {
+		position: absolute;
+		width: 0;
+		height: 100%;
+		top: 0;
+		content: '';
+		background: transparent;
+		opacity: 0.4;
+		transition: all 0.5s;
+	}
+}
+
+div.about-people-item-right-left .about-people-description:before {
+	@mixin atMediumLarge {
+		left: 0;
+	}
+}
+
+div.about-people-item-right-left .about-people-description:after {
+	@mixin atMediumLarge {
+		right: 0;
+	}
+}
+
+div.about-people-item-right-left .about-people-description:hover:before,
+div.about-people-item-right-left .about-people-description:hover:after {
+	@mixin atMediumLarge {
+		width: 100%;
+	}
+}
+
+/* End Animation for About (People) Page Text */
+
 #about .about-items img {
 	display: block;
+}
+
+.about-people {
+	width: 95%;
+	margin: 0 auto;
 }
 
 .about-people h2 {
@@ -101,6 +265,11 @@ body.about {
 
 .about-item {
 	padding: 0 20px 20px;
+	@mixin atMediumLarge {
+		padding: 0 0 20px;
+		margin: 0 auto;
+		width: 90%;
+	}
 }
 
 /* Common CSS Properties Styling */
