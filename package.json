@@ -10,6 +10,8 @@
 	"nunjucks": "gulp nunjucks",
 	"scripts": "gulp scripts",
 	"modernizr": "gulp modernizr",
+    "build": "gulp build",
+    "deploy": "gulp deploy",
 	"test": "mocha",
 	"test:watch": "mocha --watch ./test ./nodejs_library"
   },

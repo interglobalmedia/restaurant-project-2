@@ -1,0 +1,210 @@
+/* Welcome Page Styling */
+/* Syling Relating to Site Background Image */
+body.welcome {
+	overflow: hidden;
+	font-size: 18px;
+}
+
+/* End Syling Relating to Site Background */
+
+/* Welcome Page Wrapper */
+#welcome {
+	width: 100%;
+	margin: 0 auto;
+	overflow: hidden;
+	z-index: 1;
+	display: flex;
+	flex-direction: column;
+	justify-content: start;
+}
+
+/* Hide so don't have two background images */
+#welcome img {
+	display: none;
+}
+
+/* Wrapper for welcome-item sections */
+.welcome-items {
+	padding: 40px 0 0;
+	max-width: 880px;
+	width: 100%;
+	margin: 0 auto;
+	background: $mainWhite;
+	@mixin atMediumLarge {
+		padding: 60px 0 20px;
+	}
+}
+
+/* General styling for welcome-item sections */
+.welcome-items .welcome-item:first-of-type {
+	width: 90%;
+	margin: 0 auto;
+}
+
+.welcome-items .welcome-title {
+	font-size: 30px;
+	@mixin atSmall {
+		font-size: 2em;
+	}
+}
+
+.welcome-items h1 {
+	padding-bottom: 20px;
+	color: $mainRed;
+	text-transform: uppercase;
+}
+
+.welcome-items p {
+	padding: 0 40px;
+}
+
+.welcome-item img {
+	width: 90%;
+	z-index: 5;
+}
+
+.welcome-item {
+	margin: 20px 0;
+}
+
+.welcome-item .title {
+	color: $mainRed;
+	font-weight: bold;
+}
+
+/* End general styling for welcome-item sections */
+
+/* Welcome Page social media icons section styling */
+
+.welcome-items .social-media-icons-container {
+	margin: 40px auto;
+	@mixin atMediumLarge {
+		width: 100%;
+		margin: 0 auto;
+		padding: 40px 0;
+	}
+}
+
+/* End Welcome Page social media icons section styling */
+
+/* Welcome Page Find A Table Container Styling */
+
+.welcome-items .find-a-table-container {
+	@mixin atMediumLarge {
+		margin: 0 auto;
+		width: 90%;
+	}
+}
+
+/* End Welcome Page Find A Table Container Styling */
+
+/* Welcome Page Instagram Section Styling */
+
+#welcome .welcome-items .instagram-container img {
+	display: block;
+	width: 100%;
+	border: 1px solid #ddd;
+}
+
+.welcome-items .instagram-container {
+	width: 90%;
+	margin: 0 auto;
+	@mixin atMediumLarge {
+		margin: 40px auto;
+	}
+}
+
+.welcome-items .instagram-column {
+	width: 100%;
+	margin: 0 auto 20px;
+	@mixin atMediumSmall {
+		width: 50%;
+		float: left;
+		@mixin atMediumLarge {
+			width: 33.3333%;
+			float: left;
+		}
+	}
+}
+
+/* Welcome Page Instagram Section Styling */
+
+/* Youtube Embedded Video Section Styling */
+
+.video-container {
+	position: relative;
+	padding-bottom: 56.25%;
+	padding-top: 30px;
+	overflow: hidden;
+	margin: 20px auto 40px;
+	width: 90%;
+	@mixin atMediumLarge {
+		margin: 60px auto 0;
+	}
+}
+.video-container iframe,
+.video-container object,
+.video-container embed {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	margin: 20px auto;
+	z-index: 1;
+}
+
+/* End Youtube Embedded Video Section Styling */
+
+/* Welcome Page Subscribe Container Section Styling */
+
+.welcome-items .subscribe-container {
+	margin: 0 auto;
+	padding: 20px 0;
+	width: 90%;
+}
+
+/* End Welcome Page Subscribe Container Section Styling */
+
+/* Common CSS Properties Stylings */
+
+.welcome-items,
+.welcome-items .subscribe-container {
+		text-align: center;
+}
+
+.welcome-items h1,
+.welcome-items p {
+	font-family: 'Dosis', sans-serif;
+}
+
+.welcome-items h1,
+.welcome-item .description,
+.welcome-item .address,
+.welcome-item .contact-info,
+.welcome-items .find-a-table-container h2,
+.welcome-items .subscribe-container h2 {
+	font-weight: 100;
+}
+
+.welcome-items h1,
+.welcome-item .address,
+.welcome-item .contact-info,
+.welcome-item .title,
+.welcome-item .hours,
+.welcome-items .find-a-table-container,
+.welcome-items .subscribe-container h2 {
+	letter-spacing: 0.1em;
+}
+
+.welcome-item .description,
+.welcome-item .hours {
+	color: $mainBlack;
+}
+
+.welcome-item .address,
+.welcome-item .contact-info,
+.welcome-item .title,
+.welcome-item .hours {
+	line-height: 1.5;
+}

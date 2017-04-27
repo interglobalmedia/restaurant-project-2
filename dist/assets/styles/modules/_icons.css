@@ -1,0 +1,23 @@
+/* Styling Social Media Icons */
+svg {
+	transition: all 0.5s;
+}
+
+svg:hover {
+	transform: scale(1.25);
+	transition: all 0.5s;
+}
+
+.twitter:hover {
+	fill: $mainBrightRed;
+	transform: rotateX(30deg) rotateY(25deg) scale(1.5);
+}
+
+.pinterest:hover,
+.facebook:hover,
+.instagram:hover {
+	background: $mainBlack;
+	fill: $mainBrightRed;
+	border-radius: 50%;
+	padding: 3px;
+}

@@ -1,0 +1,277 @@
+/* Menu Styling */
+
+body.menu {
+	overflow: hidden;
+	font-size: 18px;
+}
+
+/* Menu Page Wrapper */
+#menu {
+	width: 100%;
+	margin: 0 auto;
+	z-index: 1;
+	display: flex;
+	flex-direction: column;
+	justify-content: start;
+}
+
+/* Hide so don't have two background images */
+#menu img {
+	display: none;
+}
+
+/* Brunch */
+
+.brunch-items,
+.brunch-bevs,
+.lunch-items,
+.dinner-items {
+	text-align: center;
+	max-width: 880px;
+	width: 100%;
+	background: $mainWhite;
+	margin: 0 auto;
+}
+
+.brunch-bevs,
+.lunch-items,
+.dinner-items {
+	padding: 60px 0 0;
+}
+
+.brunch-items {
+padding: 40px 0 0;
+	@mixin atMediumLarge {
+		padding-top: 60px;
+	}
+}
+
+.dinner-items {
+	@mixin atMediumLarge {
+		padding-bottom: 20px;
+	}
+}
+
+/* Menu Page Images Styling */
+
+#menu .brunch-items .brunch-item img,
+#menu .lunch-items .lunch-item img,
+#menu .brunch-bevs .brunch-bev-item img,
+#menu .dinner-items .dinner-item img {
+	display: block;
+	border-radius: 50%;
+}
+
+#menu .brunch-items .brunch-item img,
+#menu .lunch-items .lunch-item img,
+#menu .dinner-items .dinner-item img {
+	width: 60%;
+	margin: 0 auto;
+}
+
+#menu .brunch-bevs .brunch-bev-item img {
+	width: 55%;
+	margin: 0 auto 20px;
+}
+
+/* End Menu Page Images Styling */
+
+/* Individual Meal Section Stylings Independent of Parent */
+
+.brunch-item,
+.brunch-bev,
+.lunch-item,
+.dinner-item {
+	padding: 0 20px 20px;
+	@mixin atMediumLarge {
+		padding: 0 40px 20px;
+	}
+}
+
+/* End Individual Meal Section Stylings Independent of Parent */
+
+/* Heading Stylings For all Meals */
+
+.brunch-items h2, .brunch-items h4,
+.brunch-bevs h2,
+.lunch-items h2, .lunch-items h4,
+.dinner-items h2, .dinner-items h4 {
+	text-transform: uppercase;
+	letter-spacing: 0.1em;
+	font-weight: 100;
+}
+
+.brunch-items h2,
+.brunch-bevs h2,
+.lunch-items h2,
+.dinner-items h2 {
+	font-family: 'Cutive Mono', monospace;
+	padding-bottom: 20px;
+	color: $mainRed;
+}
+
+.brunch-items h4,
+.lunch-items h4,
+.dinner-items h4 {
+	font-family: 'Dosis', sans-serif;
+}
+
+/* End Heading Stylings For all Meals */
+
+/* Menu Item Border Y to X Styling */
+
+div.menu-container-y-to-x {
+	@mixin atMediumLarge {
+		text-align: center;
+		width: 100%;
+		margin: 0 auto;
+	}
+}
+
+div.menu-container-y-to-x .description {
+	@mixin atMediumLarge {
+		margin: 0;
+		padding-left: 0;
+		padding-right: 0;
+		position: relative;
+		cursor: pointer;
+	}
+}
+
+div.menu-border-y-to-x .description:before, div.menu-border-y-to-x .description:after {
+	@mixin atMediumLarge {
+		position: absolute;
+		opacity: 0.5;
+		height: 100%;
+		width: 0;
+		content: '';
+		background: $mainBrightRed;
+		transition: all 0.3s;
+	}
+}
+
+div.menu-border-y-to-x .description:before {
+	@mixin atMediumLarge {
+		left: 0;
+		top: 0;
+	}
+}
+
+div.menu-border-y-to-x .description:after {
+	@mixin atMediumLarge {
+		right: 0;
+		bottom: 0;
+	}
+}
+
+div.menu-border-y-to-x .description:hover:before,
+div.menu-border-y-to-x .description:hover:after {
+	@mixin atMediumLarge {
+		opacity: 0.3;
+		height: 2px;
+		width: 100%;
+	}
+}
+
+div.menu-border-y-to-x .description {
+	padding: 5px 0;
+	line-height: 1.3;
+}
+
+div.menu-border-y-to-x .description:hover {
+	background: $mainAntiqueWhite;
+	color: $mainBlack;
+}
+
+/* End Menu Item Border Y to X Styling */
+
+/* Circle Behind Styling For Price */
+
+div.menu-price-double-circle {
+	display: block;
+	@mixin atMediumLarge {
+		margin: 15px auto;
+		text-align: center;
+	}
+}
+
+div.menu-price-double-circle .price {
+	@mixin atMediumLarge {
+		margin: 0;
+		padding: 10px 10px;
+		position: relative;
+		z-index: 0;
+		cursor: pointer;
+	}
+}
+
+div.circle-behind .price:before, div.circle-behind .price:after {
+	@mixin atMediumLarge {
+		position: absolute;
+		top: 22px;
+		left: 50%;
+		width: 40px;
+		height: 40px;
+		border: 4px solid $mainLightCoral;
+		transform: translateX(-50%) translateY(-50%) scale(0.8);
+		border-radius: 50%;
+		background: transparent;
+		content: "";
+		opacity: 0;
+		transition: all 0.3s;
+		z-index: -1;
+	}
+}
+
+div.circle-behind .price:after {
+	@mixin atMediumLarge {
+		border-width: 2px;
+		transition: all 0.4s;
+	}
+}
+
+div.circle-behind .price:hover:before {
+	@mixin atMediumLarge {
+		opacity: 1;
+		transform: translateX(-50%) translateY(-50%) scale(1);
+		background: $mainAntiqueWhite;
+	}
+}
+
+div.circle-behind .price:hover:after {
+	@mixin atMediumLarge {
+		opacity: 0.5;
+		transform: translateX(-50%) translateY(-50%) scale(1.3);
+	}
+}
+
+/* Menu Page Subscribe Container Styling */
+
+.dinner-items .subscribe-container {
+	margin: 0 auto;
+	width: 90%;
+	padding: 20px 0;
+}
+
+/* End Menu Page Subscribe Container Styling */
+
+/* Common Meals Styling */
+
+.description {
+	color: $mainAzure4;
+	line-height: 1.5;
+	font-family: 'Dosis', sans-serif;
+	letter-spacing: 0.1em;
+}
+
+.price {
+	font-weight: bold;
+	font-family: 'Dosis', sans-serif;
+	//background: transparent;
+}
+
+.add {
+	margin-top: 0;
+	margin-bottom: 0;
+	font-family: 'Dosis', sans-serif;
+}

@@ -4,3 +4,4 @@ require('./gulp/tasks/scripts');
 require('./gulp/tasks/modernizr');
 require('./gulp/tasks/build');
 require('./gulp/tasks/nunjucks');
+require('./gulp/tasks/deploy');

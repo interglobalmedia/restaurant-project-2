@@ -1,0 +1,16 @@
+<!-- index.nunjucks -->
+{% extends "layout.nunjucks" %}
+
+{% block content %}
+	<body class="welcome Site">
+		<main class="Site-content">
+			<div class="wrapper">
+				<!-- Adds the nav-macro navigation partial -->
+				{% import "macros/nav-macro.nunjucks" as nav %}
+				<!-- Creating the navigation with activePage = 'welcome' -->
+				{{nav.active('welcome')}}
+				<!-- Adds the welcome-page partial -->
+				{% include "partials/welcome-page.nunjucks" %}
+			</div>
+		</main>
+{% endblock %}

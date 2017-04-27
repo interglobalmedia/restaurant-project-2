@@ -1,0 +1,26 @@
+* {
+	padding: 0;
+	margin: 0;
+}
+
+html {
+	max-height: 100vh;
+	overflow-y: auto;
+	@mixin atMediumLarge {
+		background-image: url('../../assets/images/relax-701362_1920.jpg');
+		overflow-y: auto;
+		background-size: cover;
+		background-position: center;
+		background-attachment: fixed;
+	}
+}
+
+main {
+	max-width: 880px;
+	margin: 0 auto;
+}
+
+.wrapper {
+	width: 100%;
+	margin: 0 auto;
+}
