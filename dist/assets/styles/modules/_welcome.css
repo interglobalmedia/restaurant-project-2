@@ -106,7 +106,7 @@ body.welcome {
 	border: 1px solid #ddd;
 }
 
-.welcome-items .instagram-container {
+.welcome-items .social-embed-container {
 	width: 90%;
 	margin: 0 auto;
 	@mixin atMediumLarge {
@@ -114,7 +114,7 @@ body.welcome {
 	}
 }
 
-.welcome-items .instagram-column {
+.welcome-items .instagrm-column {
 	width: 100%;
 	margin: 0 auto 20px;
 	@mixin atMediumSmall {
