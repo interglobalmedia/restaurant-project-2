@@ -7,8 +7,13 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<title>Restaurant Template 2</title>
 		<link href="https://fonts.googleapis.com/css?family=Cutive+Mono|Dosis|Joti+One" rel="stylesheet">
+		<!-- build:css assets/styles/styles.css -->
 		<link rel="stylesheet" href="temp/styles/styles.css">
+		<!-- endbuild -->
+
+		<!-- build:js assets/scripts/vendor.js -->
 		<script src="/temp/scripts/vendor.js"></script>
+		<!-- endbuild -->
 	</head>
 		<!-- You write code for this content black in another file -->
 		
@@ -83,55 +88,45 @@
 				<!-- Adds the welcome-page partial -->
 				<!-- welcome-page.nunjucks -->
 				<div id="welcome">
-					<img src="/assets/images/relax-701362_1920.jpg" alt="Interior of restaurant Julia.">
+					<img src="assets/images/relax-701362_1920.jpg" alt="Interior of restaurant Julia.">
 					<div class="welcome-items">
 						<h1 class="welcome-title"></h1>
 						<div class="welcome-item">
 							<script async src="//player-backend.cnevids.com/embedjs/51ffee3d4ffb601bd1000001/video/585997c7fd2e6139cf000006.js"></script>
 						</div>
 							<div class="welcome-item">
-								<div class="slide-hover welcome-top-bottom-borders-out">
-									<p class="description">
-										Pellentesque pharetra lectus enim, a euismod orci blandit at. In volutpat condimentum</br>
-										quam, eget bibendum eros finibus a.
-									</p>
-								</div>
+								<p class="description">
+									Pellentesque pharetra lectus enim, a euismod orci blandit at. In volutpat condimentum</br>
+									quam, eget bibendum eros finibus a.
+								</p>
 							</div>
 							<div class="welcome-item">
-									<p class="title">
-										Hours:
-									</p>
-								<div class="slide-hover welcome-top-bottom-borders-out">
-									<p class="hours">
-										Mon - Thu: 4pm - 2am</br>
-										Fri - Sat: 4pm - 4am</br>
-										Sun: 4pm - 12am
-									</p>
-								</div>
+								<p class="title">
+									Hours:
+								</p>
+								<p class="hours">
+									Mon - Thu: 4pm - 2am</br>
+									Fri - Sat: 4pm - 4am</br>
+									Sun: 4pm - 12am
+								</p>
 							</div>
 							<div class="welcome-item">
-								<div class="slide-hover welcome-top-bottom-borders-out">
-									<p class="description">
-										Open until 4am</br>
-										on Friday and Saturday nights!
-									</p>
-								</div>
+								<p class="description">
+									Open until 4am</br>
+									on Friday and Saturday nights!
+								</p>
 							</div>
 							<div class="welcome-item">
-								<div class="slide-hover welcome-top-bottom-borders-out">
-									<p class="description">
-										Happy Hour Drink Specials Before 7pm</br>
-										Late Night Drink Specials After 11pm
-									</p>
-								</div>
+								<p class="description">
+									Happy Hour Drink Specials Before 7pm</br>
+									Late Night Drink Specials After 11pm
+								</p>
 							</div>
 							<div class="welcome-item">
-								<div class="slide-hover welcome-top-bottom-borders-out">
-									<p class="address contact-info">
-										3 West Avenue, NE, NE 10002</br>
-										888-888-8888 / info@julia.com
-									</p>
-								</div>
+								<p class="address contact-info">
+									3 West Avenue, NE, NE 10002</br>
+									888-888-8888 / info@julia.com
+								</p>
 							</div>
 						<div class="social-media-icons-container">
 							<svg class="instagram" width="40" height="40" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg" fill-rule="evenodd" clip-rule="evenodd" stroke-linejoin="round" stroke-miterlimit="1.414">
@@ -213,6 +208,8 @@
 			</div>
 		</main>
 
+		<!-- build:js assets/scripts/app.js -->
 		<script src="/temp/scripts/app.js"></script>
+		<!-- endbuild -->
 	</body>
 </html>

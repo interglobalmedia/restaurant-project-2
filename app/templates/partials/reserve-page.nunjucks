@@ -1,6 +1,6 @@
 <!-- reserve-page.nunjucks -->
 				<div id="reserve">
-					<img src="/assets/images/relax-701362_1920.jpg" alt="Interior of restaurant Julia.">
+					<img src="assets/images/relax-701362_1920.jpg" alt="Interior of restaurant Julia.">
 					<div class="reservations">
 						<h1 class="reserve-title"></h1>
 						<div class="reserve-intro">

@@ -1,9 +1,9 @@
 				<!-- drinks-page.nunjucks -->
 				<div id="drinks">
-					<img src="/assets/images/relax-701362_1920.jpg" alt="Interior of restaurant Julia.">
+					<img src="assets/images/relax-701362_1920.jpg" alt="Interior of restaurant Julia.">
 						<div class="drink-items">
 							<div class="drink-item">
-								<img class="align-center zoom-in" src="/assets/images/drink-1031701_1920.jpg" alt="Julia's restaurant cocktail special.">
+								<img class="align-center zoom-in" src="assets/images/drink-1031701_1920.jpg" alt="Julia's restaurant cocktail special.">
 							</div>
 							<h2>Cocktails</h2>
 							<span class="price">12</span>

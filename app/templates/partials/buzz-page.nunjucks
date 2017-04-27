@@ -1,6 +1,6 @@
 <!-- buzz-page.nunjucks -->
 				<div id="buzz">
-					<img src="/assets/images/relax-701362_1920.jpg" alt="Interior of restaurant Julia.">
+					<img src="assets/images/relax-701362_1920.jpg" alt="Interior of restaurant Julia.">
 					<div class="buzz-items">
 						<h1 class="buzz-title"></h1>
 						<div class="buzz-item">
