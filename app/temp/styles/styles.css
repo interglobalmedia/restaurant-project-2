@@ -55,11 +55,9 @@ header {
 	letter-spacing: 0.1em;
 	font-weight: 700;
 	text-align: left;
-	//width: 100%;
 }
 @media (min-width: 897px) {
 	.logo {
-		//width: 97%;
 		text-align: center;
 		height: 120px;
 		font-size: 48px;
@@ -67,6 +65,7 @@ header {
 		left: 0;
 	}
 }
+/* Logo Text Animation Styling */
 .logo:before {
 	content: attr(data-text);
 	position: absolute;
@@ -103,7 +102,7 @@ svg:hover {
 	transition: all 0.5s;
 }
 .twitter:hover {
-	fill: firebrick;
+	fill: #ff0000;
 	-webkit-transform: rotateX(30deg) rotateY(25deg) scale(1.5);
 	        transform: rotateX(30deg) rotateY(25deg) scale(1.5);
 }
@@ -111,16 +110,18 @@ svg:hover {
 .facebook:hover,
 .instagram:hover {
 	background: black;
-	fill: firebrick;
+	fill: #ff0000;
 	border-radius: 50%;
 	padding: 3px;
 }
 /* Responsive Navigation Styling */
+/* Hide Regular Navigation Below @mixin atMediumLarge Width */
 @media (max-width: 896px) {
 	.top {
 		display: none;
 	}
 }
+/* Mobile Hamburger Styling */
 nav.hamburger {
 	display: block;
 	width: 42px;
@@ -141,6 +142,8 @@ nav.hamburger div.line {
 	transition: transform 0.3s, opacity 0.1s;
 	transition: transform 0.3s, opacity 0.1s, -webkit-transform 0.3s;
 }
+/* End Mobile Hamburger Styling */
+/* Animation classes for Hamburger Rotation Animation Styling Used in JS responsiveNav.js */
 .hide {
 	opacity: 0;
 	-webkit-transform: translateX(-42px);
@@ -154,6 +157,8 @@ nav.hamburger div.line {
 	-webkit-transform: rotate(-45deg) translateY(-17px);
 	        transform: rotate(-45deg) translateY(-17px);
 }
+/* End Animation classes for Hamburger Rotation Animation Styling Used in JS responsiveNav.js */
+/* Responsive Menu Styling */
 nav.responsive-menu {
 	background: rgba(52, 152, 219, 0);
 	top: 0;
@@ -168,6 +173,7 @@ nav.responsive-menu {
 	z-index: 1;
 	transition: background 0.5s ease-in-out, opacity 0.5s;
 }
+/* .show class styles the responsive menu when opened by clicking Hamburger */
 nav.responsive-menu.show {
 	opacity: 1;
 	transition: background 0.5s ease-in-out, visibility 0.5s;
@@ -181,6 +187,7 @@ nav.responsive-menu.show {
 		display: none;
 	}
 }
+/* Responsive Menu Links Styling */
 nav.responsive-menu ul {
 	padding: 20px 0 0 0;
 }
@@ -218,18 +225,21 @@ nav.responsive-menu a.active {
 nav.responsive-menu a:hover {
 	color: firebrick;
 }
+/* End Responsive Menu Links Styling */
 /* Navigation Styling */
 .top {
 	text-align: center;
 	width: 100%;
 	max-width: 880px;
 }
+/* Hide responsive menu and hamburger @mixin atMediumLarge and wider */
 @media (min-width: 897px) {
 	nav.responsive-menu, nav.hamburger,
 nav.responsive-menu a.active, nav.responsive-menu a:hover {
 		display: none;
 	}
 }
+/* Navigation Styling */
 nav {
 	z-index: 4;
 	margin: 0 auto;
@@ -254,9 +264,7 @@ nav li:last-child {
 	padding-bottom: 1.75rem;
 }
 nav a.active, nav a:hover {
-	//text-decoration: underline;
 	color: firebrick;
-	//border: 1px dotted #838b8b;
 }
 nav li {
 	display: inline-block;
@@ -266,7 +274,6 @@ nav li {
 	font-size: 18px;
 	font-weight: bold;
 	padding: 0.5rem;
-
 }
 @media (min-width: 897px) {
 	nav li {
@@ -280,6 +287,7 @@ nav li a:hover {
 	color: #838b8b;
 	cursor: pointer;
 }
+/* End Navigation Styling */
 /* Navigation Animation Styling .top nav */
 /* Pull right and left  */
 div.container {
@@ -302,7 +310,7 @@ div.pull-right-left a:before, div.pull-right-left a:after
 	height: 100%;
 	top: 0;
 	content: '';
-	background: red;
+	background: #ff0000;
 	opacity: 0.3;
 	transition: all 0.5s;
 }
@@ -318,6 +326,7 @@ div.pull-right-left a:hover:before, div.pull-right-left a:hover:after
 {
 	width: 100%;
 }
+/* End Pull right and left  */
 /* Zoom-In Image animation on Scroll */
 .align-center {
 	float: none;
@@ -336,10 +345,13 @@ div.pull-right-left a:hover:before, div.pull-right-left a:hover:after
 	        transform: translateY(0%) scale(1);
 }
 /* Welcome Page Styling */
+/* Syling Relating to Site Background Image */
 body.welcome {
 	overflow: hidden;
 	font-size: 18px;
 }
+/* End Syling Relating to Site Background */
+/* Welcome Page Wrapper */
 #welcome {
 	width: 100%;
 	margin: 0 auto;
@@ -356,9 +368,11 @@ body.welcome {
 	    -ms-flex-pack: start;
 	        justify-content: start;
 }
+/* Hide so don't have two background images */
 #welcome img {
 	display: none;
 }
+/* Wrapper for welcome-item sections */
 .welcome-items {
 	padding: 40px 0 0;
 	max-width: 880px;
@@ -371,6 +385,7 @@ body.welcome {
 		padding: 60px 0 20px;
 	}
 }
+/* General styling for welcome-item sections */
 .welcome-items .welcome-item:first-of-type {
 	width: 90%;
 	margin: 0 auto;
@@ -402,6 +417,8 @@ body.welcome {
 	color: firebrick;
 	font-weight: bold;
 }
+/* End general styling for welcome-item sections */
+/* Welcome Page social media icons section styling */
 .welcome-items .social-media-icons-container {
 	margin: 40px auto;
 }
@@ -412,12 +429,16 @@ body.welcome {
 		padding: 40px 0;
 	}
 }
+/* End Welcome Page social media icons section styling */
+/* Welcome Page Find A Table Container Styling */
 @media (min-width: 897px) {
 	.welcome-items .find-a-table-container {
 		margin: 0 auto;
 		width: 90%;
 	}
 }
+/* End Welcome Page Find A Table Container Styling */
+/* Welcome Page Instagram Section Styling */
 #welcome .welcome-items .instagram-container img {
 	display: block;
 	width: 100%;
@@ -448,6 +469,8 @@ body.welcome {
 		}
 	}
 }
+/* Welcome Page Instagram Section Styling */
+/* Youtube Embedded Video Section Styling */
 .video-container {
 	position: relative;
 	padding-bottom: 56.25%;
@@ -472,11 +495,14 @@ body.welcome {
 	margin: 20px auto;
 	z-index: 1;
 }
+/* End Youtube Embedded Video Section Styling */
+/* Welcome Page Subscribe Container Section Styling */
 .welcome-items .subscribe-container {
 	margin: 0 auto;
 	padding: 20px 0;
 	width: 90%;
 }
+/* End Welcome Page Subscribe Container Section Styling */
 /* Common CSS Properties Stylings */
 .welcome-items,
 .welcome-items .subscribe-container {
@@ -517,6 +543,7 @@ body.welcome {
 body.about {
 	font-size: 18px;
 }
+/* About Page Wrapper */
 #about {
 	width: 100%;
 	margin: 0 auto;
@@ -533,9 +560,15 @@ body.about {
 	    -ms-flex-pack: start;
 	        justify-content: start;
 }
+/* Hide so don't have two background images */
 #about img {
 	display: none;
 }
+#about .about-items img {
+	display: block;
+}
+/* About The Place Styling */
+/* Wrapper for about-item sections */
 .about-items {
 	padding: 40px 0 0;
 	max-width: 880px;
@@ -565,12 +598,12 @@ body.about {
 .about-items p {
 	line-height: 1.5;
 }
+/* End About The Place Styling */
+/* Style Adjustment Because of Slide Hover Images on Page */
 .slide-hover .about-description {
 	color: black;
 }
-#about .about-items img {
-	display: block;
-}
+/* About People Section Styling */
 .about-people {
 	width: 95%;
 	margin: 0 auto;
@@ -588,6 +621,8 @@ body.about {
 .about-people p {
 	padding: 0 20px;
 }
+/* End About People Section Styling */
+/* About Foodand Drink Section Styling */
 .about-food-and-drink {
 	margin: 40px auto 0;
 }
@@ -624,6 +659,7 @@ body.about {
 		margin-right: 10px;
 	}
 }
+/* End About Food and Drink Section Styling */
 .about-items .subscribe-container {
 	width: 90%;
 	padding: 20px 0;
@@ -694,6 +730,7 @@ body.menu {
 	overflow: hidden;
 	font-size: 18px;
 }
+/* Menu Page Wrapper */
 #menu {
 	width: 100%;
 	margin: 0 auto;
@@ -709,6 +746,7 @@ body.menu {
 	    -ms-flex-pack: start;
 	        justify-content: start;
 }
+/* Hide so don't have two background images */
 #menu img {
 	display: none;
 }
@@ -728,11 +766,6 @@ body.menu {
 .dinner-items {
 	padding: 60px 0 0;
 }
-@media (min-width: 897px) {
-	.dinner-items {
-		padding-bottom: 20px;
-	}
-}
 .brunch-items {
 padding: 40px 0 0;
 }
@@ -741,6 +774,12 @@ padding: 40px 0 0;
 		padding-top: 60px;
 	}
 }
+@media (min-width: 897px) {
+	.dinner-items {
+		padding-bottom: 20px;
+	}
+}
+/* Menu Page Images Styling */
 #menu .brunch-items .brunch-item img,
 #menu .lunch-items .lunch-item img,
 #menu .brunch-bevs .brunch-bev-item img,
@@ -758,11 +797,8 @@ padding: 40px 0 0;
 	width: 55%;
 	margin: 0 auto 20px;
 }
-.dinner-items .subscribe-container {
-	margin: 0 auto;
-	width: 90%;
-	padding: 20px 0;
-}
+/* End Menu Page Images Styling */
+/* Individual Meal Section Stylings Independent of Parent */
 .brunch-item,
 .brunch-bev,
 .lunch-item,
@@ -777,6 +813,8 @@ padding: 40px 0 0;
 		padding: 0 40px 20px;
 	}
 }
+/* End Individual Meal Section Stylings Independent of Parent */
+/* Heading Stylings For all Meals */
 .brunch-items h2, .brunch-items h4,
 .brunch-bevs h2,
 .lunch-items h2, .lunch-items h4,
@@ -798,6 +836,7 @@ padding: 40px 0 0;
 .dinner-items h4 {
 	font-family: 'Dosis', sans-serif;
 }
+/* End Heading Stylings For all Meals */
 /* Menu Item Border Y to X Styling */
 @media (min-width: 897px) {
 	div.menu-container-y-to-x {
@@ -822,7 +861,7 @@ padding: 40px 0 0;
 		height: 100%;
 		width: 0;
 		content: '';
-		background: red;
+		background: #ff0000;
 		transition: all 0.3s;
 	}
 }
@@ -913,6 +952,13 @@ div.menu-price-double-circle {
 		        transform: translateX(-50%) translateY(-50%) scale(1.3);
 	}
 }
+/* Menu Page Subscribe Container Styling */
+.dinner-items .subscribe-container {
+	margin: 0 auto;
+	width: 90%;
+	padding: 20px 0;
+}
+/* End Menu Page Subscribe Container Styling */
 /* Common Meals Styling */
 .description {
 	color: #838b8b;
@@ -935,6 +981,7 @@ body.drinks {
 	overflow: hidden;
 	font-size: 18px;
 }
+/* Drinks Page Wrapper */
 #drinks {
 	width: 100%;
 	margin: 0 auto;
@@ -957,9 +1004,11 @@ body.drinks {
 		margin-bottom: 20px;
 	}
 }
+/* Hide so don't have two background images */
 #drinks img {
 	display: none;
 }
+/* Wrapper for drink-item sections */
 .drink-items {
 	padding: 40px 0 0;
 	text-align: center;
@@ -979,22 +1028,6 @@ body.drinks {
 	width: 50%;
 	margin: 0 auto;
 	border-radius: 50%;
-}
-.drink-items .social-media-icons-container {
-	width: 90%;
-	margin: 20px auto;
-	padding: 20px 0 0;
-	clear: both;
-}
-@media (min-width: 800px) {
-	.drink-items .social-media-icons-container {
-		padding: 10px 0 20px;
-	}
-}
-.drink-items .subscribe-container {
-	margin: 0 auto;
-	width: 90%;
-	padding: 20px 0;
 }
 .drink-item {
 	padding-bottom: 20px;
@@ -1017,6 +1050,26 @@ body.drinks {
 .drink-items .price {
 	font-family: 'Dosis', sans-serif;
 }
+/* Social Media Icons Section Styling */
+.drink-items .social-media-icons-container {
+	width: 90%;
+	margin: 20px auto;
+	padding: 20px 0 0;
+	clear: both;
+}
+@media (min-width: 800px) {
+	.drink-items .social-media-icons-container {
+		padding: 10px 0 20px;
+	}
+}
+/* End Social Media Icons Section Styling */
+/* Subscribe Container Section Styling */
+.drink-items .subscribe-container {
+	margin: 0 auto;
+	width: 90%;
+	padding: 20px 0;
+}
+/* Subscribe Container Section Styling */
 /* Drink Item Border Y to X Styling */
 @media (min-width: 897px) {
 	div.drinks-container-y-to-x {
@@ -1041,7 +1094,7 @@ body.drinks {
 		height: 100%;
 		width: 0;
 		content: '';
-		background: red;
+		background: #ff0000;
 		transition: all 0.3s;
 	}
 }
@@ -1074,6 +1127,7 @@ div.drinks-border-y-to-x .description:hover {
 	color: black;
 }
 /* End Drink Item Border Y to X Styling */
+/* Miscellanrous Drinks Page Styling */
 #drinks .drink-items .drink-item .description {
 	color: #838b8b;
 	line-height: 1.5;
@@ -1092,6 +1146,7 @@ body.reserve {
 	overflow: hidden;
 	font-size: 18px;
 }
+/* Reservation Page Wrapper */
 #reserve {
 	width: 100%;
 	max-width: 880px;
@@ -1115,6 +1170,7 @@ body.reserve {
 		margin: 0 auto 20px;
 	}
 }
+/* Hide so don't have two background images */
 #reserve img {
 	display: none;
 }
@@ -1142,30 +1198,39 @@ body.reserve {
 	padding-bottom: 20px;
 }
 .reservations p {
-	padding-top: 10px;
 	margin: 0 auto;
 	max-width: 880px;
 	width: 100%;
+	line-height: 1.6;
 }
+/* Wrapper For Reservation Page Intro Text */
 .reserve-intro {
 	margin: 20px auto 40px;
 }
-.reserve-description,
-.reserve-description a {
+/* End Wrapper For Reservation Page Intro Text */
+.reserve-description, .reserve-description a {
 	font-family: 'Dosis', sans-serif;
 	letter-spacing: 0.1em;
 	margin: 0 auto;
 	text-align: center;
 }
+.reserve-description a {
+	color: LightCoral;
+}
+@media (min-width: 897px) {
+	.reserve-description a:hover {
+		-webkit-transform: scale(1.2);
+		        transform: scale(1.2);
+	}
+}
 /* Find A Table Styling */
 .find-a-table-container {
-	width: 95%;
+	width: 90%;
 	margin: 40px auto;
 	padding: 10px 0;
 }
 @media (min-width: 897px) {
 	.find-a-table-container {
-		width: 90%;
 		margin: 20px auto;
 		padding: 10px 0 30px;
 	}
@@ -1174,31 +1239,102 @@ body.reserve {
 	margin: 30px;
 }
 .find-a-table a {
-	background: firebrick;
-	padding: 10px 20px;
+	background: antiquewhite;
 	border: 3px dotted black;
+	height: 64px;
+	width: 198px;
+}
+.find-a-table:hover a {
+	cursor: pointer;
 }
 .find-a-table p {
 	padding-top: 10px;
 	margin-bottom: 20px;
 }
 .reserve-item .reserve-description {
-	margin: 5px auto;
+	margin: 0 auto;
 }
-.walkins br,
-.catering br {
+.walkins br, .catering br {
 	line-height: 1.5;
 }
-.reserve-email-link a,
-.reserve-description a {
-	color: LightCoral;
+/* End Find A Table Styling */
+/* Find a Table Change Face Button Effect */
+.face-button {
+	height: 66px;
+	display: inline-block;
+	text-align: center;
+	text-decoration: none;
+	color: black;
+	background: firebrick;
+	overflow: hidden;
+	width: 198px;
+	margin: 0 auto;
+	box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5), 1px 1px 2px rgba(0, 0, 0, 0.5), 1px 1px 2px rgba(0, 0, 0, 0.5), 1px 1px 2px rgba(0, 0, 0, 0.5) inset;
 }
-@media (min-width: 897px) {
-	.reserve-email-link a:hover, .reserve-description a:hover {
-		-webkit-transform: scale(1.2);
-		        transform: scale(1.2);
-	}
+.face-button, .face-primary, .face-button .face-secondary {
+	display: block;
+	line-height: 64px;
+	transition: margin .4s;
 }
+.face-button .face-primary {
+	background: firebrick;
+	color: black;
+	cursor: pointer;
+}
+.face-button .face-secondary {
+	color: firebrick;
+}
+.face-button:hover .face-primary {
+	margin-top: -64px;
+	cursor: pointer;
+}
+/* End Find a Table Change Face Button Effect */
+/* 3D Word Slide In  for Reserve Page Links */
+.word-slide-in a {
+	overflow: hidden;
+	padding: 0 4px 0 5px;
+	height: 1em;
+	font-family: 'Dosis', sans-serif;
+	letter-spacing: 0.1em;
+	font-size: 20px;
+	color: black;
+	width: 160px;
+	height: 30px;
+	background: antiquewhite;
+	text-align: center;
+	margin: 20px auto 0;
+	vertical-align: middle;
+	padding-top: 2px;
+	border: 3px dotted black;
+	box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5), 1px 1px 2px rgba(0, 0, 0, 0.5), 1px 1px 2px rgba(0, 0, 0, 0.5), 1px 1px 2px rgba(0, 0, 0, 0.5) inset;
+}
+.word-slide-in a span {
+	position: relative;
+	display: inline-block;
+	transition: -webkit-transform 0.3s;
+	transition: transform 0.3s;
+	transition: transform 0.3s, -webkit-transform 0.3s;
+}
+.word-slide-in a span::before {
+	position: absolute;
+	top: 100%;
+	left: 18px;
+	content: attr(data-hover);
+	-webkit-transform: translate3d(0, 0, 0);
+	        transform: translate3d(0, 0, 0);
+	-webkit-transform: margin 0.1s ease;
+	        transform: margin 0.1s ease;
+}
+.click-here a span::before {
+	left: 12px;
+}
+.word-slide-in a:hover span, .word-slide-in a:focus span {
+	-webkit-transform: translateY(-100%);
+	        transform: translateY(-100%);
+	cursor: pointer;
+	color: firebrick;
+}
+/* End 3D Word Slide In for Reserve Page Links */
 /* Social Media Icons Styling */
 .social-media-icons-container {
 	text-align: center;
@@ -1214,7 +1350,8 @@ body.reserve {
 .social-media-icons-container svg {
 	margin: 0 5px;
 }
-/* Subscribe Container Styling */
+/* End Social Media Icons Styling */
+/* Subscribe Container Button and Form Field Styling */
 .reservations .subscribe-container {
 	margin: 0 auto;
 	width: 90%;
@@ -1228,96 +1365,106 @@ body.reserve {
 	margin: 0 auto;
 }
 .newsletter-form-button-icon {
+	display: block;
 	width: 120px;
 	height: 42px;
 	cursor: pointer;
-	background: transparent;
-	margin: 20px 5px 0;
+	background: firebrick;
+	margin: 20px auto 0;
+	box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5), 1px 1px 2px rgba(0, 0, 0, 0.5), 1px 1px 2px rgba(0, 0, 0, 0.5), 1px 1px 2px rgba(0, 0, 0, 0.5) inset;
 }
-@media (min-width: 897px) {
-	.newsletter-form-button-icon {
-		margin: 7px 5px 0;
-	}
+.newsletter-form-button-icon,
+.newsletter-form-field-element {
+	box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5), 1px 1px 2px rgba(0, 0, 0, 0.5), 1px 1px 2px rgba(0, 0, 0, 0.5), 1px 1px 2px rgba(0, 0, 0, 0.5) inset;
 }
 .newsletter-form-field-element {
 	width: 250px;
 	height: 35px;
 	margin: 5px 5px 0;
 	font-size: 14px;
+	display: inline-block;
+	background: antiquewhite;
+	transition: -webkit-transform 0.3 ease-in-out;
+	transition: transform 0.3 ease-in-out;
+	transition: transform 0.3 ease-in-out, -webkit-transform 0.3 ease-in-out;
 }
-/* Common CSS Properties Stylings */
-.reservations h1,
-.reservations p,
-.reserve-info .add,
-.find-a-table-container h2,
-.find-a-table a,
-.find-a-table p,
-.subscribe-container h2,
-.newsletter-form-button-icon {
-	font-family: 'Dosis', sans-serif;
+.newsletter-form-field-element:hover, .newsletter-form-field-element:focus {
+	-webkit-transform: scale(1.1);
+	        transform: scale(1.1);
+	transition: color 0.5s ease-in-out;
 }
-.reservations h1,
-.newsletter-form-button-icon {
-	text-transform: uppercase;
+/* End Subscribe Container Button and Form Field Styling */
+/* Subscribe Button Change Face Button Effect */
+#subscribe .face-button {
+	height: 66px;
+	display: inline-block;
+	text-align: center;
+	text-decoration: none;
+	color: black;
+	background: antiquewhite;
+	overflow: hidden;
+	margin: 20px auto 0;
+	box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5), 1px 1px 2px rgba(0, 0, 0, 0.5), 1px 1px 2px rgba(0, 0, 0, 0.5), 1px 1px 2px rgba(0, 0, 0, 0.5) inset;
 }
-.reservations h1,
-.reservations p,
-.reserve-info a,
-.reserve-info .description,
-.find-a-table-container h2,
-.find-a-table a,
-.subscribe-container h2,
-.newsletter-form-button-icon,
-.newsletter-form-field-element {
-	letter-spacing: 0.1em;
+#subscribe .face-button, .face-primary,
+#subscribe .face-button .face-secondary {
+	display: block;
+	line-height: 64px;
+	transition: margin .4s;
+	cursor: pointer;
 }
-.reservations h1,
-.reservations p,
-.reserve-info a,
-.reserve-info .description,
-.reserve-info .add,
-.find-a-table-container h2,
-.subscribe-container h2 {
-	font-weight: 100;
-}
-.reserve-info .description,
-.reserve-info .add,
-.find-a-table-container h2,
-.find-a-table a,
-.find-a-table p,
-.subscribe-container h2,
-.subscribe-container .description {
+#subscribe .face-button .face-primary {
+	background: firebrick;
 	color: black;
 }
-.find-a-table-container,
-.subscribe-container {
+#subscribe .face-button .face-secondary {
+	color: firebrick;
+}
+.newsletter-form-button-icon .face-button:hover .face-primary {
+	margin-top: -64px;
+	cursor: pointer;
+	color: black;
+}
+/* End Subscribe Button Change Face Button Effect */
+/* Common CSS Properties Stylings */
+.reservations h1, .reservations p, .reserve-info .add, .find-a-table-container h2, .find-a-table a, .find-a-table p, .subscribe-container h2, .newsletter-form-button-icon {
+	font-family: 'Dosis', sans-serif;
+}
+.reservations h1, .newsletter-form-button-icon {
+	text-transform: uppercase;
+}
+.reservations h1, .reservations p, .reserve-info a, .reserve-info .description, .find-a-table-container h2, .find-a-table a, .subscribe-container h2, .newsletter-form-button-icon, .newsletter-form-field-element {
+	letter-spacing: 0.1em;
+}
+.reservations h1, .reservations p, .reserve-info a, .reserve-info .description, .reserve-info .add, .find-a-table-container h2, .subscribe-container h2 {
+	font-weight: 100;
+}
+.reserve-info .description, .reserve-info .add, .find-a-table-container h2, .find-a-table a, .find-a-table p, .subscribe-container h2, .subscribe-container .description {
+	color: black;
+}
+.find-a-table-container, .subscribe-container {
 	background: #838b8b;
 }
-.find-a-table-container h2,
-.subscribe-container h2 {
+.find-a-table-container h2, .subscribe-container h2 {
 	text-transform: none;
 }
-#reserve .reservations,
-.find-a-table,
-.subscribe-container .description,
-.newsletter-form-field-element {
+#reserve .reservations, .find-a-table, .subscribe-container .description, .newsletter-form-field-element {
 	text-align: center;
 }
-.find-a-table p,
-.subscribe-container .description,
-.newsletter-form-button-icon {
+.find-a-table p, .subscribe-container .description, .newsletter-form-button-icon {
 	font-size: 16px;
+	letter-spacing: 0.2em;
 }
-.newsletter-form-button-icon,
-.newsletter-form-field-element {
+.newsletter-form-button-icon, .newsletter-form-field-element {
 	outline: none;
-	border: 2px solid black;
+	border: 3px dotted black;
 }
 /* Buzz Page Styling */
 body.buzz {
 	overflow: hidden;
 	font-size: 18px;
 }
+/* Buzz Page Wrapper */
 #buzz {
 	width: 100%;
 	margin: 0 auto;
@@ -1334,9 +1481,11 @@ body.buzz {
 	    -ms-flex-pack: start;
 	        justify-content: start;
 }
+/* Hide so don't have two background images */
 #buzz img {
 	display: none;
 }
+/* Wrapper for buzz-item sections */
 .buzz-items {
 	padding: 40px 0 0;
 	width: 100%;
@@ -1363,6 +1512,7 @@ body.buzz {
 	padding-bottom: 20px;
 	color: firebrick;
 }
+/* Buzz Page Instagram Section Styling */
 .buzz-items .buzz-item,
 .buzz-items .instagram-container {
 	width: 90%;
@@ -1372,6 +1522,10 @@ body.buzz {
 	.buzz-items .instagram-container {
 		margin: 40px auto;
 	}
+}
+.instagram-container h2 {
+	width: 100%;
+	margin: 20px auto;
 }
 .buzz-items .instagram-container .instagram-column {
 	width: 100%;
@@ -1417,10 +1571,8 @@ body.buzz {
 		margin-top: -3.75%;
 	}
 }
-.instagram-container h2 {
-	width: 100%;
-	margin: 20px auto;
-}
+/* End Buzz Page Instagram Section Styling */
+/* Buzz Page Social Media Icons Section Styling */
 .buzz-items .social-media-icons-container {
 	width: 90%;
 	margin: 40px auto;
@@ -1433,11 +1585,14 @@ body.buzz {
 		padding: 40px 0 0;
 	}
 }
+/* End Buzz Page Social Media Icons Section Styling */
+/* Buzz Page Subscribe Container Section Styling */
 .buzz-items .subscribe-container {
 	padding: 20px 0;
 	margin: 0 auto;
 	width: 90%;
 }
+/* End Buzz Page Subscribe Container Section Styling */
 /* Common CSS Properties Styling */
 .buzz-items {
 	text-align: center;

@@ -4,6 +4,8 @@ body.drinks {
 	font-size: 18px;
 }
 
+/* Drinks Page Wrapper */
+
 #drinks {
 	width: 100%;
 	margin: 0 auto;
@@ -18,10 +20,12 @@ body.drinks {
 	}
 }
 
+/* Hide so don't have two background images */
 #drinks img {
 	display: none;
 }
 
+/* Wrapper for drink-item sections */
 .drink-items {
 	padding: 40px 0 0;
 	text-align: center;
@@ -40,22 +44,6 @@ body.drinks {
 	width: 50%;
 	margin: 0 auto;
 	border-radius: 50%;
-}
-
-.drink-items .social-media-icons-container {
-	width: 90%;
-	margin: 20px auto;
-	padding: 20px 0 0;
-	clear: both;
-	@mixin atMediumMedium {
-		padding: 10px 0 20px;
-	}
-}
-
-.drink-items .subscribe-container {
-	margin: 0 auto;
-	width: 90%;
-	padding: 20px 0;
 }
 
 .drink-item {
@@ -83,6 +71,30 @@ body.drinks {
 .drink-items .price {
 	font-family: 'Dosis', sans-serif;
 }
+
+/* Social Media Icons Section Styling */
+
+.drink-items .social-media-icons-container {
+	width: 90%;
+	margin: 20px auto;
+	padding: 20px 0 0;
+	clear: both;
+	@mixin atMediumMedium {
+		padding: 10px 0 20px;
+	}
+}
+
+/* End Social Media Icons Section Styling */
+
+/* Subscribe Container Section Styling */
+
+.drink-items .subscribe-container {
+	margin: 0 auto;
+	width: 90%;
+	padding: 20px 0;
+}
+
+/* Subscribe Container Section Styling */
 
 /* Drink Item Border Y to X Styling */
 
@@ -150,6 +162,8 @@ div.drinks-border-y-to-x .description:hover {
 }
 
 /* End Drink Item Border Y to X Styling */
+
+/* Miscellanrous Drinks Page Styling */
 
 #drinks .drink-items .drink-item .description {
 	color: $mainAzure4;

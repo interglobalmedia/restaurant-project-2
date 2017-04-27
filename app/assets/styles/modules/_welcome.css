@@ -1,10 +1,13 @@
 /* Welcome Page Styling */
-
+/* Syling Relating to Site Background Image */
 body.welcome {
 	overflow: hidden;
 	font-size: 18px;
 }
 
+/* End Syling Relating to Site Background */
+
+/* Welcome Page Wrapper */
 #welcome {
 	width: 100%;
 	margin: 0 auto;
@@ -15,10 +18,12 @@ body.welcome {
 	justify-content: start;
 }
 
+/* Hide so don't have two background images */
 #welcome img {
 	display: none;
 }
 
+/* Wrapper for welcome-item sections */
 .welcome-items {
 	padding: 40px 0 0;
 	max-width: 880px;
@@ -30,6 +35,7 @@ body.welcome {
 	}
 }
 
+/* General styling for welcome-item sections */
 .welcome-items .welcome-item:first-of-type {
 	width: 90%;
 	margin: 0 auto;
@@ -66,6 +72,10 @@ body.welcome {
 	font-weight: bold;
 }
 
+/* End general styling for welcome-item sections */
+
+/* Welcome Page social media icons section styling */
+
 .welcome-items .social-media-icons-container {
 	margin: 40px auto;
 	@mixin atMediumLarge {
@@ -75,12 +85,20 @@ body.welcome {
 	}
 }
 
+/* End Welcome Page social media icons section styling */
+
+/* Welcome Page Find A Table Container Styling */
+
 .welcome-items .find-a-table-container {
 	@mixin atMediumLarge {
 		margin: 0 auto;
 		width: 90%;
 	}
 }
+
+/* End Welcome Page Find A Table Container Styling */
+
+/* Welcome Page Instagram Section Styling */
 
 #welcome .welcome-items .instagram-container img {
 	display: block;
@@ -109,6 +127,10 @@ body.welcome {
 	}
 }
 
+/* Welcome Page Instagram Section Styling */
+
+/* Youtube Embedded Video Section Styling */
+
 .video-container {
 	position: relative;
 	padding-bottom: 56.25%;
@@ -132,11 +154,17 @@ body.welcome {
 	z-index: 1;
 }
 
+/* End Youtube Embedded Video Section Styling */
+
+/* Welcome Page Subscribe Container Section Styling */
+
 .welcome-items .subscribe-container {
 	margin: 0 auto;
 	padding: 20px 0;
 	width: 90%;
 }
+
+/* End Welcome Page Subscribe Container Section Styling */
 
 /* Common CSS Properties Stylings */
 

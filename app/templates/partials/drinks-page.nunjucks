@@ -60,7 +60,14 @@
 								<span class="description">Sign up with your email address to receive news and updates.</span>
 								<div id="subscribe" class="newsletter-form-field-wrapper form-item field email required">
 									<input class="newsletter-form-field-element field element" name="email" x-autocompletetype="email" type="text" spellcheck="false" placeholder="Email Address">
-									<button class="newsletter-form-button-icon">Sign Up</button>
+									<button class="newsletter-form-button-icon face-button">
+										<div class="face-primary">
+											Sign Up
+										</div>
+										<div class="face-secondary">
+											Thanks!
+										</div>
+									</button>
 								</div>
 								<span class="description">We respect your privacy.</span>
 							</div>

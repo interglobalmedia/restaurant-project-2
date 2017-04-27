@@ -4,6 +4,7 @@ body.buzz {
 	font-size: 18px;
 }
 
+/* Buzz Page Wrapper */
 #buzz {
 	width: 100%;
 	margin: 0 auto;
@@ -14,9 +15,12 @@ body.buzz {
 	justify-content: start;
 }
 
+/* Hide so don't have two background images */
 #buzz img {
 	display: none;
 }
+
+/* Wrapper for buzz-item sections */
 
 .buzz-items {
 	padding: 40px 0 0;
@@ -43,6 +47,8 @@ body.buzz {
 	color: $mainRed;
 }
 
+/* Buzz Page Instagram Section Styling */
+
 .buzz-items .buzz-item,
 .buzz-items .instagram-container {
 	width: 90%;
@@ -53,6 +59,11 @@ body.buzz {
 	@mixin atMediumLarge {
 		margin: 40px auto;
 	}
+}
+
+.instagram-container h2 {
+	width: 100%;
+	margin: 20px auto;
 }
 
 .buzz-items .instagram-container .instagram-column {
@@ -96,10 +107,9 @@ body.buzz {
 	}
 }
 
-.instagram-container h2 {
-	width: 100%;
-	margin: 20px auto;
-}
+/* End Buzz Page Instagram Section Styling */
+
+/* Buzz Page Social Media Icons Section Styling */
 
 .buzz-items .social-media-icons-container {
 	width: 90%;
@@ -112,11 +122,17 @@ body.buzz {
 	}
 }
 
+/* End Buzz Page Social Media Icons Section Styling */
+
+/* Buzz Page Subscribe Container Section Styling */
+
 .buzz-items .subscribe-container {
 	padding: 20px 0;
 	margin: 0 auto;
 	width: 90%;
 }
+
+/* End Buzz Page Subscribe Container Section Styling */
 
 /* Common CSS Properties Styling */
 .buzz-items {

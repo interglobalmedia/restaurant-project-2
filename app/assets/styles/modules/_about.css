@@ -3,6 +3,7 @@ body.about {
 	font-size: 18px;
 }
 
+/* About Page Wrapper */
 #about {
 	width: 100%;
 	margin: 0 auto;
@@ -13,10 +14,17 @@ body.about {
 	justify-content: start;
 }
 
+/* Hide so don't have two background images */
 #about img {
 	display: none;
 }
 
+#about .about-items img {
+	display: block;
+}
+
+/* About The Place Styling */
+/* Wrapper for about-item sections */
 .about-items {
 	padding: 40px 0 0;
 	max-width: 880px;
@@ -47,13 +55,14 @@ body.about {
 	line-height: 1.5;
 }
 
+/* End About The Place Styling */
+
+/* Style Adjustment Because of Slide Hover Images on Page */
 .slide-hover .about-description {
 	color: $mainBlack;
 }
 
-#about .about-items img {
-	display: block;
-}
+/* About People Section Styling */
 
 .about-people {
 	width: 95%;
@@ -72,6 +81,10 @@ body.about {
 .about-people p {
 	padding: 0 20px;
 }
+
+/* End About People Section Styling */
+
+/* About Foodand Drink Section Styling */
 
 .about-food-and-drink {
 	margin: 40px auto 0;
@@ -113,6 +126,8 @@ body.about {
 		margin-right: 10px;
 	}
 }
+
+/* End About Food and Drink Section Styling */
 
 .about-items .subscribe-container {
 	width: 90%;

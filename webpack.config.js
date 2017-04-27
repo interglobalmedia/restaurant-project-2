@@ -8,8 +8,7 @@ module.exports = {
 	},
 	output: {
 		path: path.resolve(__dirname, 'app/temp/scripts'),
-		filename: '[name].js',
-		sourceMapFileName: '[name].map'
+		filename: '[name].js'
 	},
 	module: {
 		rules: [

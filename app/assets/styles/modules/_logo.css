@@ -29,9 +29,7 @@ header {
 	letter-spacing: 0.1em;
 	font-weight: 700;
 	text-align: left;
-	//width: 100%;
 	@mixin atMediumLarge {
-		//width: 97%;
 		text-align: center;
 		height: 120px;
 		font-size: 48px;
@@ -40,6 +38,7 @@ header {
 	}
 }
 
+/* Logo Text Animation Styling */
 .logo:before {
 	content: attr(data-text);
 	position: absolute;

@@ -5,6 +5,7 @@ body.menu {
 	font-size: 18px;
 }
 
+/* Menu Page Wrapper */
 #menu {
 	width: 100%;
 	margin: 0 auto;
@@ -14,6 +15,7 @@ body.menu {
 	justify-content: start;
 }
 
+/* Hide so don't have two background images */
 #menu img {
 	display: none;
 }
@@ -37,18 +39,20 @@ body.menu {
 	padding: 60px 0 0;
 }
 
-.dinner-items {
-	@mixin atMediumLarge {
-		padding-bottom: 20px;
-	}
-}
-
 .brunch-items {
 padding: 40px 0 0;
 	@mixin atMediumLarge {
 		padding-top: 60px;
 	}
 }
+
+.dinner-items {
+	@mixin atMediumLarge {
+		padding-bottom: 20px;
+	}
+}
+
+/* Menu Page Images Styling */
 
 #menu .brunch-items .brunch-item img,
 #menu .lunch-items .lunch-item img,
@@ -70,11 +74,9 @@ padding: 40px 0 0;
 	margin: 0 auto 20px;
 }
 
-.dinner-items .subscribe-container {
-	margin: 0 auto;
-	width: 90%;
-	padding: 20px 0;
-}
+/* End Menu Page Images Styling */
+
+/* Individual Meal Section Stylings Independent of Parent */
 
 .brunch-item,
 .brunch-bev,
@@ -85,6 +87,10 @@ padding: 40px 0 0;
 		padding: 0 40px 20px;
 	}
 }
+
+/* End Individual Meal Section Stylings Independent of Parent */
+
+/* Heading Stylings For all Meals */
 
 .brunch-items h2, .brunch-items h4,
 .brunch-bevs h2,
@@ -109,6 +115,8 @@ padding: 40px 0 0;
 .dinner-items h4 {
 	font-family: 'Dosis', sans-serif;
 }
+
+/* End Heading Stylings For all Meals */
 
 /* Menu Item Border Y to X Styling */
 
@@ -236,6 +244,16 @@ div.circle-behind .price:hover:after {
 		transform: translateX(-50%) translateY(-50%) scale(1.3);
 	}
 }
+
+/* Menu Page Subscribe Container Styling */
+
+.dinner-items .subscribe-container {
+	margin: 0 auto;
+	width: 90%;
+	padding: 20px 0;
+}
+
+/* End Menu Page Subscribe Container Styling */
 
 /* Common Meals Styling */
 

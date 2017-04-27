@@ -9,7 +9,7 @@ svg:hover {
 }
 
 .twitter:hover {
-	fill: $mainRed;
+	fill: $mainBrightRed;
 	transform: rotateX(30deg) rotateY(25deg) scale(1.5);
 }
 
@@ -17,7 +17,7 @@ svg:hover {
 .facebook:hover,
 .instagram:hover {
 	background: $mainBlack;
-	fill: $mainRed;
+	fill: $mainBrightRed;
 	border-radius: 50%;
 	padding: 3px;
 }
