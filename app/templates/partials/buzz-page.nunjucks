@@ -2,7 +2,7 @@
 				<div id="buzz">
 					<img src="/assets/images/relax-701362_1920.jpg" alt="Interior of restaurant Julia.">
 					<div class="buzz-items">
-						<h1 class="buzz-title">Buzz</h1>
+						<h1 class="buzz-title"></h1>
 						<div class="buzz-item">
 							<script async src="//player-backend.cnevids.com/embedjs/51ffee3d4ffb601bd1000001/video/51f7fda9c2b4c0118c81d62e.js"></script>
 						</div>

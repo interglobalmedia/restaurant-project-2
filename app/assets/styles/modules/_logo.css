@@ -5,17 +5,20 @@ header {
 	width: 100%;
 	margin: 0 auto;
 	background: $mainWhite;
+	text-align: left;
 	@mixin atMediumLarge {
 		max-width: 880px;
 		width: 100%;
 		height: auto;
 		margin-top: 20px;
 		position: relative;
+		text-align: center;
 	}
 }
 
 .logo {
 	position: relative;
+	display: inline-block;
 	margin: 0 auto;
 	top: 22px;
 	top: 0;
@@ -26,13 +29,32 @@ header {
 	letter-spacing: 0.1em;
 	font-weight: 700;
 	text-align: left;
-	width: 100%;
+	//width: 100%;
 	@mixin atMediumLarge {
-		width: 97%;
+		//width: 97%;
 		text-align: center;
 		height: 120px;
 		font-size: 48px;
 		top: 25px;
 		left: 0;
+	}
+}
+
+.logo:before {
+	content: attr(data-text);
+	position: absolute;
+	overflow: hidden;
+	white-space: nowrap;
+	width: 0;
+	color: rgba(#ff0000, 0.9);
+	animation: fill-coral 2s infinite;
+}
+
+@keyframes fill-coral {
+	50% {
+		width: 100%;
+	}
+	100% {
+		width: 0;
 	}
 }

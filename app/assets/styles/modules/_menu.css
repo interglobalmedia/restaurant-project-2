@@ -50,19 +50,30 @@ padding: 40px 0 0;
 	}
 }
 
-#menu .brunch-items .brunch-item img {
+#menu .brunch-items .brunch-item img,
+#menu .lunch-items .lunch-item img,
+#menu .brunch-bevs .brunch-bev-item img,
+#menu .dinner-items .dinner-item img {
 	display: block;
+	border-radius: 50%;
+}
+
+#menu .brunch-items .brunch-item img,
+#menu .lunch-items .lunch-item img,
+#menu .dinner-items .dinner-item img {
 	width: 60%;
 	margin: 0 auto;
-	border-radius: 50%;
+}
+
+#menu .brunch-bevs .brunch-bev-item img {
+	width: 55%;
+	margin: 0 auto 20px;
 }
 
 .dinner-items .subscribe-container {
 	margin: 0 auto;
-	@mixin atMediumLarge {
-		width: 90%;
-		margin: 0 auto;
-	}
+	width: 90%;
+	padding: 20px 0;
 }
 
 .brunch-item,

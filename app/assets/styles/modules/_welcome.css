@@ -30,6 +30,11 @@ body.welcome {
 	}
 }
 
+.welcome-items .welcome-item:first-of-type {
+	width: 90%;
+	margin: 0 auto;
+}
+
 .welcome-items .welcome-title {
 	font-size: 30px;
 	@mixin atSmall {
@@ -46,90 +51,6 @@ body.welcome {
 .welcome-items p {
 	padding: 0 40px;
 }
-
-/* Animation for Welcome Page Text */
-/* Top and Bottom borders go out */
-
-div.slide-hover {
-	@mixin atMediumLarge {
-		text-align: center;
-		margin: 0 auto;
-		transition: ease-in-out 0.3s;
-	}
-}
-
-div.slide-hover .description {
-	@mixin atMediumLarge {
-		margin: 0;
-		padding: 10px 10px;
-		position: relative;
-		z-index: 0;
-		cursor: pointer;
-	}
-}
-
-div.welcome-top-bottom-borders-out .description:before,
-div.welcome-top-bottom-borders-out .description:after,
-div.welcome-top-bottom-borders-out .address:before,
-div.welcome-top-bottom-borders-out .address:after,
-div.welcome-top-bottom-borders-out .hours:before,
-div.welcome-top-bottom-borders-out .hours:after {
-	position: absolute;
-	left: 0;
-	width: 100%;
-	height: 2px;
-	background: $mainBrightRed;
-	content: "";
-	opacity: 0;
-	transition: all 0.5s;
-}
-
-div.welcome-top-bottom-borders-out .description:before,
-div.welcome-top-bottom-borders-out .address:before,
-div.welcome-top-bottom-borders-out .hours:before {
-	top: 0;
-	transform: translateY(10px);
-}
-
-div.welcome-top-bottom-borders-out .description:after,
-div.welcome-top-bottom-borders-out .address:after,
-div.welcome-top-bottom-borders-out .hours:after {
-	bottom: 0;
-	transform: translateY(-10px);
-}
-
-div.welcome-top-bottom-borders-out .description:hover:before,
-div.welcome-top-bottom-borders-out .description:hover:after,
-div.welcome-top-bottom-borders-out .address:hover:before,
-div.welcome-top-bottom-borders-out .address:hover:after,
-div.welcome-top-bottom-borders-out .hours:hover:before,
-div.welcome-top-bottom-borders-out .hours:hover:after {
-	opacity: 0.4;
-	transform: translateY(0px);
-}
-
-div.welcome-top-bottom-borders-out .description:hover,
-div.welcome-top-bottom-borders-out .address:hover,
-div.welcome-top-bottom-borders-out .hours:hover {
-	background: $mainAntiqueWhite;
-	cursor: pointer;
-}
-
-.title {
-	margin-bottom: 20px;
-}
-
-.title:hover {
-	cursor: pointer;
-}
-
-.welcome-item .address:hover,
-.welcome-item .hours:hover {
-	padding-top: 10px;
-	padding-bottom: 10px;
-}
-
-/* End Top and Bottom borders go out */
 
 .welcome-item img {
 	width: 90%;
@@ -213,9 +134,8 @@ div.welcome-top-bottom-borders-out .hours:hover {
 
 .welcome-items .subscribe-container {
 	margin: 0 auto;
-	@mixin atMediumLarge {
-		width: 90%;
-	}
+	padding: 20px 0;
+	width: 90%;
 }
 
 /* Common CSS Properties Stylings */

@@ -1,7 +1,7 @@
 <!-- nav-macro.nunjucks -->
 {% macro active(activePage='home') %}
 				<header>
-					<div class="logo">
+					<div data-text="Julia's" class="logo">
 						Julia's
 					</div>
 					<div class="mobile-nav">
@@ -24,7 +24,7 @@
 										<a href="menu.html" class="{%if activePage == 'menu' %} active {% endif %}">MENU</a>
 									</li>
 									<li>
-										<a href="photos.html" class="{%if activePage == 'photos' %} active {% endif %}">PHOTOS</a>
+										<a href="drinks.html" class="{%if activePage == 'drinks' %} active {% endif %}">DRINKS</a>
 									</li>
 									<li>
 										<a href="reserve.html" class="{%if activePage == 'reserve' %} active {% endif %}">RESERVE</a>
@@ -49,7 +49,7 @@
 								<a href="menu.html" class="{%if activePage == 'menu' %} active {% endif %}">MENU</a>
 							</li>
 							<li>
-								<a href="photos.html" class="{%if activePage == 'photos' %} active {% endif %}">PHOTOS</a>
+								<a href="drinks.html" class="{%if activePage == 'drinks' %} active {% endif %}">DRINKS</a>
 							</li>
 							<li>
 								<a href="reserve.html" class="{%if activePage == 'reserve' %} active {% endif %}">RESERVE</a>

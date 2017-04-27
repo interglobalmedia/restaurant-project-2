@@ -1,4 +1,4 @@
-<!-- photos.nunjucks -->
+<!-- drinks.nunjucks -->
 {% extends "layout.nunjucks" %}
 {% block content %}
 	<body class="drinks Site">
@@ -7,9 +7,9 @@
 				<!-- Adds the nav-macro navigation partial -->
 				{% import "macros/nav-macro.nunjucks" as nav %}
 				<!-- Creating the navigation with activePage = 'drinks' -->
-				{{nav.active('photos')}}
+				{{nav.active('drinks')}}
 				<!-- Adds the drinks-page partial -->
-				{% include "partials/photos-page.nunjucks" %}
+				{% include "partials/drinks-page.nunjucks" %}
 			</div>
 		</main>
 {% endblock %}

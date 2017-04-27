@@ -133,11 +133,7 @@ body.reserve {
 .reservations .subscribe-container {
 	margin: 0 auto;
 	width: 90%;
-	text-align: center;
-	@mixin atMediumLarge {
-		max-width: 880px;
-		width: 90%;
-	}
+	padding: 20px 0;
 }
 
 .subscribe-container h2 {
@@ -165,11 +161,6 @@ body.reserve {
 	height: 35px;
 	margin: 5px 5px 0;
 	font-size: 14px;
-}
-
-#reserve .footer p {
-	padding-top: 60px;
-	padding-bottom: 0;
 }
 
 /* Common CSS Properties Stylings */
