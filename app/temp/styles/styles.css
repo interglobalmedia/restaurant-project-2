@@ -439,7 +439,7 @@ body.welcome {
 }
 /* End Welcome Page Find A Table Container Styling */
 /* Welcome Page Instagram Section Styling */
-#welcome .welcome-items .instagram-container img {
+#welcome .welcome-items .instagram-container.instagram-column img {
 	display: block;
 	width: 100%;
 	border: 1px solid #ddd;
