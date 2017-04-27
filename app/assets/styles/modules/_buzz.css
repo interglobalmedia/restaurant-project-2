@@ -50,23 +50,23 @@ body.buzz {
 /* Buzz Page Instagram Section Styling */
 
 .buzz-items .buzz-item,
-.buzz-items .instagram-container {
+.buzz-items .social-embed-container {
 	width: 90%;
 	margin: 0 auto;
 }
 
-.buzz-items .instagram-container {
+.buzz-items .social-embed-container {
 	@mixin atMediumLarge {
 		margin: 40px auto;
 	}
 }
 
-.instagram-container h2 {
+.social-embed-container h2 {
 	width: 100%;
 	margin: 20px auto;
 }
 
-.buzz-items .instagram-container .instagram-column {
+.buzz-items .social-embed-container .instagrm-column {
 	width: 100%;
 	margin: 1.25% auto 0;
 	@mixin atMediumMedium {
@@ -75,8 +75,8 @@ body.buzz {
 	}
 }
 
-.buzz-items .instagram-container .instagram-column:nth-of-type(1),
-.buzz-items .instagram-container .instagram-column:nth-of-type(3) {
+.buzz-items .social-embed-container .instagrm-column:nth-of-type(1),
+.buzz-items .isocial-embed-container .instagrm-column:nth-of-type(3) {
 	width: 100%;
 	margin: 1.25% auto 0;
 	@mixin atMediumMedium {
@@ -85,8 +85,8 @@ body.buzz {
 	}
 }
 
-.buzz-items .instagram-container .instagram-column:nth-of-type(2),
-.buzz-items .instagram-container .instagram-column:nth-of-type(4) {
+.buzz-items .social-embed-container .instagrm-column:nth-of-type(2),
+.buzz-items .social-embed-container .instagrm-column:nth-of-type(4) {
 	width: 100%;
 	margin: 1.25% auto 0;
 	@mixin atMediumMedium {
@@ -95,13 +95,13 @@ body.buzz {
 	}
 }
 
-.buzz-items .instagram-container .instagram-column:nth-of-type(2) {
+.buzz-items .social-embed-container .instagrm-column:nth-of-type(2) {
 	@mixin atMediumMedium {
 		margin: 1.25% 0 0 1.25%;
 	}
 }
 
-.buzz-items .instagram-container .instagram-column:nth-of-type(3) {
+.buzz-items .social-embed-container .instagrm-column:nth-of-type(3) {
 	@mixin atMediumMedium {
 		margin-top: -3.75%;
 	}
@@ -140,7 +140,7 @@ body.buzz {
 }
 
 .buzz-items h1,
-.instagram-container h2 {
+.social-embed-container h2 {
 	font-family: 'Dosis', sans-serif;
 	text-align: center;
 	font-weight: 100;
