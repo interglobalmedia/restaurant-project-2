@@ -174,13 +174,18 @@ div.menu-border-y-to-x .description:hover:after {
 }
 
 div.menu-border-y-to-x .description {
-	padding: 5px 0;
-	line-height: 1.3;
+	@mixin atMediumLarge {
+		padding: 5px 0;
+		line-height: 1.3;
+	}
 }
 
 div.menu-border-y-to-x .description:hover {
-	background: $mainAntiqueWhite;
-	color: $mainBlack;
+	@mixin atMediumLarge {
+		background: $mainAntiqueWhite;
+		color: $mainBlack;
+	}
+
 }
 
 /* End Menu Item Border Y to X Styling */
