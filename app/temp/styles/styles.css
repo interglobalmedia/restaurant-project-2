@@ -885,13 +885,17 @@ div.menu-border-y-to-x .description:hover:after {
 		width: 100%;
 	}
 }
-div.menu-border-y-to-x .description {
-	padding: 5px 0;
-	line-height: 1.3;
+@media (min-width: 897px) {
+	div.menu-border-y-to-x .description {
+		padding: 5px 0;
+		line-height: 1.3;
+	}
 }
-div.menu-border-y-to-x .description:hover {
-	background: antiquewhite;
-	color: black;
+@media (min-width: 897px) {
+	div.menu-border-y-to-x .description:hover {
+		background: antiquewhite;
+		color: black;
+	}
 }
 /* End Menu Item Border Y to X Styling */
 /* Circle Behind Styling For Price */
@@ -1118,13 +1122,17 @@ div.drinks-border-y-to-x .description:hover:after {
 		width: 100%;
 	}
 }
-div.drinks-border-y-to-x .description {
-	padding: 5px 0;
-	line-height: 1.3;
+@media (min-width: 897px) {
+	div.drinks-border-y-to-x .description {
+		padding: 5px 0;
+		line-height: 1.3;
+	}
 }
-div.drinks-border-y-to-x .description:hover {
-	background: antiquewhite;
-	color: black;
+@media (min-width: 897px) {
+	div.drinks-border-y-to-x .description:hover {
+		background: antiquewhite;
+		color: black;
+	}
 }
 /* End Drink Item Border Y to X Styling */
 /* Miscellanrous Drinks Page Styling */
