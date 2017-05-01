@@ -1261,7 +1261,7 @@ body.reserve {
 }
 /* End Subscribe Container Button and Form Field Styling */
 /* Subscribe Button Change Face Button Effect */
-#subscribe .face-button {
+.face-button {
 	height: 60px;
 	display: inline-block;
 	text-align: center;
@@ -1272,21 +1272,21 @@ body.reserve {
 	margin: 20px auto 0;
 	box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5), 1px 1px 2px rgba(0, 0, 0, 0.5), 1px 1px 2px rgba(0, 0, 0, 0.5), 1px 1px 2px rgba(0, 0, 0, 0.5) inset;
 }
-#subscribe .face-button, .face-primary,
-#subscribe .face-button .face-secondary {
+.face-button, .face-primary,
+.face-button .face-secondary {
 	display: block;
 	line-height: 64px;
 	transition: margin .4s;
 	cursor: pointer;
 }
-#subscribe .face-button .face-primary {
+.face-button .face-primary {
 	background: firebrick;
 	color: black;
 }
-#subscribe .face-button .face-secondary {
+.face-button .face-secondary {
 	color: firebrick;
 }
-.newsletter-form-button-icon .face-button:hover .face-primary {
+.face-button:hover .face-primary {
 	margin-top: -64px;
 	cursor: pointer;
 	color: black;
