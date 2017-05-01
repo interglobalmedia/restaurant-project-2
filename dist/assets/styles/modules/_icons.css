@@ -3,20 +3,20 @@ svg {
 	transition: all 0.5s;
 }
 
-svg:hover, svg:active {
+svg:active {
 	transform: scale(1.25);
 	transition: all 0.5s;
 	cursor: pointer;
 }
 
-.twitter-svg:hover, .twitter-svg:active {
+.twitter-svg:active {
 	fill: $mainBrightRed;
 	transform: rotateX(30deg) rotateY(25deg) scale(1.5);
 }
 
-.pinterest-svg:hover, .pinterest-svg:active,
-.facebook-svg:hover, .facebook-svg:active,
-.instagrm-svg:hover, .instagrm-svg:active {
+.pinterest-svg:active,
+.facebook-svg:active,
+.instagrm-svg:active {
 	background: $mainBlack;
 	fill: $mainBrightRed;
 	border-radius: 50%;
