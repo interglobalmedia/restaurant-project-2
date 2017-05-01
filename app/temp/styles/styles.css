@@ -134,19 +134,19 @@ div.logo {
 svg {
 	transition: all 0.5s;
 }
-svg:hover {
+svg:active {
 	-webkit-transform: scale(1.25);
 	        transform: scale(1.25);
 	transition: all 0.5s;
 }
-.twitter:hover {
+.twitter:active {
 	fill: #ff0000;
 	-webkit-transform: rotateX(30deg) rotateY(25deg) scale(1.5);
 	        transform: rotateX(30deg) rotateY(25deg) scale(1.5);
 }
-.pinterest:hover,
-.facebook:hover,
-.instagram:hover {
+.pinterest:active,
+.facebook:active,
+.instagram:active {
 	background: black;
 	fill: #ff0000;
 	border-radius: 50%;
@@ -1261,7 +1261,7 @@ body.reserve {
 }
 /* End Subscribe Container Button and Form Field Styling */
 /* Subscribe Button Change Face Button Effect */
-.face-button {
+#subscribe .face-button {
 	height: 60px;
 	display: inline-block;
 	text-align: center;
@@ -1272,21 +1272,21 @@ body.reserve {
 	margin: 20px auto 0;
 	box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5), 1px 1px 2px rgba(0, 0, 0, 0.5), 1px 1px 2px rgba(0, 0, 0, 0.5), 1px 1px 2px rgba(0, 0, 0, 0.5) inset;
 }
-.face-button, .face-primary,
-.face-button .face-secondary {
+#subscribe .face-button, .face-primary,
+#subscribe .face-button .face-secondary {
 	display: block;
 	line-height: 64px;
 	transition: margin .4s;
 	cursor: pointer;
 }
-.face-button .face-primary {
+#subscribe .face-button .face-primary {
 	background: firebrick;
 	color: black;
 }
-.face-button .face-secondary {
+#subscribe .face-button .face-secondary {
 	color: firebrick;
 }
-.face-button:hover .face-primary {
+#subscribe .face-button:active .face-primary {
 	margin-top: -64px;
 	cursor: pointer;
 	color: black;
