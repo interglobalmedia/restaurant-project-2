@@ -277,7 +277,7 @@ window.addEventListener('scroll', (0, _zoomin.debounce)(_zoomin.checkSlide));
 /* Typing Text Effect Welcome Page */
 
 document.addEventListener('DOMContentLoaded', function (event) {
-	var dataText = ["Welcome", "to Julia's", "Restaurant", "Come Visit", "and Enjoy", "the Experience", "... Today!"];
+	var dataText = ["Welcome", "to Julia's", "Restaurant", "Come Visit", "and Enjoy", "the", "Experience", "... Today!"];
 	/* type one text string. keeps calling itself until all text strings completed */
 	function typeWriter(text, i, callback) {
 		// check if text is finished typing
