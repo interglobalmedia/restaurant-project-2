@@ -1,45 +1,47 @@
 /* Header/Logo Styling */
 
+.mobile-nav {
+	text-align: center;
+	@mixin atMediumLarge {
+		margin-top: 10px;
+	}
+}
+
 header {
 	z-index: 2;
 	width: 100%;
-	margin: 0 auto;
+	margin: 40px auto 0;
 	background: $mainWhite;
-	text-align: left;
+	text-align: center;
 	@mixin atMediumLarge {
 		max-width: 880px;
 		width: 100%;
 		height: auto;
-		margin-top: 20px;
+		margin: -1px auto 0;
 		position: relative;
 		text-align: center;
+		position: relative;
 	}
 }
 
-.logo {
+/* Responsive Logo Styling */
+
+.responsive-logo {
 	position: relative;
 	display: inline-block;
-	margin: 0 auto;
-	top: 22px;
-	top: 0;
-	left: 10px;
-	font-size: 32px;
+	margin: 20px auto 20px;
 	text-transform: uppercase;
 	font-family: 'Joti One', cursive;
 	letter-spacing: 0.1em;
 	font-weight: 700;
-	text-align: left;
+	font-size: 48px;
+	text-align: center;
 	@mixin atMediumLarge {
-		text-align: center;
-		height: 120px;
-		font-size: 48px;
-		top: 25px;
-		left: 0;
+		display: none;
 	}
 }
 
-/* Logo Text Animation Styling */
-.logo:before {
+.responsive-logo:before {
 	content: attr(data-text);
 	position: absolute;
 	overflow: hidden;
@@ -47,6 +49,40 @@ header {
 	width: 0;
 	color: rgba(#ff0000, 0.9);
 	animation: fill-coral 2s infinite;
+	@mixin atMediumLarge {
+		display: none;
+	}
+}
+
+/* Logo Styling atMediumLarge Screens */
+
+div.logo {
+	display: none;
+	@mixin atMediumLarge {
+		position: relative;
+		display: inline-block;
+		margin: 20px auto;
+		top: 0;
+		left: 10px;
+		text-transform: uppercase;
+		font-family: 'Joti One', cursive;
+		letter-spacing: 0.1em;
+		font-weight: 700;
+		font-size: 48px;
+	}
+}
+
+/* Logo Text Animation Styling */
+.logo:before {
+	@mixin atMediumLarge {
+		content: attr(data-text);
+		position: absolute;
+		overflow: hidden;
+		white-space: nowrap;
+		width: 0;
+		color: rgba(#ff0000, 0.9);
+		animation: fill-coral 2s infinite;
+	}
 }
 
 @keyframes fill-coral {

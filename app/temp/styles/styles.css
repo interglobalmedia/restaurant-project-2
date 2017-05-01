@@ -84,13 +84,6 @@ header {
 	}
 }
 /* Logo Styling atMediumLarge Screens */
-@media (min-width: 897px) {
-	.logo-wrapper {
-		margin: 0 auto;
-		text-align: center;
-		background: white;
-	}
-}
 div.logo {
 	display: none;
 }
@@ -1451,11 +1444,6 @@ body.buzz {
 		margin: 1.25% 0 0 1.25%;
 	}
 }
-/*.buzz-items .social-embed-container .instagrm-column:nth-of-type(2) {
-	@mixin atMediumMedium {
-		margin: 1.25% 0 0 1.25%;
-	}
-}*/
 /* End Buzz Page Instagram Section Styling */
 /* Buzz Page Social Media Icons Section Styling */
 .buzz-items .social-media-icons-container {

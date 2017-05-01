@@ -7,9 +7,9 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<title>Restaurant Template 2</title>
 		<link href="https://fonts.googleapis.com/css?family=Cutive+Mono|Dosis|Joti+One" rel="stylesheet">
-		<link rel="stylesheet" href="assets/styles/styles-04b86bd20f.css"/>
+		<link rel="stylesheet" href="assets/styles/styles-965344db1b.css"/>
 
-		<script src="assets/scripts/vendor-d98ce44ac8.js"></script>
+		<script src="assets/scripts/vendor-175acd9887.js"></script>
 	</head>
 		<!-- You write code for this content black in another file -->
 		
@@ -20,19 +20,19 @@
 				
 				<!-- Creating the navigation with activePage = 'menu' -->
 				
-				<header>
-					<div data-text="Julia's" class="logo">
-						Julia's
-					</div>
-					<div class="mobile-nav">
-						<nav class="hamburger">
-							<div class="line"></div>
-							<div class="line"></div>
-							<div class="line"><div>
-						</nav>
-						<!-- Macro stuff here -->
-						<nav class="responsive-menu">
-							<div class="expand">
+				<div class="mobile-nav">
+					<nav class="hamburger">
+						<div class="line"></div>
+						<div class="line"></div>
+						<div class="line"><div>
+					</nav>
+					<!-- Macro stuff here -->
+					<header>
+						<div data-text="Julia's" class="logo">
+							Julia's
+						</div>
+						<nav class="top responsive-menu">
+							<div class="container pull-right-left">
 								<ul>
 									<li>
 										<a href="index.html" class="">WELCOME</a>
@@ -55,31 +55,12 @@
 								</ul>
 							</div>
 						</nav>
-					</div>
-					<!-- Macro stuff here -->
-					<nav class="top">
-						<div class="container pull-right-left">
-							<li>
-								<a href="index.html" class="">WELCOME</a>
-							</li>
-							<li>
-								<a href="about.html" class="">ABOUT</a>
-							</li>
-							<li>
-								<a href="menu.html" class=" active ">MENU</a>
-							</li>
-							<li>
-								<a href="drinks.html" class="">DRINKS</a>
-							</li>
-							<li>
-								<a href="reserve.html" class="">RESERVE</a>
-							</li>
-							<li>
-								<a href="buzz.html" class="">BUZZ</a>
-							</li>
+					</header>
+					<div data-text="Julia's" class="responsive-logo">
+						Julia's
 						</div>
-					</nav>
-				</header>
+					<div class="nav-divider"></div>
+				</div>
 
 				<!-- Adds the menu-page partial -->
 				<!-- menu-page.nunjucks -->
@@ -91,113 +72,65 @@
 							</div>
 							<h2>Brunch</h2>
 							<div class="brunch-item">
-								<div class="menu-container-y-to-x menu-border-y-to-x">
-									<h4>The Sierra</h4>
-									<p class="description">Warm brussel sprouts, Caesar salad, poached egg</p>
-								</div>
-								<div class="menu-price-double-circle circle-behind">
-									<span class="price">13</span>
-								</div>
+								<h4>The Sierra</h4>
+								<p class="description">Warm brussel sprouts, Caesar salad, poached egg</p>
+								<span class="price">13</span>
 							</div>
 							<div class="brunch-item">
-								<div class="menu-container-y-to-x menu-border-y-to-x">
-									<h4>Brunch Salad</h4>
-									<p class="description">Mixed Lettuce, grilled orange, roasted fennel, cotija cheese, caramelized pepitas, cumin dressing</p>
-								</div>
-								<div class="menu-price-double-circle circle-behind">
-									<span class="price">13</span>
-								</div>
+								<h4>Brunch Salad</h4>
+								<p class="description">Mixed Lettuce, grilled orange, roasted fennel, cotija cheese, caramelized pepitas, cumin dressing</p>
+								<span class="price">13</span>
 							</div>
 							<div class="brunch-item">
-								<div class="menu-container-y-to-x menu-border-y-to-x">
-									<h4>Cv Esquite Salad</h4>
-									<p class="description">Grilled sweet corn, caramelized pepitas, mint, cotija cheese, cumin dressing</p>
-								</div>
-								<div class="menu-price-double-circle circle-behind">
-									<span class="price">14</span>
-								</div>
+								<h4>Cv Esquite Salad</h4>
+								<p class="description">Grilled sweet corn, caramelized pepitas, mint, cotija cheese, cumin dressing</p>
+								<span class="price">14</span>
 							</div>
 							<div class="brunch-item">
-								<div class="menu-container-y-to-x menu-border-y-to-x">
-									<h4>Shrimp Tacos</h4>
-									<p class="description">Sauteed shrimp, refried beans, chipotle sauce</p>
-								</div>
-								<div class="menu-price-double-circle circle-behind">
-									<span class="price">16</span>
-								</div>
+								<h4>Shrimp Tacos</h4>
+								<p class="description">Sauteed shrimp, refried beans, chipotle sauce</p>
+								<span class="price">16</span>
 							</div>
 							<div class="brunch-item">
-								<div class="menu-container-y-to-x menu-border-y-to-x">
-									<h4>Duck Confit Chilaquiles</h4>
-									<p class="description">Tortilla chips topped with slow-cooked duck, tomatillo salsa, cotija cheese</p>
-								</div>
-								<div class="menu-price-double-circle circle-behind">
-									<span class="price">20</span>
-								</div>
+								<h4>Duck Confit Chilaquiles</h4>
+								<p class="description">Tortilla chips topped with slow-cooked duck, tomatillo salsa, cotija cheese</p>
+								<span class="price">20</span>
 								<p class="add">(add fried egg $2)</p>
 							</div>
 							<div class="brunch-item">
-								<div class="menu-container-y-to-x menu-border-y-to-x">
-									<h4>Quesadillas De Rajas</h4>
-									<p class="description">Roasted poblano peppers, caramelized onions, Chihuahua cheese in flour tortillas</p>
-								</div>
-								<div class="menu-price-double-circle circle-behind">
-									<span class="price">11</span>
-								</div>
+								<h4>Quesadillas De Rajas</h4>
+								<p class="description">Roasted poblano peppers, caramelized onions, Chihuahua cheese in flour tortillas</p>
+								<span class="price">11</span>
 							</div>
 							<div class="brunch-item">
-								<div class="menu-container-y-to-x menu-border-y-to-x">
-									<h4>The Wyzra</h4>
-									<p class="description">Two fried eggs, sauteed Brussel sprouts, chorizo, orange zest</p>
-								</div>
-								<div class="menu-price-double-circle circle-behind">
-									<span class="price">16</span>
-								</div>
+								<h4>The Wyzra</h4>
+								<p class="description">Two fried eggs, sauteed Brussel sprouts, chorizo, orange zest</p>
+								<span class="price">16</span>
 							</div>
 							<div class="brunch-item">
-								<div class="menu-container-y-to-x menu-border-y-to-x">
-									<h4>Duck Calentado</h4>
-									<p class="description">Duck fired rice, scrambled eggs, mixed veggies</p>
-								</div>
-								<div class="menu-price-double-circle circle-behind">
-									<span class="price">18</span>
-								</div>
+								<h4>Duck Calentado</h4>
+								<p class="description">Duck fired rice, scrambled eggs, mixed veggies</p>
+								<span class="price">18</span>
 							</div>
 							<div class="brunch-item">
-								<div class="menu-container-y-to-x menu-border-y-to-x">
-									<h4>Parrillada</h4>
-									<p class="description">House selection of sausages, grilled veggies, mini arepas, queso fundido</p>
-								</div>
-								<div class="menu-price-double-circle circle-behind">
-									<span class="price">20</span>
-								</div>
+								<h4>Parrillada</h4>
+								<p class="description">House selection of sausages, grilled veggies, mini arepas, queso fundido</p>
+								<span class="price">20</span>
 							</div>
 							<div class="brunch-item">
-								<div class="menu-container-y-to-x menu-border-y-to-x">
-									<h4>Cv Burger</h4>
-									<p class="description">Fleischer's grass-fed beef, mixed with sauteed onions, house-made Brazilian cheese-bread bun, cilantro pesto, sweet potato fries</p>
-								</div>
-								<div class="menu-price-double-circle circle-behind">
-									<span class="price">18</span>
-								</div>
+								<h4>Cv Burger</h4>
+								<p class="description">Fleischer's grass-fed beef, mixed with sauteed onions, house-made Brazilian cheese-bread bun, cilantro pesto, sweet potato fries</p>
+								<span class="price">18</span>
 							</div>
 							<div class="brunch-item">
-								<div class="menu-container-y-to-x menu-border-y-to-x">
-									<h4>Steak And Huevos Divorciados</h4>
-									<p class="description">Grilled hanger steak, tomatillo and roasted tomato salsa, two fried eggs</p>
-								</div>
-								<div class="menu-price-double-circle circle-behind">
-									<span class="price">21</span>
-								</div>
+								<h4>Steak And Huevos Divorciados</h4>
+								<p class="description">Grilled hanger steak, tomatillo and roasted tomato salsa, two fried eggs</p>
+								<span class="price">21</span>
 							</div>
 							<div class="brunch-item">
-								<div class="menu-container-y-to-x menu-border-y-to-x">
-									<h4>Gringo Churros</h4>
-									<p class="description">Two cinnamon sugar donuts, hot chocolate for dipping</p>
-								</div>
-								<div class="menu-price-double-circle circle-behind">
-									<span class="price">11</span>
-								</div>
+								<h4>Gringo Churros</h4>
+								<p class="description">Two cinnamon sugar donuts, hot chocolate for dipping</p>
+								<span class="price">11</span>
 								<p class="add">A la mode 16</p>
 							</div>
 						<div class="brunch-bevs">
@@ -206,117 +139,61 @@
 							</div>
 							<h2>Drinks</h2>
 							<div class="brunch-bev">
-								<div class="menu-container-y-to-x menu-border-y-to-x">
-									<h4>Bloody Mary</h4>
-									<p class="description">A classic</p>
-								</div>
-								<div class="menu-price-double-circle circle-behind">
-									<span class="price">11</span>
-								</div>
+								<h4>Bloody Mary</h4>
+								<p class="description">A classic</p>
+								<span class="price">11</span>
 							</div>
 							<div class="brunch-bev">
-								<div class="menu-container-y-to-x menu-border-y-to-x">
-									<h4>Chili Willi</h4>
-									<p class="description">Mezcal, Aperol, vermouth, grapefruit, lime, chipotle Tobasco</p>
-								</div>
-								<div class="menu-price-double-circle circle-behind">
-									<span class="price">12</span>
-								</div>
+								<h4>Chili Willi</h4>
+								<p class="description">Mezcal, Aperol, vermouth, grapefruit, lime, chipotle Tobasco</p>
+								<span class="price">12</span>
 							</div>
 							<div class="brunch-bev">
-								<div class="menu-container-y-to-x menu-border-y-to-x">
-									<h4>La Picosa</h4>
-									<p class="description">Tequila, mezcal, serrano, cucumber syrup, lime juice</p>
+								<h4>La Picosa</h4>
+								<p class="description">Tequila, mezcal, serrano, cucumber syrup, lime juice</p>
 								</div>
-								<div class="menu-price-double-circle circle-behind">
-									<span class="price">12</span>
-								</div>
+								<span class="price">12</span>
 							</div>
 							<div class="brunch-bev">
-								<div class="menu-container-y-to-x menu-border-y-to-x">
-									<h4>Michelada</h4>
-									<p class="description">Beer, Worcestershire, lime juice, hot sauce</p>
-								</div>
-								<div class="menu-price-double-circle circle-behind">
-									<span class="price">7</span>
-								</div>
+								<h4>Michelada</h4>
+								<p class="description">Beer, Worcestershire, lime juice, hot sauce</p>
+								<span class="price">7</span>
 							</div>
 							<div class="brunch-bev">
-								<div class="menu-container-y-to-x menu-border-y-to-x">
-									<h4>Mimosa</h4>
-									<p class="description">Bubbles with fresh-squeezed orange juice</p>
-								</div>
-								<div class="menu-price-double-circle circle-behind">
-									<span class="price">11</span>
-								</div>
+								<h4>Mimosa</h4>
+								<p class="description">Bubbles with fresh-squeezed orange juice</p>
+								<span class="price">11</span>
 							</div>
 							<div class="brunch-bev">
-								<div class="menu-container-y-to-x menu-border-y-to-x">
-									<h4>Bottomless Coffee</h4>
-									<p class="description">Regular</p>
-								</div>
-								<div class="menu-price-double-circle circle-behind">
-									<span class="price">5</span>
-								</div>
+								<h4>Bottomless Coffee</h4>
+								<p class="description">Regular</p>
+								<span class="price">5</span>
 							</div>
 							<div class="brunch-bev">
-								<div class="menu-container-y-to-x menu-border-y-to-x">
-									<h4>Mint Limeade</h4>
-									<p class="description"></p>
-								</div>
-								<div class="menu-price-double-circle circle-behind">
-									<span class="price">4</span>
-								</div>
+								<h4>Mint Limeade</h4>
+								<p class="description"></p>
+								<span class="price">4</span>
 							</div>
 							<div class="brunch-bev">
-								<div class="menu-container-y-to-x menu-border-y-to-x">
-									<h4>Juices</h4>
-									<p class="description">Orange Or Grapefruit</p>
-								</div>
-								<div class="menu-price-double-circle circle-behind">
-									<span class="price">5</span>
-								</div>
+								<h4>Juices</h4>
+								<p class="description">Orange Or Grapefruit</p>
+								<span class="price">5</span>
 							</div>
 							<div class="brunch-bev">
-								<div class="menu-container-y-to-x menu-border-y-to-x">
-									<h4>Beer</h4>
-									<p class="description">Negra Modello</p>
-								</div>
-								<div class="menu-price-double-circle circle-behind">
-									<span class="price">6</span>
-								</div>
-								<div class="menu-container-y-to-x menu-border-y-to-x">
-									<p class="description">Victoria</p>
-								</div>
-								<div class="menu-price-double-circle circle-behind">
-									<span class="price">6</span>
-								</div>
-								<div class="menu-container-y-to-x menu-border-y-to-x">
-									<p class="description">Grey Lady</p>
-								</div>
-								<div class="menu-price-double-circle circle-behind">
-									<span class="price">6</span>
-								</div>
-								<div class="menu-container-y-to-x menu-border-y-to-x">
-									<p class="description">Six Point Sweet Action</p>
-								</div>
-								<div class="menu-price-double-circle circle-behind">
-									<span class="price">7</span>
-								</div>
-								<div class="menu-container-y-to-x menu-border-y-to-x">
-									<p class="description">Lagunitas IPA</p>
-								</div>
-								<div class="menu-price-double-circle circle-behind">
-									<span class="price">6</span>
-								</div>
-								<div class="menu-container-y-to-x menu-border-y-to-x">
-									<p class="description">La Choufe</p>
-								</div>
-								<div class="menu-price-double-circle circle-behind">
-									<span class="price">10</span>
-								</div>
+								<h4>Beer</h4>
+								<p class="description">Negra Modello</p>
+								<span class="price">6</span>
+								<p class="description">Victoria</p>
+								<span class="price">6</span>
+								<p class="description">Grey Lady</p>
+								<span class="price">6</span>
+								<p class="description">Six Point Sweet Action</p>
+								<span class="price">7</span>
+								<p class="description">Lagunitas IPA</p>
+								<span class="price">6</span>
+								<p class="description">La Choufe</p>
+								<span class="price">10</span>
 							</div>
-						</div>
 						</div>
 						<div class="lunch-items">
 							<div class="lunch-item">
@@ -324,96 +201,56 @@
 							</div>
 							<h2>Lunch</h2>
 							<div class="lunch-item">
-								<div class="menu-container-y-to-x menu-border-y-to-x">
-									<h4>Cv Lunch Salad</h4>
-									<p class="description">Mixed greens, caramelized pepitas, roasted fennel, grilled oranges, cotija cheese, vinaigrette</p>
-								</div>
-								<div class="menu-price-double-circle circle-behind">
-									<span class="price">13</span>
-								</div>
+								<h4>Cv Lunch Salad</h4>
+								<p class="description">Mixed greens, caramelized pepitas, roasted fennel, grilled oranges, cotija cheese, vinaigrette</p>
+								<span class="price">13</span>
 							</div>
 							<div class="lunch-item">
-								<div class="menu-container-y-to-x menu-border-y-to-x">
-									<h4>Steak Salad</h4>
-									<p class="description">Mixed greens, sliced tomatoes, onions, balsamic dressing, 8 ounce hanger steak</p>
-								</div>
-								<div class="menu-price-double-circle circle-behind">
-									<span class="price">18</span>
-								</div>
+								<h4>Steak Salad</h4>
+								<p class="description">Mixed greens, sliced tomatoes, onions, balsamic dressing, 8 ounce hanger steak</p>
+								<span class="price">18</span>
 							</div>
 							<div class="lunch-item">
-								<div class="menu-container-y-to-x menu-border-y-to-x">
-									<h4>Quesadillas De Rajas</h4>
-									<p class="description">Roasted poblano peppers, caramelized onions, Chihuahua cheese in flour tortillas</p>
-								</div>
-								<div class="menu-price-double-circle circle-behind">
-									<span class="price">11</span>
-								</div>
+								<h4>Quesadillas De Rajas</h4>
+								<p class="description">Roasted poblano peppers, caramelized onions, Chihuahua cheese in flour tortillas</p>
+								<span class="price">11</span>
 							</div>
 							<div class="lunch-item">
-								<div class="menu-container-y-to-x menu-border-y-to-x">
-									<h4>Duck Confit Chilaquiles</h4>
-									<p class="description">Tortilla chips topped with slow-cooked duck, tomatillo salsa, cotija cheese</p>
-								</div>
-								<div class="menu-price-double-circle circle-behind">
-									<span class="price">20</span>
-								</div>
+								<h4>Duck Confit Chilaquiles</h4>
+								<p class="description">Tortilla chips topped with slow-cooked duck, tomatillo salsa, cotija cheese</p>
+								<span class="price">20</span>
 								<p class="add">(add a fried egg $2)</p>
 							</div>
 							<div class="lunch-item">
-								<div class="menu-container-y-to-x menu-border-y-to-x">
-									<h4>Poblano Pepper Pasta</h4>
-									<p class="description">Fresh pasta, Bolognese sauce, sauteed poblano peppers</p>
-								</div>
-								<div class="menu-price-double-circle circle-behind">
-									<span class="price">20</span>
-								</div>
-								</div>
-							<div class="lunch-item">
-								<div class="menu-container-y-to-x menu-border-y-to-x">
-									<h4>Milanesa</h4>
-									<p class="description">Flattened top round steak smothered
-									in fresh tomato sauce and cheese. Served with French fries or salad</p>
-								</div>
-								<div class="menu-price-double-circle circle-behind">
-									<span class="price">24</span>
-								</div>
+								<h4>Poblano Pepper Pasta</h4>
+								<p class="description">Fresh pasta, Bolognese sauce, sauteed poblano peppers</p>
+								<span class="price">20</span>
 							</div>
 							<div class="lunch-item">
-								<div class="menu-container-y-to-x menu-border-y-to-x">
-									<h4>Cv Burger</h4>
-									<p class="description">Grass-fed beef mixed with sauteed onions served on house-made Brazilian cheese bread with a seasonal pesto. Served with French fries or salad</p>
-								</div>
-								<div class="menu-price-double-circle circle-behind">
-									<span class="price">18</span>
-								</div>
+								<h4>Milanesa</h4>
+								<p class="description">Flattened top round steak smothered
+								in fresh tomato sauce and cheese. Served with French fries or salad</p>
+								<span class="price">24</span>
 							</div>
 							<div class="lunch-item">
-								<div class="menu-container-y-to-x menu-border-y-to-x">
-									<h4>Lamb Sandwich</h4>
-									<p class="description">24 hr lamb, roasted and sliced, with mint, aji amarillo, and labne spread. Served with French fries or salad</p>
-								</div>
-								<div class="menu-price-double-circle circle-behind">
-									<span class="price">14</span>
-								</div>
+								<h4>Cv Burger</h4>
+								<p class="description">Grass-fed beef mixed with sauteed onions served on house-made Brazilian cheese bread with a seasonal pesto. Served with French fries or salad</p>
+								<span class="price">18</span>
 							</div>
 							<div class="lunch-item">
-								<div class="menu-container-y-to-x menu-border-y-to-x">
-									<h4>Grilled Veggie Sandwich</h4>
-									<p class="description">Grilled veggies with melted mozzarella and a smokey paprika and jerez dressing. Served with French fries or salad</p>
-								</div>
-								<div class="menu-price-double-circle circle-behind">
-									<span class="price">14</span>
-								</div>
+								<h4>Lamb Sandwich</h4>
+								<p class="description">24 hr lamb, roasted and sliced, with mint, aji amarillo, and labne spread. Served with French fries or salad</p>
+								<span class="price">14</span>
 							</div>
 							<div class="lunch-item">
-								<div class="menu-container-y-to-x menu-border-y-to-x">
-									<h4>Family Meal</h4>
-									<p class="description">Daily special of our homey platter</p>
-								</div>
-								<div class="menu-price-double-circle circle-behind">
-									<span class="price">28</span>
-								</div>
+								<h4>Grilled Veggie Sandwich</h4>
+								<p class="description">Grilled veggies with melted mozzarella and a smokey paprika and jerez dressing. Served with French fries or salad</p>
+								<span class="price">14</span>
+							</div>
+							<div class="lunch-item">
+								<h4>Family Meal</h4>
+								<p class="description">Daily special of our homey platter</p>
+								<span class="price">28</span>
 							</div>
 						</div>
 						<div class="dinner-items">
@@ -422,199 +259,119 @@
 							</div>
 							<h2>Dinner</h2>
 							<div class="dinner-item">
-								<div class="menu-container-y-to-x menu-border-y-to-x">
-									<h4>Sausage and Veggie Parrillada</h4>
-									<p class="description">House selection of sausages and veggies, mini arepas, queso fundido</p>
-								</div>
-								<div class="menu-price-double-circle circle-behind">
-									<span class="price">23</span>
-								</div>
+								<h4>Sausage and Veggie Parrillada</h4>
+								<p class="description">House selection of sausages and veggies, mini arepas, queso fundido</p>
+								<span class="price">23</span>
 							</div>
 							<div class="dinner-item">
-								<div class="menu-container-y-to-x menu-border-y-to-x">
-									<h4>Pulpo Al Pastor</h4>
-									<p class="description">Grilled octopus, pineapple, charred onions, cilantro coulis</p>
-								</div>
-								<div class="menu-price-double-circle circle-behind">
-									<span class="price">16</span>
-								</div>
+								<h4>Pulpo Al Pastor</h4>
+								<p class="description">Grilled octopus, pineapple, charred onions, cilantro coulis</p>
+								<span class="price">16</span>
 							</div>
 							<div class="dinner-item">
-								<div class="menu-container-y-to-x menu-border-y-to-x">
-									<h4>Baked Eggplant Mole</h4>
-									<p class="description">Butternut squash puree, caramelized onions, sweet corn, manchego, spicy pasilla and peach mole</p>
-								</div>
-								<div class="menu-price-double-circle circle-behind">
-									<span class="price">16</span>
-								</div>
+								<h4>Baked Eggplant Mole</h4>
+								<p class="description">Butternut squash puree, caramelized onions, sweet corn, manchego, spicy pasilla and peach mole</p>
+								<span class="price">16</span>
 							</div>
 							<div class="dinner-item">
-								<div class="menu-container-y-to-x menu-border-y-to-x">
-									<h4>Pork Belly Arepa</h4>
-									<p class="description">Bean puree, maple syrup, fresh herbs, cotija cheese</p>
-								</div>
-								<div class="menu-price-double-circle circle-behind">
-									<span class="price">14</span>
-								</div>
+								<h4>Pork Belly Arepa</h4>
+								<p class="description">Bean puree, maple syrup, fresh herbs, cotija cheese</p>
+								<span class="price">14</span>
 							</div>
 							<div class="dinner-item">
-								<div class="menu-container-y-to-x menu-border-y-to-x">
-									<h4>Watercress and Radicchio Salad</h4>
-									<p class="description">Watercress, radicchio, pomegranate, grilled red onions, sage, garlic chips, molasses Dijon dressing</p>
-								</div>
-								<div class="menu-price-double-circle circle-behind">
-									<span class="price">23</span>
-								</div>
+								<h4>Watercress and Radicchio Salad</h4>
+								<p class="description">Watercress, radicchio, pomegranate, grilled red onions, sage, garlic chips, molasses Dijon dressing</p>
+								<span class="price">23</span>
 							</div>
 							<div class="dinner-item">
-								<div class="menu-container-y-to-x menu-border-y-to-x">
-									<h4>Cv Esquite Salad</h4>
-									<p class="description">Grilled sweet corn, caramelized pepitas, mint, cotija, cumin dressing</p>
-								</div>
-								<div class="menu-price-double-circle circle-behind">
-									<span class="price">14</span>
-								</div>
+								<h4>Cv Esquite Salad</h4>
+								<p class="description">Grilled sweet corn, caramelized pepitas, mint, cotija, cumin dressing</p>
+								<span class="price">14</span>
 							</div>
 							<div class="dinner-item">
-								<div class="menu-container-y-to-x menu-border-y-to-x">
-									<h4>Quinoa And Cabbage Salad</h4>
-									<p class="description">Angel hair cabbage, quinoa in coconut milk, feta cheese, chile de arbol pickled radish, scallions, parsley, olive oil and rice vinegar</p>
-								</div>
-								<div class="menu-price-double-circle circle-behind">
-									<span class="price">14</span>
-								</div>
+								<h4>Quinoa And Cabbage Salad</h4>
+								<p class="description">Angel hair cabbage, quinoa in coconut milk, feta cheese, chile de arbol pickled radish, scallions, parsley, olive oil and rice vinegar</p>
+								<span class="price">14</span>
 							</div>
 							<div class="dinner-item">
-								<div class="menu-container-y-to-x menu-border-y-to-x">
-									<h4>Chef's Steak</h4>
-									<p class="description">30 to 45 oz bone -in rib eye served with house made salsas</p>
-								</div>
-								<div class="menu-price-double-circle circle-behind">
-									<span class="price">2.75/oz</span>
-								</div>
+								<h4>Chef's Steak</h4>
+								<p class="description">30 to 45 oz bone -in rib eye served with house made salsas</p>
+								<span class="price">2.75/oz</span>
 							</div>
 							<div class="dinner-item">
-								<div class="menu-container-y-to-x menu-border-y-to-x">
-									<h4>Picanha</h4>
-									<p class="description">10 oz steak served with farofa and house made salsas</p>
-								</div>
-								<div class="menu-price-double-circle circle-behind">
-									<span class="price">33</span>
-								</div>
+								<h4>Picanha</h4>
+								<p class="description">10 oz steak served with farofa and house made salsas</p>
+								<span class="price">33</span>
 							</div>
 							<div class="dinner-item">
-								<div class="menu-container-y-to-x menu-border-y-to-x">
-									<h4>Sirloin</h4>
-									<p class="description">10 oz Fleischer's grass-fed steak with house made salsa</p>
-								</div>
-								<div class="menu-price-double-circle circle-behind">
-									<span class="price">32</span>
-								</div>
+								<h4>Sirloin</h4>
+								<p class="description">10 oz Fleischer's grass-fed steak with house made salsa</p>
+								<span class="price">32</span>
 							</div>
 							<div class="dinner-item">
-								<div class="menu-container-y-to-x menu-border-y-to-x">
-									<h4>Skirt Steak</h4>
-									<p class="description">8 oz steak with house made salsas</p>
-								</div>
-								<div class="menu-price-double-circle circle-behind">
-									<span class="price">24</span>
-								</div>
+								<h4>Skirt Steak</h4>
+								<p class="description">8 oz steak with house made salsas</p>
+								<span class="price">24</span>
 							</div>
 							<div class="dinner-item">
-								<div class="menu-container-y-to-x menu-border-y-to-x">
-									<h4>Hanger Steak</h4>
-									<p class="description">8 oz steak with house made salsas</p>
-								</div>
-								<div class="menu-price-double-circle circle-behind">
-									<span class="price">18</span>
-								</div>
+								<h4>Hanger Steak</h4>
+								<p class="description">8 oz steak with house made salsas</p>
+								<span class="price">18</span>
 							</div>
 							<div class="dinner-item">
-								<div class="menu-container-y-to-x menu-border-y-to-x">
-									<h4>Pao De Queijo Burger</h4>
-									<p class="description">8 oz Fleischer's grass-fed burger mixed with caramelized onions topped with cilantro pesto</p>
-								</div>
-								<div class="menu-price-double-circle circle-behind">
-									<span class="price">18</span>
-								</div>
+								<h4>Pao De Queijo Burger</h4>
+								<p class="description">8 oz Fleischer's grass-fed burger mixed with caramelized onions topped with cilantro pesto</p>
+								<span class="price">18</span>
 							</div>
 							<div class="dinner-item">
-								<div class="menu-container-y-to-x menu-border-y-to-x">
-									<h4>Whole Brook Trout</h4>
-									<p class="description">Sunchoke puree, roasted asparagus, sweet red onions over an aji amarillo sauce</p>
-								</div>
-								<div class="menu-price-double-circle circle-behind">
-									<span class="price">18</span>
-								</div>
+								<h4>Whole Brook Trout</h4>
+								<p class="description">Sunchoke puree, roasted asparagus, sweet red onions over an aji amarillo sauce</p>
+								<span class="price">18</span>
 							</div>
 							<div class="dinner-item">
-								<div class="menu-container-y-to-x menu-border-y-to-x">
-									<h4>Achiote Roasted Chicken</h4>
-									<p class="description">Calasparra rice, cilantro, shallots</p>
-								</div>
-								<div class="menu-price-double-circle circle-behind">
-									<span class="price">25</span>
-								</div>
+								<h4>Achiote Roasted Chicken</h4>
+								<p class="description">Calasparra rice, cilantro, shallots</p>
+								<span class="price">25</span>
 							</div>
 							<div class="dinner-item">
-								<div class="menu-container-y-to-x menu-border-y-to-x">
-									<h4>Grilled Baby Eggplant &amp; Farofa</h4>
-									<p class="description">Red rice, lentil, dates, roasted cauliflower and smoky pecans</p>
-								</div>
-								<div class="menu-price-double-circle circle-behind">
-									<span class="price">22</span>
-								</div>
+								<h4>Grilled Baby Eggplant &amp; Farofa</h4>
+								<p class="description">Red rice, lentil, dates, roasted cauliflower and smoky pecans</p>
+								<span class="price">22</span>
 							</div>
 							<div class="dinner-item">
-								<div class="menu-container-y-to-x menu-border-y-to-x">
-									<h4>Poblano Pepper Pasta</h4>
-									<p class="description">Fresh fettuccine Bolognese and sauteed poblano peppers</p>
-								</div>
-								<div class="menu-price-double-circle circle-behind">
-									<span class="price">21</span>
-								</div>
+								<h4>Poblano Pepper Pasta</h4>
+								<p class="description">Fresh fettuccine Bolognese and sauteed poblano peppers</p>
+								<span class="price">21</span>
 							</div>
 							<div class="dinner-item">
 								<h4>Shoestring Sweet Potato Fries</h4>
 								<p class="description"></p>
-								<div class="menu-price-double-circle circle-behind">
-									<span class="price">7</span>
-								</div>
+								<span class="price">7</span>
 							</div>
 							<div class="dinner-item">
 								<h4>Green Beans With roasted Almonds</h4>
 								<p class="description"></p>
-								<div class="menu-price-double-circle circle-behind">
-									<span class="price">8</span>
-								</div>
+								<span class="price">8</span>
 							</div>
 							<div class="dinner-item">
 								<h4>Guajillo And Aji Amarillo Three Cheese Mac &amp; Cheese</h4>
 								<p class="description"></p>
-								<div class="menu-price-double-circle circle-behind">
-									<span class="price">8</span>
-								</div>
+								<span class="price">8</span>
 							</div>
 							<div class="dinner-item">
 								<h4>Slow Cooked Crimini Mushrooms</h4>
 								<p class="description"></p>
-								<div class="menu-price-double-circle circle-behind">
-									<span class="price">8</span>
-								</div>
+								<span class="price">8</span>
 							</div>
 							<div class="dinner-item">
 								<h4>Brussel Sprouts With Chorizo, Orange Zest</h4>
 								<p class="description"></p>
-								<div class="menu-price-double-circle circle-behind">
-									<span class="price">8</span>
-								</div>
+								<span class="price">8</span>
 							</div>
 							<div class="dinner-item">
 								<h4>Salted Peewee Potatoes</h4>
 								<p class="description"></p>
-								<div class="menu-price-double-circle circle-behind">
-									<span class="price">8</span>
-								</div>
+								<span class="price">8</span>
 							</div>
 							<div class="social-media-icons-container">
 								<svg class="instagram" width="40" height="40" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg" fill-rule="evenodd" clip-rule="evenodd" stroke-linejoin="round" stroke-miterlimit="1.414"><path d="M8 0C5.827 0 5.555.01 4.702.048 3.85.088 3.27.222 2.76.42c-.526.204-.973.478-1.417.923-.445.444-.72.89-.923 1.417-.198.51-.333 1.09-.372 1.942C.008 5.555 0 5.827 0 8s.01 2.445.048 3.298c.04.852.174 1.433.372 1.942.204.526.478.973.923 1.417.444.445.89.72 1.417.923.51.198 1.09.333 1.942.372.853.04 1.125.048 3.298.048s2.445-.01 3.298-.048c.852-.04 1.433-.174 1.942-.372.526-.204.973-.478 1.417-.923.445-.444.72-.89.923-1.417.198-.51.333-1.09.372-1.942.04-.853.048-1.125.048-3.298s-.01-2.445-.048-3.298c-.04-.852-.174-1.433-.372-1.942-.204-.526-.478-.973-.923-1.417-.444-.445-.89-.72-1.417-.923-.51-.198-1.09-.333-1.942-.372C10.445.008 10.173 0 8 0zm0 1.44c2.136 0 2.39.01 3.233.048.78.036 1.203.166 1.485.276.374.145.64.318.92.598.28.28.453.546.598.92.11.282.24.705.276 1.485.038.844.047 1.097.047 3.233s-.01 2.39-.05 3.233c-.04.78-.17 1.203-.28 1.485-.15.374-.32.64-.6.92-.28.28-.55.453-.92.598-.28.11-.71.24-1.49.276-.85.038-1.1.047-3.24.047s-2.39-.01-3.24-.05c-.78-.04-1.21-.17-1.49-.28-.38-.15-.64-.32-.92-.6-.28-.28-.46-.55-.6-.92-.11-.28-.24-.71-.28-1.49-.03-.84-.04-1.1-.04-3.23s.01-2.39.04-3.24c.04-.78.17-1.21.28-1.49.14-.38.32-.64.6-.92.28-.28.54-.46.92-.6.28-.11.7-.24 1.48-.28.85-.03 1.1-.04 3.24-.04zm0 2.452c-2.27 0-4.108 1.84-4.108 4.108 0 2.27 1.84 4.108 4.108 4.108 2.27 0 4.108-1.84 4.108-4.108 0-2.27-1.84-4.108-4.108-4.108zm0 6.775c-1.473 0-2.667-1.194-2.667-2.667 0-1.473 1.194-2.667 2.667-2.667 1.473 0 2.667 1.194 2.667 2.667 0 1.473-1.194 2.667-2.667 2.667zm5.23-6.937c0 .53-.43.96-.96.96s-.96-.43-.96-.96.43-.96.96-.96.96.43.96.96z"/></svg>
@@ -649,6 +406,6 @@
 			</div>
 		</main>
 
-		<script src="assets/scripts/app-194998769f.js"></script>
+		<script src="assets/scripts/app-bd94dcdea7.js"></script>
 	</body>
 </html>
