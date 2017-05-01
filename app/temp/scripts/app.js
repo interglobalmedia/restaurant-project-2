@@ -138,25 +138,29 @@ exports.clickFacebookSvg = clickFacebookSvg;
 exports.clickTwitterSvg = clickTwitterSvg;
 exports.clickPinterestSvg = clickPinterestSvg;
 /* JS For SVG Icon Animations */
-var instagramSvg = document.querySelector('.instagrm-svg');
+var instagramSvg = document.querySelector('svg .instagrm-svg');
 var facebookSvg = document.querySelector('.facebook-svg');
 var twitterSvg = document.querySelector('.twitter-svg');
 var pinterestSvg = document.querySelector('.pinterest-svg');
 
-function clickInstagramSvg() {
-	instagramSvg.setAttribute('style', 'transform: scale(1.25); transition: all 0.5s; fill: red; background: black; border-radius: 50%; padding: 3px; cursor: pointer; margin-right: 20px;');
+function clickInstagramSvg(e) {
+	var socialInstSvg = e.target;
+	socialInstSvg.setAttribute('style', 'transform: scale(1.25); transition: all 0.5s; fill: red; border-radius: 50%; padding: 3px; cursor: pointer; margin-right: 20px;');
 }
 
-function clickFacebookSvg() {
-	facebookSvg.setAttribute('style', 'transform: scale(1.25); transition: all 0.5s; background: black; fill: red; border-radius: 50%; padding: 3px; cursor: pointer; margin-right: 20px;');
+function clickFacebookSvg(e) {
+	var socialFbSvg = e.target;
+	socialFbSvg.setAttribute('style', 'transform: scale(1.25); transition: all 0.5s; background: black; fill: red; border-radius: 50%; padding: 3px; cursor: pointer; margin-right: 20px;');
 }
 
-function clickTwitterSvg() {
-	twitterSvg.setAttribute('style', 'transition: all 0.5s; fill: red; transform: rotateX(30deg) rotateY(25deg) scale(1.5); cursor: pointer; margin-right: 20px;');
+function clickTwitterSvg(e) {
+	var socialTwitterSvg = e.target;
+	socialTwitterSvg.setAttribute('style', 'transition: all 0.5s; fill: red; transform: rotateX(30deg) rotateY(25deg) scale(1.5); cursor: pointer; margin-right: 20px;');
 }
 
-function clickPinterestSvg() {
-	pinterestSvg.setAttribute('style', 'transition: all 0.5s; transform: scale(1.25); background: black; fill: red; border-radius: 50%; padding: 3px; cursor: pointer;');
+function clickPinterestSvg(e) {
+	var socialPintSvg = e.target;
+	socialPintSvg.setAttribute('style', 'transition: all 0.5s; transform: scale(1.25); background: black; fill: red; border-radius: 50%; padding: 3px; cursor: pointer;');
 }
 
 instagramSvg.addEventListener('click', clickInstagramSvg);
@@ -289,10 +293,10 @@ contactButton.addEventListener('click', _buttonAnimation.clickContactButton);
 
 /* JS For SVG Icon Animations */
 
-var instagramSvg = document.querySelector('.instagrm-svg');
-var facebookSvg = document.querySelector('.facebook-svg');
-var twitterSvg = document.querySelector('.twitter-svg');
-var pinterestSvg = document.querySelector('.pinterest-svg');
+var instagramSvg = document.querySelector('svg .instagrm-svg');
+var facebookSvg = document.querySelector('svg .facebook-svg');
+var twitterSvg = document.querySelector('svg .twitter-svg');
+var pinterestSvg = document.querySelector('svg .pinterest-svg');
 
 instagramSvg.addEventListener('click', _iconAnimation.clickInstagramSvg);
 facebookSvg.addEventListener('click', _iconAnimation.clickFacebookSvg);

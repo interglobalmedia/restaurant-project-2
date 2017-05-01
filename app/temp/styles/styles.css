@@ -134,20 +134,20 @@ div.logo {
 svg {
 	transition: all 0.5s;
 }
-svg:hover, svg:active {
+svg:active {
 	-webkit-transform: scale(1.25);
 	        transform: scale(1.25);
 	transition: all 0.5s;
 	cursor: pointer;
 }
-.twitter-svg:hover, .twitter-svg:active {
+.twitter-svg:active {
 	fill: #ff0000;
 	-webkit-transform: rotateX(30deg) rotateY(25deg) scale(1.5);
 	        transform: rotateX(30deg) rotateY(25deg) scale(1.5);
 }
-.pinterest-svg:hover, .pinterest-svg:active,
-.facebook-svg:hover, .facebook-svg:active,
-.instagrm-svg:hover, .instagrm-svg:active {
+.pinterest-svg:active,
+.facebook-svg:active,
+.instagrm-svg:active {
 	background: black;
 	fill: #ff0000;
 	border-radius: 50%;
@@ -1447,16 +1447,6 @@ body.buzz {
 .social-embed-container h2 {
 	width: 100%;
 	margin: 20px auto;
-}
-.buzz-items .social-embed-container .instagrm-column {
-	width: 100%;
-	margin: 1.25% auto 0;
-}
-@media (min-width: 800px) {
-	.buzz-items .social-embed-container .instagrm-column {
-		width: 48.75%;
-		float: left;
-	}
 }
 .buzz-items .social-embed-container .instagrm-column:nth-of-type(1),
 .buzz-items .social-embed-container .instagrm-column:nth-of-type(3) {

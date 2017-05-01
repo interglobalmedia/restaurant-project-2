@@ -31,10 +31,10 @@ contactButton.addEventListener('click', clickContactButton);
 
 import { clickInstagramSvg, clickFacebookSvg, clickTwitterSvg, clickPinterestSvg } from './modules/iconAnimation';
 
-const instagramSvg = document.querySelector('.instagrm-svg');
-const facebookSvg = document.querySelector('.facebook-svg');
-const twitterSvg = document.querySelector('.twitter-svg');
-const pinterestSvg = document.querySelector('.pinterest-svg');
+const instagramSvg = document.querySelector('svg .instagrm-svg');
+const facebookSvg = document.querySelector('svg .facebook-svg');
+const twitterSvg = document.querySelector('svg .twitter-svg');
+const pinterestSvg = document.querySelector('svg .pinterest-svg');
 
 instagramSvg.addEventListener('click', clickInstagramSvg);
 facebookSvg.addEventListener('click', clickFacebookSvg);
