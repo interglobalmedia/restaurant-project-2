@@ -132,22 +132,21 @@ div.logo {
 }
 /* Styling Social Media Icons */
 svg {
-	transition: all 0.5s ease;
+	transition: all 0.5s;
 }
-svg:hover, svg:active {
+svg:active {
 	-webkit-transform: scale(1.25);
 	        transform: scale(1.25);
 	transition: all 0.5s;
-	cursor: pointer;
 }
-.twitter-svg:hover, .twitter-svg:active {
+.twitter:active {
 	fill: #ff0000;
 	-webkit-transform: rotateX(30deg) rotateY(25deg) scale(1.5);
 	        transform: rotateX(30deg) rotateY(25deg) scale(1.5);
 }
-.pinterest-svg:hover, .pinterest-svg:active,
-.facebook-svg:hover, .facebook-svg:active,
-.instagrm-svg:hover, .instagrm-svg:active {
+.pinterest:active,
+.facebook:active,
+.instagram:active {
 	background: black;
 	fill: #ff0000;
 	border-radius: 50%;
@@ -1147,7 +1146,7 @@ body.reserve {
 	height: 64px;
 	width: 198px;
 }
-.find-a-table:hover a, .find-a-table:active a {
+.find-a-table:hover a {
 	cursor: pointer;
 }
 .find-a-table p {
@@ -1255,7 +1254,7 @@ body.reserve {
 	transition: transform 0.3 ease-in-out;
 	transition: transform 0.3 ease-in-out, -webkit-transform 0.3 ease-in-out;
 }
-.newsletter-form-field-element:hover, .newsletter-form-field-element:active, .newsletter-form-field-element:focus {
+.newsletter-form-field-element:hover, .newsletter-form-field-element:focus {
 	-webkit-transform: scale(1.1);
 	        transform: scale(1.1);
 	transition: color 0.5s ease-in-out;
