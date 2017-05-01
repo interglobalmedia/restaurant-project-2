@@ -179,12 +179,12 @@ document.addEventListener('DOMContentLoaded', function(event) {
 });
 
 /* JS For Button Animations */
-import { clickContactButton, clickEmailUsButton, clickFaceButton, clickSubscribeButton } from './modules/buttonAnimation';
+import { clickEmailUsButton, clickContactButton, clickFaceButton, clickSubscribeButton } from './modules/buttonAnimation';
 
-const subscribeButton = document.querySelector('.newsletter-form-field-wrapper .face-button .face-primary');
-const faceButton = document.querySelector('.find-a-table .face-button .face-primary');
 const getInTouchButton = document.querySelector('.reserve-email-link a');
-const contactButton = document.querySelector('.reserve-description a');
+const contactButton = document.querySelector('.contact-us a');
+const faceButton = document.querySelector('.find-a-table .face-button .face-primary');
+const subscribeButton = document.querySelector('.newsletter-form-field-wrapper .face-button .face-primary');
 
 subscribeButton.addEventListener('click', clickSubscribeButton);
 faceButton.addEventListener('click', clickFaceButton);

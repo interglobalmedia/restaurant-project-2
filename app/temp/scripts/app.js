@@ -76,26 +76,26 @@
 Object.defineProperty(exports, "__esModule", {
 	value: true
 });
-exports.clickContactButton = clickContactButton;
 exports.clickEmailUsButton = clickEmailUsButton;
+exports.clickContactButton = clickContactButton;
 exports.clickFaceButton = clickFaceButton;
 exports.clickSubscribeButton = clickSubscribeButton;
 /* JS For Button Animations */
 var getInTouchButton = document.querySelector('.reserve-email-link a');
-var contactButton = document.querySelector('.reserve-description a');
+var contactButton = document.querySelector('.contact-us a');
 var faceButton = document.querySelector('.find-a-table .face-button .face-primary');
 var subscribeButton = document.querySelector('.newsletter-form-field-wrapper .face-button .face-primary');
-
-function clickContactButton() {
-	contactButton.style.transition = 'all 0.3s ease';
-	contactButton.textContent = 'CONTACT US!';
-	contactButton.style.cssText = "color: firebrick; background: antiquewhite; border: 3px dotted black; padding: 10px; text-decoration: none; box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5), 1px 1px 2px rgba(0, 0, 0, 0.5), 1px 1px 2px rgba(0, 0, 0, 0.5), 1px 1px 2px rgba(0, 0, 0, 0.5) inset;";
-}
 
 function clickEmailUsButton() {
 	getInTouchButton.style.transition = 'all 0.3s ease';
 	getInTouchButton.textContent = 'EMAIL US!';
 	getInTouchButton.style.cssText = "color: firebrick; background: antiquewhite; border: 3px dotted black; padding: 10px; text-decoration: none; box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5), 1px 1px 2px rgba(0, 0, 0, 0.5), 1px 1px 2px rgba(0, 0, 0, 0.5), 1px 1px 2px rgba(0, 0, 0, 0.5) inset;";
+}
+
+function clickContactButton() {
+	contactButton.style.transition = 'all 0.3s ease';
+	contactButton.textContent = 'CONTACT US!';
+	contactButton.style.cssText = "color: firebrick; background: antiquewhite; border: 3px dotted black; padding: 10px; text-decoration: none; box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5), 1px 1px 2px rgba(0, 0, 0, 0.5), 1px 1px 2px rgba(0, 0, 0, 0.5), 1px 1px 2px rgba(0, 0, 0, 0.5) inset;";
 }
 
 function clickFaceButton() {
@@ -398,10 +398,10 @@ document.addEventListener('DOMContentLoaded', function (event) {
 /* JS For Button Animations */
 
 
-var subscribeButton = document.querySelector('.newsletter-form-field-wrapper .face-button .face-primary');
-var faceButton = document.querySelector('.find-a-table .face-button .face-primary');
 var getInTouchButton = document.querySelector('.reserve-email-link a');
-var contactButton = document.querySelector('.reserve-description a');
+var contactButton = document.querySelector('.contact-us a');
+var faceButton = document.querySelector('.find-a-table .face-button .face-primary');
+var subscribeButton = document.querySelector('.newsletter-form-field-wrapper .face-button .face-primary');
 
 subscribeButton.addEventListener('click', _buttonAnimation.clickSubscribeButton);
 faceButton.addEventListener('click', _buttonAnimation.clickFaceButton);
