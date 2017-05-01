@@ -1,19 +1,12 @@
 /* Responsive Navigation Styling */
 
-/* Hide Regular Navigation Below @mixin atMediumLarge Width */
-
-.top {
-	@mixin atResponsive {
-		display: none;
-	}
-}
-
 /* Mobile Hamburger Styling */
+
 nav.hamburger {
 	display: block;
 	width: 42px;
 	height: 36px;
-	margin: -25px 10px 15px 30px;
+	margin: 8px 15px 15px 30px;
 	position: sticky;
 	left: 100vw;
 	cursor: pointer;
@@ -34,7 +27,7 @@ nav.hamburger div.line {
 
 .hide {
 	opacity: 0;
-	transform: translateX(-42px);
+	transform: translateX(42px);
 }
 
 .animate0 {
@@ -49,54 +42,66 @@ nav.hamburger div.line {
 
 /* Responsive Menu Styling */
 
-nav.responsive-menu {
-	background: rgba(52, 152, 219, 0);
+nav.top {
 	top: 0;
 	left: 0;
-	width: 100%;
+	width: 90%;
 	height: 0;
 	transition: height 0.5s;
 	overflow-y: visible;
 	position: sticky;
 	opacity: 0;
 	z-index: 1;
-	-webkit-transition: background 0.5s ease-in-out, opacity 0.5s;
-	-moz-transition: background 0.5s ease-in-out, opacity 0.5s;
-	-ms-transition: background 0.5s ease-in-out, opacity 0.5s;
-	-o-transition: background 0.5s ease-in-out, opacity 0.5s;
 	transition: background 0.5s ease-in-out, opacity 0.5s;
+	border-bottom: 1px solid $mainBlack;
+	font-family: 'Dosis', sans-serif;
+	@mixin atMediumLarge {
+		z-index: 4;
+		margin: 0 auto;
+		text-align: center;
+		opacity: 1;
+		width: 100%;
+		height: 60px;
+	}
 }
 
 /* .show class styles the responsive menu when opened by clicking Hamburger */
-nav.responsive-menu.show {
+nav.top.show {
 	opacity: 1;
-	-webkit-transition: background 0.5s ease-in-out, visibility 0.5s;
-	-moz-transition: background 0.5s ease-in-out, visibility 0.5s;
-	-ms-transition: background 0.5s ease-in-out, visibility 0.5s;
-	-o-transition: background 0.5s ease-in-out, visibility 0.5s;
 	transition: background 0.5s ease-in-out, visibility 0.5s;
 	display: block !important;
-	width: 100%;
 	height: auto;
-	margin-left: 0;
+	margin:0 auto;
 	@mixin atMediumLarge {
 		display: none;
 	}
 }
 
 /* Responsive Menu Links Styling */
-nav.responsive-menu ul {
-	padding: 20px 0 0 0;
+nav.top ul {
+	padding: 0 0 0 0;
 }
 
-nav.responsive-menu li {
+nav.top li {
 	list-style: none;
 	text-align: center;
 	width: 100%;
 	padding-left: 0;
+	padding-top: 10px;
 }
 
-nav.responsive-menu li a {
+nav.top li:first-child {
+	padding-top: 0;
+	@mixin atMediumLarge {
+		padding: 1rem 0.5rem;
+	}
+}
+
+nav.top li:last-child {
+	padding-bottom: 20px;
+}
+
+nav.top li a {
 	color: $mainBlack;
 	font-size: 28px;
 	text-decoration: none;
@@ -104,147 +109,162 @@ nav.responsive-menu li a {
 	line-height: 1.5;
 }
 
-nav.responsive-menu li:first-child a {
+nav.top li:first-child a {
 	background: transparent;
 	border: none;
 	color: $mainBlack;
 }
 
-nav.responsive-menu li:first-child a:hover {
+nav.top li:first-child a:hover {
 	color: $mainRed;
 }
 
-nav.responsive-menu li:first-child a.active {
+nav.top li:first-child a.active {
 	color: $mainAzure4;
+	@mixin atMediumLarge {
+		color: $mainRed;
+	}
 }
 
-nav.responsive-menu a.active, nav.responsive-menu a:hover {
+nav.top a.active, nav.responsive-menu a:hover {
 	text-decoration: underline;
 	border: none;
 }
 
-nav.responsive-menu a.active {
+nav.top a.active {
 	color: $mainAzure4;
 }
 
-nav.responsive-menu a:hover {
+nav.top a:hover {
 	color: $mainRed;
 }
 
 /* End Responsive Menu Links Styling */
 
 /* Navigation Styling */
-.top {
-	text-align: center;
-	width: 100%;
-	max-width: 880px;
-}
+/*nav.top {
+	@mixin atMediumLarge {
+		z-index: 4;
+		margin: 0 auto;
+		text-align: center;
+		opacity: 1;
+		width: 100%;
+		height: 60px;
+	}
+}*/
 
 /* Hide responsive menu and hamburger @mixin atMediumLarge and wider */
-nav.responsive-menu, nav.hamburger,
-nav.responsive-menu a.active, nav.responsive-menu a:hover {
+nav.hamburger {
 	@mixin atMediumLarge {
 		display: none;
 	}
 }
 
-/* Navigation Styling */
-nav {
-	z-index: 4;
-	margin: 0 auto;
+nav.top ul {
 	@mixin atMediumLarge {
-		max-width: 880px;
-		width: 100%;
-		height: 60px;
+		padding: 0;
+		list-style: none;
+		//max-width: 880px;
+		//width: 100%;
+		//overflow: auto;
+		//margin: 0 auto;
 	}
 }
 
-nav ul {
-	padding: 0;
-	list-style: none;
-}
-
-nav a {
-	text-decoration: none;
-	display: block;
-}
-
-nav li:last-child {
-	margin-right: 20px;
-	padding-bottom: 1.75rem;
-}
-
-nav a.active, nav a:hover {
-	color: $mainRed;
-}
-
-nav li {
-	display: inline-block;
-	text-align: center;
-	letter-spacing: 0.1em;
-	font-family: 'Dosis',sans-serif;
-	font-size: 18px;
-	font-weight: bold;
-	padding: 0.5rem;
+nav.top a {
 	@mixin atMediumLarge {
-		padding: 1rem 1.5rem 1.75rem;
+		text-decoration: none;
+		display: block;
 	}
 }
 
-nav li a {
-	color: $mainBlack;
+nav.top a.active, nav.top a:hover {
+	@mixin atMediumLarge {
+		color: $mainRed;
+	}
 }
 
-nav li a:hover {
-	color: $mainAzure4;
-	cursor: pointer;
+nav.top li {
+	@mixin atMediumLarge {
+		display: inline-block;
+		text-align: center;
+		letter-spacing: 0.1em;
+		font-family: 'Dosis',sans-serif;
+		font-weight: bold;
+		width: 120px;
+		//padding: 0.5rem;
+		padding: 1rem 0.5rem;
+	}
+}
+
+nav.top li a {
+	@mixin atMediumLarge {
+		color: $mainBlack;
+		font-size: 18px;
+	}
+}
+
+nav.top li a:hover {
+	@mixin atMediumLarge {
+		color: $mainAzure4;
+		cursor: pointer;
+	}
 }
 
 /* End Navigation Styling */
 
 /* Navigation Animation Styling .top nav */
+
 /* Pull right and left  */
 
 div.container {
-	text-align: center;
-	margin: 0 auto;
-	//padding: 10em 3em;
-	background: $mainAntiqueWhite;
+	@mixin atMediumLarge {
+		text-align: center;
+		margin: 0 auto;
+		//padding: 10em 3em;
+		background: $mainAntiqueWhite;
+	}
 }
 
 div.container a {
-	//margin: 0px 10px;
-	padding: 10px 10px;
-	position: relative;
-	z-index: 2;
-	cursor: pointer;
+	@mixin atMediumLarge {
+		margin: 0px 10px;
+		padding: 10px 10px;
+		position: relative;
+		z-index: 2;
+		cursor: pointer;
+	}
 }
 
-div.pull-right-left a:before, div.pull-right-left a:after
-{
-	position: absolute;
-	width: 2px;
-	height: 100%;
-	top: 0;
-	content: '';
-	background: $mainBrightRed;
-	opacity: 0.3;
-	transition: all 0.5s;
+div.pull-right-left a:before, div.pull-right-left a:after {
+	@mixin atMediumLarge {
+		position: absolute;
+		width: 2px;
+		height: 100%;
+		top: 0;
+		content: '';
+		background: $mainBrightRed;
+		opacity: 0.3;
+		transition: all 0.5s;
+	}
 }
 
-div.pull-right-left a:before
-{
-	left: 0;
+div.pull-right-left a:before {
+	@mixin atMediumLarge {
+		left: 0;
+	}
 }
 
-div.pull-right-left a:after
-{
-	right: 0;
+div.pull-right-left a:after {
+	@mixin atMediumLarge {
+		right: 0;
+	}
 }
 
-div.pull-right-left a:hover:before, div.pull-right-left a:hover:after
-{
-	width: 100%;
+div.pull-right-left a:hover:before, div.pull-right-left a:hover:after {
+	@mixin atMediumLarge {
+		width: 100%;
+	}
 }
 
 /* End Pull right and left  */

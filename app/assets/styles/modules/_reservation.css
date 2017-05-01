@@ -58,22 +58,12 @@ body.reserve {
 .reserve-intro {
 	margin: 20px auto 40px;
 }
+
 /* End Wrapper For Reservation Page Intro Text */
 
 .reserve-description, .reserve-description a {
 	font-family: 'Dosis', sans-serif;
 	letter-spacing: 0.1em;
-	margin: 0 auto;
-	text-align: center;
-}
-
-.reserve-description a {
-	color: $mainLightCoral;
-	@mixin atMediumLarge {
-		&:hover {
-			transform: scale(1.2);
-		}
-	}
 }
 
 /* Find A Table Styling */
@@ -136,7 +126,7 @@ body.reserve {
 .face-button, .face-primary, .face-button .face-secondary {
 	display: block;
 	line-height: 64px;
-	transition: margin .4s;
+	transition: margin 0.4s;
 }
 
 .face-button .face-primary {
@@ -149,60 +139,26 @@ body.reserve {
 	color: $mainRed;
 }
 
-.face-button:hover .face-primary {
+.face-button:active .face-primary {
 	margin-top: -64px;
 	cursor: pointer;
 }
 
 /* End Find a Table Change Face Button Effect */
 
-/* 3D Word Slide In  for Reserve Page Links */
+/* Reserve Page Links Initial Styling */
 
-.word-slide-in a {
-	overflow: hidden;
-	padding: 0 4px 0 5px;
-	height: 1em;
+.click-here {
+	margin: 25px auto;
+}
+
+.click-here a {
+	color: $mainLightCoral;
 	font-family: 'Dosis', sans-serif;
 	letter-spacing: 0.1em;
-	font-size: 20px;
-	color: $mainBlack;
-	width: 160px;
-	height: 30px;
-	background: $mainAntiqueWhite;
-	text-align: center;
-	margin: 20px auto 0;
-	vertical-align: middle;
-	padding-top: 2px;
-	border: 3px dotted $mainBlack;
-	box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5), 1px 1px 2px rgba(0, 0, 0, 0.5), 1px 1px 2px rgba(0, 0, 0, 0.5), 1px 1px 2px rgba(0, 0, 0, 0.5) inset;
 }
 
-.word-slide-in a span {
-	position: relative;
-	display: inline-block;
-	transition: transform 0.3s;
-}
-
-.word-slide-in a span::before {
-	position: absolute;
-	top: 100%;
-	left: 18px;
-	content: attr(data-hover);
-	transform: translate3d(0, 0, 0);
-	transform: margin 0.1s ease;
-}
-
-.click-here a span::before {
-	left: 12px;
-}
-
-.word-slide-in a:hover span, .word-slide-in a:focus span {
-	transform: translateY(-100%);
-	cursor: pointer;
-	color: $mainRed;
-}
-
-/* End 3D Word Slide In for Reserve Page Links */
+/* End Reserve Page Links Initial Styling */
 
 /* Social Media Icons Styling */
 
@@ -277,7 +233,7 @@ body.reserve {
 /* Subscribe Button Change Face Button Effect */
 
 #subscribe .face-button {
-	height: 66px;
+	height: 60px;
 	display: inline-block;
 	text-align: center;
 	text-decoration: none;

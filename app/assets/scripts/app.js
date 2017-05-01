@@ -177,3 +177,16 @@ document.addEventListener('DOMContentLoaded', function(event) {
 	// start the text animation
 	startTextAnimation(0);
 });
+
+/* JS For Button Animations */
+import { clickContactButton, clickEmailUsButton, clickFaceButton, clickSubscribeButton } from './modules/buttonAnimation';
+
+const subscribeButton = document.querySelector('.newsletter-form-field-wrapper .face-button .face-primary');
+const faceButton = document.querySelector('.find-a-table .face-button .face-primary');
+const getInTouchButton = document.querySelector('.reserve-email-link a');
+const contactButton = document.querySelector('.reserve-description a');
+
+subscribeButton.addEventListener('click', clickSubscribeButton);
+faceButton.addEventListener('click', clickFaceButton);
+getInTouchButton.addEventListener('click', clickEmailUsButton);
+contactButton.addEventListener('click', clickContactButton);

@@ -24,19 +24,19 @@
 				
 				<!-- Creating the navigation with activePage = 'buzz' -->
 				
-				<header>
-					<div data-text="Julia's" class="logo">
-						Julia's
-					</div>
-					<div class="mobile-nav">
-						<nav class="hamburger">
-							<div class="line"></div>
-							<div class="line"></div>
-							<div class="line"><div>
-						</nav>
-						<!-- Macro stuff here -->
-						<nav class="responsive-menu">
-							<div class="expand">
+				<div class="mobile-nav">
+					<nav class="hamburger">
+						<div class="line"></div>
+						<div class="line"></div>
+						<div class="line"><div>
+					</nav>
+					<!-- Macro stuff here -->
+					<header>
+						<div data-text="Julia's" class="logo">
+							Julia's
+						</div>
+						<nav class="top responsive-menu">
+							<div class="container pull-right-left">
 								<ul>
 									<li>
 										<a href="index.html" class="">WELCOME</a>
@@ -59,31 +59,12 @@
 								</ul>
 							</div>
 						</nav>
-					</div>
-					<!-- Macro stuff here -->
-					<nav class="top">
-						<div class="container pull-right-left">
-							<li>
-								<a href="index.html" class="">WELCOME</a>
-							</li>
-							<li>
-								<a href="about.html" class="">ABOUT</a>
-							</li>
-							<li>
-								<a href="menu.html" class="">MENU</a>
-							</li>
-							<li>
-								<a href="drinks.html" class="">DRINKS</a>
-							</li>
-							<li>
-								<a href="reserve.html" class="">RESERVE</a>
-							</li>
-							<li>
-								<a href="buzz.html" class=" active ">BUZZ</a>
-							</li>
+					</header>
+					<div data-text="Julia's" class="responsive-logo">
+						Julia's
 						</div>
-					</nav>
-				</header>
+					<div class="nav-divider"></div>
+				</div>
 
 				<!-- Adds the buzz-page partial -->
 				<!-- buzz-page.nunjucks -->
@@ -92,24 +73,30 @@
 					<div class="buzz-items">
 						<h1 class="buzz-title"></h1>
 						<div class="buzz-item">
+							<p class="description">
+								Pellentesque pharetra lectus enim, a euismod orci blandit at. In volutpat condimentum
+								quam, eget bibendum eros finibus a.
+							</p>
+						</div>
+						<div class="buzz-item">
 							<script async src="//player-backend.cnevids.com/embedjs/51ffee3d4ffb601bd1000001/video/51f7fda9c2b4c0118c81d62e.js"></script>
 						</div>
 						<div class="social">
 							<div class="social-embed-container">
 								<h2>Instagram</h2>
-								<div class="instagrm-column" align="center">
+								<div class="instagrm-column">
 									<blockquote class="instagram-media" data-instgrm-captioned data-instgrm-version="7" style=" background:#FFF; border:0; border-radius:3px; box-shadow:0 0 1px 0 rgba(0,0,0,0.5),0 1px 10px 0 rgba(0,0,0,0.15); margin: 1px; max-width:729px; padding:0; width:100%;"><div style="padding:8px;"> <div style=" background:#F8F8F8; line-height:0; margin-top:40px; padding:50.0% 0; text-align:center; width:100%;"> <div  style=" background:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACwAAAAsCAMAAAApWqozAAAABGdBTUEAALGPC/xhBQAAAAFzUkdCAK7OHOkAAAAMUExURczMzPf399fX1+bm5mzY9AMAAADiSURBVDjLvZXbEsMgCES5/P8/t9FuRVCRmU73JWlzosgSIIZURCjo/ad+EQJJB4Hv8BFt+IDpQoCx1wjOSBFhh2XssxEIYn3ulI/6MNReE07UIWJEv8UEOWDS88LY97kqyTliJKKtuYBbruAyVh5wOHiXmpi5we58Ek028czwyuQdLKPG1Bkb4NnM+VeAnfHqn1k4+GPT6uGQcvu2h2OVuIf/gWUFyy8OWEpdyZSa3aVCqpVoVvzZZ2VTnn2wU8qzVjDDetO90GSy9mVLqtgYSy231MxrY6I2gGqjrTY0L8fxCxfCBbhWrsYYAAAAAElFTkSuQmCC); display:block; height:44px; margin:0 auto -44px; position:relative; top:-22px; width:44px;"></div></div> <p style=" margin:8px 0 0 0; padding:0 4px;"> <a href="https://www.instagram.com/p/BS1BexwA_PJ/" style=" color:#000; font-family:Arial,sans-serif; font-size:14px; font-style:normal; font-weight:normal; line-height:17px; text-decoration:none; word-wrap:break-word;" target="_blank">Επιχείρηση Octopussy #eixame_kai_sto_xwrio_mas #foodporn #food #athensrestaurants</a></p> <p style=" color:#c9c8cd; font-family:Arial,sans-serif; font-size:14px; line-height:17px; margin-bottom:0; margin-top:8px; overflow:hidden; padding:8px 0 7px; text-align:center; text-overflow:ellipsis; white-space:nowrap;">A post shared by Babis Doukas (@its_the_duke_dude) on <time style=" font-family:Arial,sans-serif; font-size:14px; line-height:17px;" datetime="2017-04-13T14:14:02+00:00">Apr 13, 2017 at 7:14am PDT</time></p></div></blockquote>
 									<script async defer src="//platform.instagram.com/en_US/embeds.js"></script>
 								</div>
-								<div class="instagrm-column" align="center">
+								<div class="instagrm-column">
 									<blockquote class="instagram-media" data-instgrm-captioned data-instgrm-version="7" style=" background:#FFF; border:0; border-radius:3px; box-shadow:0 0 1px 0 rgba(0,0,0,0.5),0 1px 10px 0 rgba(0,0,0,0.15); margin: 1px; max-width:729px; padding:0; width:100%;"><div style="padding:8px;"> <div style=" background:#F8F8F8; line-height:0; margin-top:40px; padding:50.0% 0; text-align:center; width:100%;"> <div style=" background:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACwAAAAsCAMAAAApWqozAAAABGdBTUEAALGPC/xhBQAAAAFzUkdCAK7OHOkAAAAMUExURczMzPf399fX1+bm5mzY9AMAAADiSURBVDjLvZXbEsMgCES5/P8/t9FuRVCRmU73JWlzosgSIIZURCjo/ad+EQJJB4Hv8BFt+IDpQoCx1wjOSBFhh2XssxEIYn3ulI/6MNReE07UIWJEv8UEOWDS88LY97kqyTliJKKtuYBbruAyVh5wOHiXmpi5we58Ek028czwyuQdLKPG1Bkb4NnM+VeAnfHqn1k4+GPT6uGQcvu2h2OVuIf/gWUFyy8OWEpdyZSa3aVCqpVoVvzZZ2VTnn2wU8qzVjDDetO90GSy9mVLqtgYSy231MxrY6I2gGqjrTY0L8fxCxfCBbhWrsYYAAAAAElFTkSuQmCC); display:block; height:44px; margin:0 auto -44px; position:relative; top:-22px; width:44px;"></div></div> <p style=" margin:8px 0 0 0; padding:0 4px;"> <a href="https://www.instagram.com/p/BS05adTlDNi/" style=" color:#000; font-family:Arial,sans-serif; font-size:14px; font-style:normal; font-weight:normal; line-height:17px; text-decoration:none; word-wrap:break-word;" target="_blank">Cuando el queso acapara toda tu atención ‼️ SpecialFries el Top! de nuestros entrantes 🧀 #foodlover #foodporn #cheese #specialfries #valencia #foodies</a></p> <p style=" color:#c9c8cd; font-family:Arial,sans-serif; font-size:14px; line-height:17px; margin-bottom:0; margin-top:8px; overflow:hidden; padding:8px 0 7px; text-align:center; text-overflow:ellipsis; white-space:nowrap;">A post shared by TheBlackTurtle - Hamburguesas (@dblackturtle) on <time style=" font-family:Arial,sans-serif; font-size:14px; line-height:17px;" datetime="2017-04-13T13:03:32+00:00">Apr 13, 2017 at 6:03am PDT</time></p></div></blockquote>
 									<script async defer src="//platform.instagram.com/en_US/embeds.js"></script>
 								</div>
-								<div class="instagrm-column" align="center">
+								<div class="instagrm-column">
 									<blockquote class="instagram-media" data-instgrm-captioned data-instgrm-version="7" style=" background:#FFF; border:0; border-radius:3px; box-shadow:0 0 1px 0 rgba(0,0,0,0.5),0 1px 10px 0 rgba(0,0,0,0.15); margin: 1px; max-width:729px; padding:0; width:99.375%; width:-webkit-calc(100% - 2px); width:calc(100% - 2px);"><div style="padding:8px;"> <div style=" background:#F8F8F8; line-height:0; margin-top:40px; padding:50.0% 0; text-align:center; width:100%;"> <div style=" background:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACwAAAAsCAMAAAApWqozAAAABGdBTUEAALGPC/xhBQAAAAFzUkdCAK7OHOkAAAAMUExURczMzPf399fX1+bm5mzY9AMAAADiSURBVDjLvZXbEsMgCES5/P8/t9FuRVCRmU73JWlzosgSIIZURCjo/ad+EQJJB4Hv8BFt+IDpQoCx1wjOSBFhh2XssxEIYn3ulI/6MNReE07UIWJEv8UEOWDS88LY97kqyTliJKKtuYBbruAyVh5wOHiXmpi5we58Ek028czwyuQdLKPG1Bkb4NnM+VeAnfHqn1k4+GPT6uGQcvu2h2OVuIf/gWUFyy8OWEpdyZSa3aVCqpVoVvzZZ2VTnn2wU8qzVjDDetO90GSy9mVLqtgYSy231MxrY6I2gGqjrTY0L8fxCxfCBbhWrsYYAAAAAElFTkSuQmCC); display:block; height:44px; margin:0 auto -44px; position:relative; top:-22px; width:44px;"></div></div> <p style=" margin:8px 0 0 0; padding:0 4px;"> <a href="https://www.instagram.com/p/BS0_i8DBUyk/" style=" color:#000; font-family:Arial,sans-serif; font-size:14px; font-style:normal; font-weight:normal; line-height:17px; text-decoration:none; word-wrap:break-word;" target="_blank">#첫줄 . . . . . . . . . . . . . . #니뽕내뽕 #크뽕 #크림짬뽕 #짬뽕 #먹방 #맛있다 #맛있다그램 #먹스타그램 #식스타그램 #맛스타그램 #음식 #사진 #맞팔 #맞팔해요 #좋아요 #선팔 #데일리 #일상 #food #daily #like #delicious #yum #yummy</a></p> <p style=" color:#c9c8cd; font-family:Arial,sans-serif; font-size:14px; line-height:17px; margin-bottom:0; margin-top:8px; overflow:hidden; padding:8px 0 7px; text-align:center; text-overflow:ellipsis; white-space:nowrap;">A post shared by greenee23 (@greenee.23) on <time style=" font-family:Arial,sans-serif; font-size:14px; line-height:17px;" datetime="2017-04-13T13:57:07+00:00">Apr 13, 2017 at 6:57am PDT</time></p></div></blockquote>
 									<script async defer src="//platform.instagram.com/en_US/embeds.js"></script>
 								</div>
-								<div class="instagrm-column" align="center">
+								<div class="instagrm-column">
 									<blockquote class="instagram-media" data-instgrm-captioned data-instgrm-version="7" style=" background:#FFF; border:0; border-radius:3px; box-shadow:0 0 1px 0 rgba(0,0,0,0.5),0 1px 10px 0 rgba(0,0,0,0.15); margin: 1px; max-width:729px; padding:0; width:99.375%; width:-webkit-calc(100% - 2px); width:calc(100% - 2px);"><div style="padding:8px;"> <div style=" background:#F8F8F8; line-height:0; margin-top:40px; padding:50.0% 0; text-align:center; width:100%;"> <div  style=" background:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACwAAAAsCAMAAAApWqozAAAABGdBTUEAALGPC/xhBQAAAAFzUkdCAK7OHOkAAAAMUExURczMzPf399fX1+bm5mzY9AMAAADiSURBVDjLvZXbEsMgCES5/P8/t9FuRVCRmU73JWlzosgSIIZURCjo/ad+EQJJB4Hv8BFt+IDpQoCx1wjOSBFhh2XssxEIYn3ulI/6MNReE07UIWJEv8UEOWDS88LY97kqyTliJKKtuYBbruAyVh5wOHiXmpi5we58Ek028czwyuQdLKPG1Bkb4NnM+VeAnfHqn1k4+GPT6uGQcvu2h2OVuIf/gWUFyy8OWEpdyZSa3aVCqpVoVvzZZ2VTnn2wU8qzVjDDetO90GSy9mVLqtgYSy231MxrY6I2gGqjrTY0L8fxCxfCBbhWrsYYAAAAAElFTkSuQmCC); display:block; height:44px; margin:0 auto -44px; position:relative; top:-22px; width:44px;"></div></div> <p style=" margin:8px 0 0 0; padding:0 4px;"> <a href="https://www.instagram.com/p/BS02S3sABC7/" style=" color:#000; font-family:Arial,sans-serif; font-size:14px; font-style:normal; font-weight:normal; line-height:17px; text-decoration:none; word-wrap:break-word;" target="_blank">Flawless 👌🏻 ⠀ ⠀  #steak #steakhouse #steakandlobster #lobster #lobsters #lunch #lunchbreak #lunchtime #lunchinlondon #eatingout #food #foodies #foodporn #foodiegram #foodie #restaurant #london #thisislondon #londoncalling #londoner #foreveronvacation</a></p> <p style=" color:#c9c8cd; font-family:Arial,sans-serif; font-size:14px; line-height:17px; margin-bottom:0; margin-top:8px; overflow:hidden; padding:8px 0 7px; text-align:center; text-overflow:ellipsis; white-space:nowrap;">A post shared by Andreza Fazio (@andrezafazio) on <time style=" font-family:Arial,sans-serif; font-size:14px; line-height:17px;" datetime="2017-04-13T12:36:17+00:00">Apr 13, 2017 at 5:36am PDT</time></p></div></blockquote>
 									<script async defer src="//platform.instagram.com/en_US/embeds.js"></script>
 								</div>

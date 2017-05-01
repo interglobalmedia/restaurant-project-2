@@ -16,6 +16,10 @@ body.welcome {
 	display: flex;
 	flex-direction: column;
 	justify-content: start;
+	background: $mainWhite;
+	@mixin atMediumLarge {
+		margin: 0 auto 20px;
+	}
 }
 
 /* Hide so don't have two background images */
@@ -27,18 +31,21 @@ body.welcome {
 .welcome-items {
 	padding: 40px 0 0;
 	max-width: 880px;
-	width: 100%;
+	width: 90%;
 	margin: 0 auto;
 	background: $mainWhite;
 	@mixin atMediumLarge {
 		padding: 60px 0 20px;
+		width: 90%;
 	}
 }
 
 /* General styling for welcome-item sections */
 .welcome-items .welcome-item:first-of-type {
-	width: 90%;
-	margin: 0 auto;
+	margin: 20px auto 0;
+	@mixin atMediumLarge {
+		margin: 40px auto 0;
+	}
 }
 
 .welcome-items .welcome-title {
@@ -65,6 +72,14 @@ body.welcome {
 
 .welcome-item {
 	margin: 20px 0;
+	width: 100%;
+}
+
+.welcome-item .description {
+	width: 100%;
+	margin: 0 auto;
+	text-align: center;
+	padding: 0;
 }
 
 .welcome-item .title {
@@ -90,10 +105,8 @@ body.welcome {
 /* Welcome Page Find A Table Container Styling */
 
 .welcome-items .find-a-table-container {
-	@mixin atMediumLarge {
-		margin: 0 auto;
-		width: 90%;
-	}
+	margin: 0 auto 20px;
+	width: 100%;
 }
 
 /* End Welcome Page Find A Table Container Styling */
@@ -107,7 +120,7 @@ body.welcome {
 }
 
 .welcome-items .social-embed-container {
-	width: 90%;
+	width: 100%;
 	margin: 0 auto;
 	@mixin atMediumLarge {
 		margin: 40px auto;
@@ -137,7 +150,7 @@ body.welcome {
 	padding-top: 30px;
 	overflow: hidden;
 	margin: 20px auto 40px;
-	width: 90%;
+	width: 100%;
 	@mixin atMediumLarge {
 		margin: 60px auto 0;
 	}
@@ -161,7 +174,7 @@ body.welcome {
 .welcome-items .subscribe-container {
 	margin: 0 auto;
 	padding: 20px 0;
-	width: 90%;
+	width: 100%;
 }
 
 /* End Welcome Page Subscribe Container Section Styling */

@@ -1,0 +1,1 @@
+/* JS For SVG Icon Animations */

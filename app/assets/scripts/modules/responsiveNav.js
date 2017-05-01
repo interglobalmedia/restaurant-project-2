@@ -1,7 +1,7 @@
 const icon = document.querySelector('.hamburger');
 
 function transformIcon() {
-	const responsivemenu = document.querySelector('.responsive-menu');
+	const responsivemenu = document.querySelector('.top');
 	const lines = document.querySelectorAll('.line');
 	lines[0].classList.toggle('animate0');
 	lines[1].classList.toggle('hide');

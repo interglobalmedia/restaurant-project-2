@@ -63,7 +63,7 @@
 /******/ 	__webpack_require__.p = "";
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 3);
+/******/ 	return __webpack_require__(__webpack_require__.s = 4);
 /******/ })
 /************************************************************************/
 /******/ ([
@@ -73,10 +73,67 @@
 "use strict";
 
 
+Object.defineProperty(exports, "__esModule", {
+	value: true
+});
+exports.clickContactButton = clickContactButton;
+exports.clickEmailUsButton = clickEmailUsButton;
+exports.clickFaceButton = clickFaceButton;
+exports.clickSubscribeButton = clickSubscribeButton;
+/* JS For Button Animations */
+var getInTouchButton = document.querySelector('.reserve-email-link a');
+var contactButton = document.querySelector('.reserve-description a');
+var faceButton = document.querySelector('.find-a-table .face-button .face-primary');
+var subscribeButton = document.querySelector('.newsletter-form-field-wrapper .face-button .face-primary');
+
+function clickContactButton() {
+	contactButton.style.transition = 'all 0.3s ease';
+	contactButton.textContent = 'CONTACT US!';
+	contactButton.style.cssText = "color: firebrick; background: antiquewhite; border: 3px dotted black; padding: 10px; text-decoration: none; box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5), 1px 1px 2px rgba(0, 0, 0, 0.5), 1px 1px 2px rgba(0, 0, 0, 0.5), 1px 1px 2px rgba(0, 0, 0, 0.5) inset;";
+}
+
+function clickEmailUsButton() {
+	getInTouchButton.style.transition = 'all 0.3s ease';
+	getInTouchButton.textContent = 'EMAIL US!';
+	getInTouchButton.style.cssText = "color: firebrick; background: antiquewhite; border: 3px dotted black; padding: 10px; text-decoration: none; box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5), 1px 1px 2px rgba(0, 0, 0, 0.5), 1px 1px 2px rgba(0, 0, 0, 0.5), 1px 1px 2px rgba(0, 0, 0, 0.5) inset;";
+}
+
+function clickFaceButton() {
+	if (faceButton.classList.contains('face-primary')) {
+		faceButton.remove('face-primary');
+		faceButton.add('face-secondary');
+	} else {
+		faceButton.add('face-primary');
+		faceButton.remove('face-secondary');
+	}
+}
+
+function clickSubscribeButton() {
+	if (subscribeButton.classList.contains('face-primary')) {
+		subscribeButton.remove('face-primary');
+		subscribeButton.add('face-secondary');
+	} else {
+		subscribeButton.add('face-primary');
+		subscribeButton.remove('face-secondary');
+	}
+}
+
+subscribeButton.addEventListener('click', clickSubscribeButton);
+faceButton.addEventListener('click', clickFaceButton);
+getInTouchButton.addEventListener('click', clickEmailUsButton);
+contactButton.addEventListener('click', clickContactButton);
+
+/***/ }),
+/* 1 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
 var icon = document.querySelector('.hamburger');
 
 function transformIcon() {
-	var responsivemenu = document.querySelector('.responsive-menu');
+	var responsivemenu = document.querySelector('.top');
 	var lines = document.querySelectorAll('.line');
 	lines[0].classList.toggle('animate0');
 	lines[1].classList.toggle('hide');
@@ -89,7 +146,7 @@ icon.addEventListener('click', transformIcon);
 module.exports.transformIcon = transformIcon;
 
 /***/ }),
-/* 1 */
+/* 2 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -149,16 +206,18 @@ function checkSlide(e) {
 window.addEventListener('scroll', debounce(checkSlide));
 
 /***/ }),
-/* 2 */,
-/* 3 */
+/* 3 */,
+/* 4 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 
 
-var _responsiveNav = __webpack_require__(0);
+var _responsiveNav = __webpack_require__(1);
 
-var _zoomin = __webpack_require__(1);
+var _zoomin = __webpack_require__(2);
+
+var _buttonAnimation = __webpack_require__(0);
 
 /* Resposnive Nav */
 
@@ -335,6 +394,19 @@ document.addEventListener('DOMContentLoaded', function (event) {
 	// start the text animation
 	startTextAnimation(0);
 });
+
+/* JS For Button Animations */
+
+
+var subscribeButton = document.querySelector('.newsletter-form-field-wrapper .face-button .face-primary');
+var faceButton = document.querySelector('.find-a-table .face-button .face-primary');
+var getInTouchButton = document.querySelector('.reserve-email-link a');
+var contactButton = document.querySelector('.reserve-description a');
+
+subscribeButton.addEventListener('click', _buttonAnimation.clickSubscribeButton);
+faceButton.addEventListener('click', _buttonAnimation.clickFaceButton);
+getInTouchButton.addEventListener('click', _buttonAnimation.clickEmailUsButton);
+contactButton.addEventListener('click', _buttonAnimation.clickContactButton);
 
 /***/ })
 /******/ ]);
