@@ -232,7 +232,7 @@ body.reserve {
 
 /* Subscribe Button Change Face Button Effect */
 
-.face-button {
+#subscribe .face-button {
 	height: 60px;
 	display: inline-block;
 	text-align: center;
@@ -244,24 +244,24 @@ body.reserve {
 	box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5), 1px 1px 2px rgba(0, 0, 0, 0.5), 1px 1px 2px rgba(0, 0, 0, 0.5), 1px 1px 2px rgba(0, 0, 0, 0.5) inset;
 }
 
-.face-button, .face-primary,
-.face-button .face-secondary {
+#subscribe .face-button, .face-primary,
+#subscribe .face-button .face-secondary {
 	display: block;
 	line-height: 64px;
 	transition: margin .4s;
 	cursor: pointer;
 }
 
-.face-button .face-primary {
+#subscribe .face-button .face-primary {
 	background: $mainRed;
 	color: $mainBlack;
 }
 
-.face-button .face-secondary {
+#subscribe .face-button .face-secondary {
 	color: $mainRed;
 }
 
-.face-button:hover .face-primary {
+#subscribe .face-button:active .face-primary {
 	margin-top: -64px;
 	cursor: pointer;
 	color: black;
