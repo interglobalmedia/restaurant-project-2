@@ -63,7 +63,7 @@
 /******/ 	__webpack_require__.p = "";
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 4);
+/******/ 	return __webpack_require__(__webpack_require__.s = 5);
 /******/ })
 /************************************************************************/
 /******/ ([
@@ -130,6 +130,47 @@ contactButton.addEventListener('click', clickContactButton);
 "use strict";
 
 
+Object.defineProperty(exports, "__esModule", {
+	value: true
+});
+exports.clickInstagramSvg = clickInstagramSvg;
+exports.clickFacebookSvg = clickFacebookSvg;
+exports.clickTwitterSvg = clickTwitterSvg;
+exports.clickPinterestSvg = clickPinterestSvg;
+/* JS For SVG Icon Animations */
+var instagramSvg = document.querySelecto('.instagrm-svg');
+var facebookSvg = document.querySelector('.facebook-svg');
+var twitterSvg = document.querySelector('.twitter-svg');
+var pinterestSvg = document.wuerySelector('.pinterest-svg');
+
+function clickInstagramSvg() {
+	instagramSvg.setAttribute('style', 'transform: scale(1.25); transition: all 0.5s; fill: red; background: black; border-radius: 50%; padding: 3px; cursor: pointer;');
+}
+
+function clickFacebookSvg() {
+	facebookSvg.setAttribute('style', 'transform: scale(1.25); transition: all 0.5s; background: black; fill: red; border-radius: 50%; padding: 3px; cursor: pointer;');
+}
+
+function clickTwitterSvg() {
+	twitterSvg.setAttribute('style', 'transition: all 0.5s; fill: red; transform: rotateX(30deg) rotateY(25deg) scale(1.5); cursor: pointer;');
+}
+
+function clickPinterestSvg() {
+	pinterestSvg.setAttribute('style', 'transition: all 0.5s; transform: scale(1.25); background: black; fill: red; border-radius: 50%; padding: 3px; cursor: pointer;');
+}
+
+instagramSvg.addEventListener('click', clickInstagramSvg);
+facebookSvg.addEventListener('click', clickFacebookSvg);
+twitterSvg.addEventListener('click', clickTwitterSvg);
+pinterestSvg.addEventListener('click', clickPinterestSvg);
+
+/***/ }),
+/* 2 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
 var icon = document.querySelector('.hamburger');
 
 function transformIcon() {
@@ -146,7 +187,7 @@ icon.addEventListener('click', transformIcon);
 module.exports.transformIcon = transformIcon;
 
 /***/ }),
-/* 2 */
+/* 3 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -206,18 +247,20 @@ function checkSlide(e) {
 window.addEventListener('scroll', debounce(checkSlide));
 
 /***/ }),
-/* 3 */,
-/* 4 */
+/* 4 */,
+/* 5 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 
 
-var _responsiveNav = __webpack_require__(1);
+var _responsiveNav = __webpack_require__(2);
 
-var _zoomin = __webpack_require__(2);
+var _zoomin = __webpack_require__(3);
 
 var _buttonAnimation = __webpack_require__(0);
+
+var _iconAnimation = __webpack_require__(1);
 
 /* Resposnive Nav */
 
@@ -407,6 +450,18 @@ subscribeButton.addEventListener('click', _buttonAnimation.clickSubscribeButton)
 faceButton.addEventListener('click', _buttonAnimation.clickFaceButton);
 getInTouchButton.addEventListener('click', _buttonAnimation.clickEmailUsButton);
 contactButton.addEventListener('click', _buttonAnimation.clickContactButton);
+
+/* JS For SVG Icon Animations */
+
+var instagramSvg = document.querySelecto('.instagrm-svg');
+var facebookSvg = document.querySelector('.facebook-svg');
+var twitterSvg = document.querySelector('.twitter-svg');
+var pinterestSvg = document.wuerySelector('.pinterest-svg');
+
+instagramSvg.addEventListener('click', _iconAnimation.clickInstagramSvg);
+facebookSvg.addEventListener('click', _iconAnimation.clickFacebookSvg);
+twitterSvg.addEventListener('click', _iconAnimation.clickTwitterSvg);
+pinterestSvg.addEventListener('click', _iconAnimation.clickPinterestSvg);
 
 /***/ })
 /******/ ]);
