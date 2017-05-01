@@ -100,21 +100,21 @@ function clickContactButton() {
 
 function clickFaceButton() {
 	if (faceButton.classList.contains('face-primary')) {
-		faceButton.remove('face-primary');
-		faceButton.add('face-secondary');
+		faceButton.classList.remove('face-primary');
+		faceButton.classList.add('face-secondary');
 	} else {
-		faceButton.add('face-primary');
-		faceButton.remove('face-secondary');
+		faceButton.classList.add('face-primary');
+		faceButton.classList.remove('face-secondary');
 	}
 }
 
 function clickSubscribeButton() {
 	if (subscribeButton.classList.contains('face-primary')) {
-		subscribeButton.remove('face-primary');
-		subscribeButton.add('face-secondary');
+		subscribeButton.classList.remove('face-primary');
+		subscribeButton.classList.add('face-secondary');
 	} else {
-		subscribeButton.add('face-primary');
-		subscribeButton.remove('face-secondary');
+		subscribeButton.classList.add('face-primary');
+		subscribeButton.classList.remove('face-secondary');
 	}
 }
 
@@ -138,21 +138,21 @@ exports.clickFacebookSvg = clickFacebookSvg;
 exports.clickTwitterSvg = clickTwitterSvg;
 exports.clickPinterestSvg = clickPinterestSvg;
 /* JS For SVG Icon Animations */
-var instagramSvg = document.querySelecto('.instagrm-svg');
+var instagramSvg = document.querySelector('.instagrm-svg');
 var facebookSvg = document.querySelector('.facebook-svg');
 var twitterSvg = document.querySelector('.twitter-svg');
-var pinterestSvg = document.wuerySelector('.pinterest-svg');
+var pinterestSvg = document.querySelector('.pinterest-svg');
 
 function clickInstagramSvg() {
-	instagramSvg.setAttribute('style', 'transform: scale(1.25); transition: all 0.5s; fill: red; background: black; border-radius: 50%; padding: 3px; cursor: pointer;');
+	instagramSvg.setAttribute('style', 'transform: scale(1.25); transition: all 0.5s; fill: red; background: black; border-radius: 50%; padding: 3px; cursor: pointer; margin-right: 20px;');
 }
 
 function clickFacebookSvg() {
-	facebookSvg.setAttribute('style', 'transform: scale(1.25); transition: all 0.5s; background: black; fill: red; border-radius: 50%; padding: 3px; cursor: pointer;');
+	facebookSvg.setAttribute('style', 'transform: scale(1.25); transition: all 0.5s; background: black; fill: red; border-radius: 50%; padding: 3px; cursor: pointer; margin-right: 20px;');
 }
 
 function clickTwitterSvg() {
-	twitterSvg.setAttribute('style', 'transition: all 0.5s; fill: red; transform: rotateX(30deg) rotateY(25deg) scale(1.5); cursor: pointer;');
+	twitterSvg.setAttribute('style', 'transition: all 0.5s; fill: red; transform: rotateX(30deg) rotateY(25deg) scale(1.5); cursor: pointer; margin-right: 20px;');
 }
 
 function clickPinterestSvg() {
@@ -453,10 +453,10 @@ contactButton.addEventListener('click', _buttonAnimation.clickContactButton);
 
 /* JS For SVG Icon Animations */
 
-var instagramSvg = document.querySelecto('.instagrm-svg');
+var instagramSvg = document.querySelector('.instagrm-svg');
 var facebookSvg = document.querySelector('.facebook-svg');
 var twitterSvg = document.querySelector('.twitter-svg');
-var pinterestSvg = document.wuerySelector('.pinterest-svg');
+var pinterestSvg = document.querySelector('.pinterest-svg');
 
 instagramSvg.addEventListener('click', _iconAnimation.clickInstagramSvg);
 facebookSvg.addEventListener('click', _iconAnimation.clickFacebookSvg);

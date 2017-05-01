@@ -1,19 +1,19 @@
 /* JS For SVG Icon Animations */
-const instagramSvg = document.querySelecto('.instagrm-svg');
+const instagramSvg = document.querySelector('.instagrm-svg');
 const facebookSvg = document.querySelector('.facebook-svg');
 const twitterSvg = document.querySelector('.twitter-svg');
-const pinterestSvg = document.wuerySelector('.pinterest-svg');
+const pinterestSvg = document.querySelector('.pinterest-svg');
 
 export function clickInstagramSvg() {
-	instagramSvg.setAttribute('style', 'transform: scale(1.25); transition: all 0.5s; fill: red; background: black; border-radius: 50%; padding: 3px; cursor: pointer;');
+	instagramSvg.setAttribute('style', 'transform: scale(1.25); transition: all 0.5s; fill: red; background: black; border-radius: 50%; padding: 3px; cursor: pointer; margin-right: 20px;');
 }
 
 export function clickFacebookSvg() {
-	facebookSvg.setAttribute('style', 'transform: scale(1.25); transition: all 0.5s; background: black; fill: red; border-radius: 50%; padding: 3px; cursor: pointer;');
+	facebookSvg.setAttribute('style', 'transform: scale(1.25); transition: all 0.5s; background: black; fill: red; border-radius: 50%; padding: 3px; cursor: pointer; margin-right: 20px;');
 }
 
 export function clickTwitterSvg() {
-	twitterSvg.setAttribute('style', 'transition: all 0.5s; fill: red; transform: rotateX(30deg) rotateY(25deg) scale(1.5); cursor: pointer;');
+	twitterSvg.setAttribute('style', 'transition: all 0.5s; fill: red; transform: rotateX(30deg) rotateY(25deg) scale(1.5); cursor: pointer; margin-right: 20px;');
 }
 
 export function clickPinterestSvg() {

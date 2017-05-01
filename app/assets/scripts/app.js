@@ -195,10 +195,10 @@ contactButton.addEventListener('click', clickContactButton);
 
 import { clickInstagramSvg, clickFacebookSvg, clickTwitterSvg, clickPinterestSvg } from './modules/iconAnimation';
 
-const instagramSvg = document.querySelecto('.instagrm-svg');
+const instagramSvg = document.querySelector('.instagrm-svg');
 const facebookSvg = document.querySelector('.facebook-svg');
 const twitterSvg = document.querySelector('.twitter-svg');
-const pinterestSvg = document.wuerySelector('.pinterest-svg');
+const pinterestSvg = document.querySelector('.pinterest-svg');
 
 instagramSvg.addEventListener('click', clickInstagramSvg);
 facebookSvg.addEventListener('click', clickFacebookSvg);

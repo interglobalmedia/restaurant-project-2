@@ -18,21 +18,21 @@ export function clickContactButton() {
 
 export function clickFaceButton() {
 	if(faceButton.classList.contains('face-primary')) {
-		faceButton.remove('face-primary');
-		faceButton.add('face-secondary');
+		faceButton.classList.remove('face-primary');
+		faceButton.classList.add('face-secondary');
 	} else {
-		faceButton.add('face-primary');
-		faceButton.remove('face-secondary');
+		faceButton.classList.add('face-primary');
+		faceButton.classList.remove('face-secondary');
 	}
 }
 
 export function clickSubscribeButton() {
 	if(subscribeButton.classList.contains('face-primary')) {
-		subscribeButton.remove('face-primary');
-		subscribeButton.add('face-secondary');
+		subscribeButton.classList.remove('face-primary');
+		subscribeButton.classList.add('face-secondary');
 	} else {
-		subscribeButton.add('face-primary');
-		subscribeButton.remove('face-secondary');
+		subscribeButton.classList.add('face-primary');
+		subscribeButton.classList.remove('face-secondary');
 	}
 }
 
