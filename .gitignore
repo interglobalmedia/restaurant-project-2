@@ -1,3 +1,4 @@
 node_modules/
 test/
 nodejs_library/
+.publish
