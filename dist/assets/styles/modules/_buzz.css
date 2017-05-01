@@ -20,6 +20,22 @@ body.buzz {
 	display: none;
 }
 
+/* Buzz Page CSS Typewriter Effect for .welcome-title */
+
+.buzz-title {
+	overflow: hidden;
+	white-space: nowrap;
+	margin: 0 auto;
+	letter-spacing: .15em;
+	animation: typing 5s steps(40, end) infinite;
+}
+
+/* The typing effect */
+@keyframes typing {
+  from { width: 0 }
+  to { width: 100% }
+}
+
 /* Wrapper for buzz-item sections */
 
 .buzz-items {
@@ -36,9 +52,10 @@ body.buzz {
 }
 
 .buzz-items .buzz-title {
-	font-size: 30px;
-	@mixin atSmall {
-		font-size: 2em;
+	font-size: 20px;
+	@mixin atMediumLarge {
+		font-size: 28px;
+		margin: 40px auto;
 	}
 }
 

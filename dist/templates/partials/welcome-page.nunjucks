@@ -2,7 +2,7 @@
 				<div id="welcome">
 					<img src="assets/images/relax-701362_1920.jpg" alt="Interior of restaurant Julia.">
 					<div class="welcome-items">
-						<h1 class="welcome-title"></h1>
+						<h1 class="welcome-title">Welcome to Julia's!</h1>
 						<div class="welcome-item">
 							<p class="description">
 								Pellentesque pharetra lectus enim, a euismod orci blandit at. In volutpat condimentum
@@ -64,7 +64,7 @@
 						</div>
 						<div class="social-embed-container">
 							<div class="instagrm-column">
-								<a href="assets/images/melanzana-1985391_1920.jpg"><img src="assets/images/melanzana-1985391_1920.jpg" class="align-center zoom-in" alt="Julia's restaurant exquisite grilled eggplant sprinkled with pomegranate seeds, bean sprouts, and melted mozzarella cheese."></a>
+								<img src="assets/images/melanzana-1985391_1920.jpg" class="align-center zoom-in" alt="Julia's restaurant exquisite grilled eggplant sprinkled with pomegranate seeds, bean sprouts, and melted mozzarella cheese.">
 							</div>
 							<div class="instagrm-column">
 								<img src="assets/images/salad-2087384_1920.jpg" class="align-center zoom-in" alt=" Julia's restaurant Caesar salad overflowing with cheesy romano dressing.">
