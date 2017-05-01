@@ -24,6 +24,22 @@ body.reserve {
 	display: none;
 }
 
+/* Reserve Page CSS Typewriter Effect for .welcome-title */
+
+.reserve-title {
+	overflow: hidden;
+	white-space: nowrap;
+	margin: 0 auto;
+	letter-spacing: .15em;
+	animation: typing 5s steps(40, end) infinite;
+}
+
+/* The typing effect */
+@keyframes typing {
+  from { width: 0 }
+  to { width: 100% }
+}
+
 #reserve .reservations {
 	padding: 40px 0 0;
 	max-width: 880px;
@@ -35,10 +51,7 @@ body.reserve {
 }
 
 .reservations .reserve-title {
-	font-size: 30px;
-	@mixin atSmall {
-		font-size: 2em;
-	}
+	font-size: 20px;
 }
 
 .reservations h1 {

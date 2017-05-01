@@ -23,6 +23,22 @@ body.about {
 	display: block;
 }
 
+/* About Page CSS Typewriter Effect for .welcome-title */
+
+.about-title {
+	overflow: hidden;
+	white-space: nowrap;
+	margin: 0 auto;
+	letter-spacing: .15em;
+	animation: typing 5s steps(40, end) infinite;
+}
+
+/* The typing effect */
+@keyframes typing {
+  from { width: 0 }
+  to { width: 100% }
+}
+
 /* About The Place Styling */
 /* Wrapper for about-item sections */
 .about-items {
@@ -37,9 +53,10 @@ body.about {
 }
 
 .about-items .about-title {
-	font-size: 30px;
-	@mixin atSmall {
-		font-size: 2em;
+	font-size: 20px;
+	@mixin atMediumLarge {
+		font-size: 28px;
+		margin: 40px auto;
 	}
 }
 

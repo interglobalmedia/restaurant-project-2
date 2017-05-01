@@ -431,6 +431,24 @@ body.welcome {
 #welcome img {
 	display: none;
 }
+/* Welcome Page CSS Typewriter Effect for .welcome-title */
+.welcome-title {
+	overflow: hidden;
+	white-space: nowrap;
+	margin: 0 auto;
+	letter-spacing: .15em;
+	-webkit-animation: typing 5s steps(40, end) infinite;
+	        animation: typing 5s steps(40, end) infinite;
+}
+/* The typing effect */
+@-webkit-keyframes typing {
+  from { width: 0 }
+  to { width: 100% }
+}
+@keyframes typing {
+  from { width: 0 }
+  to { width: 100% }
+}
 /* Wrapper for welcome-item sections */
 .welcome-items {
 	padding: 40px 0 0;
@@ -455,11 +473,12 @@ body.welcome {
 	}
 }
 .welcome-items .welcome-title {
-	font-size: 30px;
+	font-size: 20px;
 }
-@media (min-width: 530px) {
+@media (min-width: 897px) {
 	.welcome-items .welcome-title {
-		font-size: 2em;
+		font-size: 28px;
+		margin: 40px auto;
 	}
 }
 .welcome-items h1 {
@@ -636,6 +655,20 @@ body.about {
 #about .about-items img {
 	display: block;
 }
+/* About Page CSS Typewriter Effect for .welcome-title */
+.about-title {
+	overflow: hidden;
+	white-space: nowrap;
+	margin: 0 auto;
+	letter-spacing: .15em;
+	-webkit-animation: typing 5s steps(40, end) infinite;
+	        animation: typing 5s steps(40, end) infinite;
+}
+/* The typing effect */
+@keyframes typing {
+  from { width: 0 }
+  to { width: 100% }
+}
 /* About The Place Styling */
 /* Wrapper for about-item sections */
 .about-items {
@@ -651,11 +684,12 @@ body.about {
 	}
 }
 .about-items .about-title {
-	font-size: 30px;
+	font-size: 20px;
 }
-@media (min-width: 530px) {
+@media (min-width: 897px) {
 	.about-items .about-title {
-		font-size: 2em;
+		font-size: 28px;
+		margin: 40px auto;
 	}
 }
 .about-items h1 {
@@ -1072,6 +1106,20 @@ body.reserve {
 #reserve img {
 	display: none;
 }
+/* Reserve Page CSS Typewriter Effect for .welcome-title */
+.reserve-title {
+	overflow: hidden;
+	white-space: nowrap;
+	margin: 0 auto;
+	letter-spacing: .15em;
+	-webkit-animation: typing 5s steps(40, end) infinite;
+	        animation: typing 5s steps(40, end) infinite;
+}
+/* The typing effect */
+@keyframes typing {
+  from { width: 0 }
+  to { width: 100% }
+}
 #reserve .reservations {
 	padding: 40px 0 0;
 	max-width: 880px;
@@ -1084,12 +1132,7 @@ body.reserve {
 	}
 }
 .reservations .reserve-title {
-	font-size: 30px;
-}
-@media (min-width: 530px) {
-	.reservations .reserve-title {
-		font-size: 2em;
-	}
+	font-size: 20px;
 }
 .reservations h1 {
 	color: firebrick;
@@ -1336,6 +1379,20 @@ body.buzz {
 #buzz img {
 	display: none;
 }
+/* Buzz Page CSS Typewriter Effect for .welcome-title */
+.buzz-title {
+	overflow: hidden;
+	white-space: nowrap;
+	margin: 0 auto;
+	letter-spacing: .15em;
+	-webkit-animation: typing 5s steps(40, end) infinite;
+	        animation: typing 5s steps(40, end) infinite;
+}
+/* The typing effect */
+@keyframes typing {
+  from { width: 0 }
+  to { width: 100% }
+}
 /* Wrapper for buzz-item sections */
 .buzz-items {
 	padding: 40px 0 0;
@@ -1352,11 +1409,12 @@ body.buzz {
 	}
 }
 .buzz-items .buzz-title {
-	font-size: 30px;
+	font-size: 20px;
 }
-@media (min-width: 530px) {
+@media (min-width: 897px) {
 	.buzz-items .buzz-title {
-		font-size: 2em;
+		font-size: 28px;
+		margin: 40px auto;
 	}
 }
 .buzz-items h1 {

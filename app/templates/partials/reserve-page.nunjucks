@@ -2,7 +2,7 @@
 				<div id="reserve">
 					<img src="assets/images/relax-701362_1920.jpg" alt="Interior of restaurant Julia.">
 					<div class="reservations">
-						<h1 class="reserve-title"></h1>
+						<h1 class="reserve-title">Reserve a table Now!</h1>
 						<div class="reserve-intro">
 							<div class="reserve-item">
 								<p class="reserve-description make-reservation">
