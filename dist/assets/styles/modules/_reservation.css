@@ -52,6 +52,10 @@ body.reserve {
 
 .reservations .reserve-title {
 	font-size: 20px;
+	@mixin atMediumLarge {
+		font-size: 28px;
+		margin: 40px auto;
+	}
 }
 
 .reservations h1 {
