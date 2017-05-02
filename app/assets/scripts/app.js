@@ -26,17 +26,3 @@ subscribeButton.addEventListener('click', clickSubscribeButton);
 faceButton.addEventListener('click', clickFaceButton);
 getInTouchButton.addEventListener('click', clickEmailUsButton);
 contactButton.addEventListener('click', clickContactButton);
-
-/* JS For SVG Icon Animations */
-
-import { clickInstagramSvg, clickFacebookSvg, clickTwitterSvg, clickPinterestSvg } from './modules/iconAnimation';
-
-const instagramSvg = document.querySelector('svg .instagrm-svg');
-const facebookSvg = document.querySelector('svg .facebook-svg');
-const twitterSvg = document.querySelector('svg .twitter-svg');
-const pinterestSvg = document.querySelector('svg .pinterest-svg');
-
-instagramSvg.addEventListener('click', clickInstagramSvg);
-facebookSvg.addEventListener('click', clickFacebookSvg);
-twitterSvg.addEventListener('click', clickTwitterSvg);
-pinterestSvg.addEventListener('click', clickPinterestSvg);
